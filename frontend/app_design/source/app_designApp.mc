@@ -15,12 +15,11 @@ class app_designApp extends Application.AppBase {
     }
 
     function getInitialView() {
-        var view = new app_designView();
-        var delegate = new app_designDelegate();
+        var view = new CalendarPageView();
+        var delegate = new CalendarPageDelegate(view);
         return [view, delegate];
     }
 }
-
 
 function getApp() as app_designApp {
     return Application.getApp() as app_designApp;
