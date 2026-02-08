@@ -1,0 +1,246 @@
+[ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Lang,4,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 6; @symbol_classdef = [DateResultView,6,6,20]; @symbol_extends<0> = [WatchUi,6,29,36]; @symbol_extends<1> = [View,6,37,41]; ]
+class DateResultView extends WatchUi.View {
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 8; @position = 8; @symbol_vardef = [dateString,8,8,18]; @symbol_type<0> = [String,8,22,28]; ]
+    var dateString as String;
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 9; @position = 8; @symbol_vardef = [hasData,9,8,15]; @symbol_type<0> = [Boolean,9,19,26]; ]
+    var hasData as Boolean;
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 11; @symbol_functiondef = [initialize,11,13,23]; @symbol_param<0> = [date,11,24,28]; @symbol_param<0>_type<0> = [String,11,32,38]; @symbol_param<1> = [dataExists,11,40,50]; @symbol_param<1>_type<0> = [Boolean,11,54,61]; ]
+    function initialize(date as String, dataExists as Boolean) as Void {
+_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_11_63_15_4_start:
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 12 8 ]
+        symbol [ View %tmp.2 12 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 12 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 13 8 ]
+        %tmp.4 = lgetv %date;
+        symbol [ date %tmp.4 13 21 25 ];
+        symbol [ dateString ? 13 8 18 ];
+        putv self :dateString %tmp.4;
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 14 8 ]
+        %tmp.5 = lgetv %dataExists;
+        symbol [ dataExists %tmp.5 14 18 28 ];
+        symbol [ hasData ? 14 8 15 ];
+        putv self :hasData %tmp.5;
+_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_11_63_15_4_stop:
+    }
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 17; @symbol_functiondef = [onLayout,17,13,21]; @symbol_param<0> = [dc,17,22,24]; @symbol_param<0>_type<0> = [Dc,17,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+    }
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 20; @symbol_functiondef = [onShow,20,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 23; @symbol_functiondef = [onUpdate,23,13,21]; @symbol_param<0> = [dc,23,22,24]; @symbol_param<0>_type<0> = [Dc,23,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_23_40_39_4_start:
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 24 8 ]
+        [ "_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_23_40_39_4_start" "_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_23_40_39_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 24 12 17 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 24 20 22 ];
+        symbol [ getWidth %tmp.2 24 23 31 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %width.1 %tmp.3;
+        symbol [ width %width.1 24 12 17 ];
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 25 8 ]
+        [ "_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_23_40_39_4_start" "_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_23_40_39_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 25 12 18 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 25 21 23 ];
+        symbol [ getHeight %tmp.5 25 24 33 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %height.2 %tmp.6;
+        symbol [ height %height.2 25 12 18 ];
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 26 8 ]
+        [ "_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_23_40_39_4_start" "_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_23_40_39_4_stop" ]
+        %centerX.3 = local;
+        symbol [ centerX %centerX.3 26 12 19 ];
+        %tmp.7 = lgetv %width.1;
+        symbol [ width %tmp.7 26 22 27 ];
+        %tmp.8 = 2;
+        %tmp.9 = div %tmp.7 %tmp.8;
+        lputv %centerX.3 %tmp.9;
+        symbol [ centerX %centerX.3 26 12 19 ];
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 27 8 ]
+        [ "_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_23_40_39_4_start" "_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_23_40_39_4_stop" ]
+        %centerY.4 = local;
+        symbol [ centerY %centerY.4 27 12 19 ];
+        %tmp.10 = lgetv %height.2;
+        symbol [ height %tmp.10 27 22 28 ];
+        %tmp.11 = 2;
+        %tmp.12 = div %tmp.10 %tmp.11;
+        lputv %centerY.4 %tmp.12;
+        symbol [ centerY %centerY.4 27 12 19 ];
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 30 8 ]
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 30 8 10 ];
+        symbol [ setColor %tmp.14 30 11 19 ];
+        %tmp.14 = getv function %tmp.13 :setColor;
+        symbol [ Graphics %tmp.15 30 20 28 ];
+        %tmp.15 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.16 30 29 40 ];
+        %tmp.16 = getv %tmp.15 :COLOR_WHITE;
+        symbol [ Graphics %tmp.17 30 42 50 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.18 30 51 62 ];
+        %tmp.18 = getv %tmp.17 :COLOR_WHITE;
+        invoke %tmp.13 %tmp.14(%tmp.16, %tmp.18);
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 31 8 ]
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 31 8 10 ];
+        symbol [ clear %tmp.20 31 11 16 ];
+        %tmp.20 = getv function %tmp.19 :clear;
+        invoke %tmp.19 %tmp.20();
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 33 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 33 8 10 ];
+        symbol [ setColor %tmp.22 33 11 19 ];
+        %tmp.22 = getv function %tmp.21 :setColor;
+        symbol [ Graphics %tmp.23 33 20 28 ];
+        %tmp.23 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.24 33 29 40 ];
+        %tmp.24 = getv %tmp.23 :COLOR_BLACK;
+        symbol [ Graphics %tmp.25 33 42 50 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.26 33 51 68 ];
+        %tmp.26 = getv %tmp.25 :COLOR_TRANSPARENT;
+        invoke %tmp.21 %tmp.22(%tmp.24, %tmp.26);
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 35 8 ]
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 35 8 10 ];
+        symbol [ drawText %tmp.28 35 11 19 ];
+        %tmp.28 = getv function %tmp.27 :drawText;
+        %tmp.29 = lgetv %centerX.3;
+        symbol [ centerX %tmp.29 35 20 27 ];
+        %tmp.30 = lgetv %centerY.4;
+        symbol [ centerY %tmp.30 35 29 36 ];
+        %tmp.31 = 20;
+        %tmp.32 = sub %tmp.30 %tmp.31;
+        symbol [ Graphics %tmp.33 35 43 51 ];
+        %tmp.33 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.34 35 52 62 ];
+        %tmp.34 = getv %tmp.33 :FONT_SMALL;
+        %tmp.35 = "No data reported";
+        symbol [ Graphics %tmp.36 36 20 28 ];
+        %tmp.36 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.37 36 29 48 ];
+        %tmp.37 = getv %tmp.36 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.38 36 51 59 ];
+        %tmp.38 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.39 36 60 80 ];
+        %tmp.39 = getv %tmp.38 :TEXT_JUSTIFY_VCENTER;
+        %tmp.40 = bitor %tmp.37 %tmp.39;
+        invoke %tmp.27 %tmp.28(%tmp.29, %tmp.32, %tmp.34, %tmp.35, %tmp.40);
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 37 8 ]
+        %tmp.41 = lgetv %dc;
+        symbol [ dc %tmp.41 37 8 10 ];
+        symbol [ drawText %tmp.42 37 11 19 ];
+        %tmp.42 = getv function %tmp.41 :drawText;
+        %tmp.43 = lgetv %centerX.3;
+        symbol [ centerX %tmp.43 37 20 27 ];
+        %tmp.44 = lgetv %centerY.4;
+        symbol [ centerY %tmp.44 37 29 36 ];
+        %tmp.45 = 20;
+        %tmp.46 = add %tmp.44 %tmp.45;
+        symbol [ Graphics %tmp.47 37 43 51 ];
+        %tmp.47 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.48 37 52 61 ];
+        %tmp.48 = getv %tmp.47 :FONT_TINY;
+        %tmp.49 = "on ";
+        symbol [ dateString %tmp.51 37 71 81 ];
+        %tmp.51 = getv ? :dateString;
+        %tmp.52 = add %tmp.49 %tmp.51;
+        symbol [ Graphics %tmp.53 38 20 28 ];
+        %tmp.53 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.54 38 29 48 ];
+        %tmp.54 = getv %tmp.53 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.55 38 51 59 ];
+        %tmp.55 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.56 38 60 80 ];
+        %tmp.56 = getv %tmp.55 :TEXT_JUSTIFY_VCENTER;
+        %tmp.57 = bitor %tmp.54 %tmp.56;
+        invoke %tmp.41 %tmp.42(%tmp.43, %tmp.46, %tmp.48, %tmp.52, %tmp.57);
+_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_23_40_39_4_stop:
+    }
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 41; @symbol_functiondef = [onHide,41,13,19]; ]
+    function onHide() as Void {
+    }
+}
+[ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 46; @symbol_classdef = [DateResultDelegate,46,6,24]; @symbol_extends<0> = [WatchUi,46,33,40]; @symbol_extends<1> = [BehaviorDelegate,46,41,57]; ]
+class DateResultDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 46; ]
+    <init> {
+    }
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 46; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 48; @symbol_functiondef = [initialize,48,13,23]; ]
+    function initialize() as Void {
+_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_48_26_50_4_start:
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 49 8 ]
+        symbol [ BehaviorDelegate %tmp.2 49 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 49 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_48_26_50_4_stop:
+    }
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 53; @symbol_functiondef = [onBack,53,13,19]; @symbol_return<0> = [Boolean,53,25,32]; ]
+    function onBack() as Boolean {
+_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_53_33_56_4_start:
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 54 8 ]
+        symbol [ WatchUi %tmp.1 54 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 54 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 54 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.4 54 32 43 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_RIGHT;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 55 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_53_33_56_4_stop:
+    }
+    [ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 58; @symbol_functiondef = [onSelect,58,13,21]; @symbol_return<0> = [Boolean,58,27,34]; ]
+    function onSelect() as Boolean {
+_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_58_35_62_4_start:
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 60 8 ]
+        symbol [ WatchUi %tmp.1 60 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 60 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 60 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.4 60 32 43 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_RIGHT;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc" 61 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+_Users_dorukozel_Desktop_RareDiseaseApp_frontend_app_design_source_DataResultView_mc_58_35_62_4_stop:
+    }
+}
+[ @file = "/Users/dorukozel/Desktop/RareDiseaseApp/frontend/app_design/source/DataResultView.mc"; @line = 2; ]
+<init> {
+}

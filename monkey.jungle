@@ -1,0 +1,11 @@
+project.manifest = manifest.xml
+
+# Source files
+base.sourcePath = source
+
+# Resources
+base.resourcePath = resources
+
+# Target device
+vivoactive5.sourcePath = $(base.sourcePath)
+vivoactive5.resourcePath = $(base.resourcePath)

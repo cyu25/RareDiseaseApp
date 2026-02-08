@@ -1,0 +1,414 @@
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; @symbol_importdef<2> = [Storage,1,26,33]; ]
+import Toybox.Application.Storage;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Time,2,14,18]; ]
+import Toybox.Time;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Time,3,14,18]; @symbol_importdef<2> = [Gregorian,3,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 5; @symbol_classdef = [SurveyStorage,5,6,19]; ]
+class SurveyStorage {
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 8; @symbol_functiondef = [hasCompletedToday,8,20,37]; @symbol_return<0> = [Boolean,8,43,50]; ]
+    static
+    function hasCompletedToday() as Boolean {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_8_51_17_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 9 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_8_51_17_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_8_51_17_4_stop" ]
+        %lastCompleted.1 = local;
+        symbol [ lastCompleted %lastCompleted.1 9 12 25 ];
+        symbol [ Storage %tmp.1 9 28 35 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.2 9 36 44 ];
+        %tmp.2 = getv function %tmp.1 :getValue;
+        %tmp.3 = "lastSurveyDate";
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %lastCompleted.1 %tmp.4;
+        symbol [ lastCompleted %lastCompleted.1 9 12 25 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 11 8 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_11_8_13_8_if_stmt:
+        %tmp.5 = lgetv %lastCompleted.1;
+        symbol [ lastCompleted %tmp.5 11 12 25 ];
+        %tmp.6 = null;
+        %tmp.7 = eq %tmp.5 %tmp.6;
+        bf %tmp.7 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_11_8_13_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_11_8_13_8_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_11_35_13_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 12 12 ]
+        %tmp.8 = false;
+        ret %tmp.8;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_11_35_13_8_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_11_8_13_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_11_8_13_8_if_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 15 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_8_51_17_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_8_51_17_4_stop" ]
+        %today.2 = local;
+        symbol [ today %today.2 15 12 17 ];
+        %tmp.9 = self;
+        symbol [ getTodayString %tmp.10 15 20 34 ];
+        %tmp.10 = getv function %tmp.9 :getTodayString;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %today.2 %tmp.11;
+        symbol [ today %today.2 15 12 17 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 16 8 ]
+        %tmp.12 = lgetv %lastCompleted.1;
+        symbol [ lastCompleted %tmp.12 16 15 28 ];
+        symbol [ equals %tmp.13 16 29 35 ];
+        %tmp.13 = getv function %tmp.12 :equals;
+        %tmp.14 = lgetv %today.2;
+        symbol [ today %tmp.14 16 36 41 ];
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        ret %tmp.15;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_8_51_17_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 20; @symbol_functiondef = [markCompletedToday,20,20,38]; ]
+    static
+    function markCompletedToday() as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_20_49_23_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 21 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_20_49_23_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_20_49_23_4_stop" ]
+        %today.1 = local;
+        symbol [ today %today.1 21 12 17 ];
+        %tmp.1 = self;
+        symbol [ getTodayString %tmp.2 21 20 34 ];
+        %tmp.2 = getv function %tmp.1 :getTodayString;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %today.1 %tmp.3;
+        symbol [ today %today.1 21 12 17 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 22 8 ]
+        symbol [ Storage %tmp.4 22 8 15 ];
+        %tmp.4 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.5 22 16 24 ];
+        %tmp.5 = getv function %tmp.4 :setValue;
+        %tmp.6 = "lastSurveyDate";
+        %tmp.7 = lgetv %today.1;
+        symbol [ today %tmp.7 22 43 48 ];
+        invoke %tmp.4 %tmp.5(%tmp.6, %tmp.7);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_20_49_23_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 26; @symbol_functiondef = [getTodayString,26,20,34]; @symbol_return<0> = [String,26,40,46]; ]
+    static
+    function getTodayString() as String {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_26_47_30_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 27 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_26_47_30_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_26_47_30_4_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 27 12 15 ];
+        symbol [ Time %tmp.1 27 18 22 ];
+        %tmp.1 = getm $.Toybox.Time;
+        symbol [ now %tmp.2 27 23 26 ];
+        %tmp.2 = getv function %tmp.1 :now;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %now.1 %tmp.3;
+        symbol [ now %now.1 27 12 15 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 28 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_26_47_30_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_26_47_30_4_stop" ]
+        %info.2 = local;
+        symbol [ info %info.2 28 12 16 ];
+        symbol [ Gregorian %tmp.4 28 19 28 ];
+        %tmp.4 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.5 28 29 33 ];
+        %tmp.5 = getv function %tmp.4 :info;
+        %tmp.6 = lgetv %now.1;
+        symbol [ now %tmp.6 28 34 37 ];
+        symbol [ Time %tmp.7 28 39 43 ];
+        %tmp.7 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.8 28 44 56 ];
+        %tmp.8 = getv %tmp.7 :FORMAT_SHORT;
+        %tmp.9 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.8);
+        lputv %info.2 %tmp.9;
+        symbol [ info %info.2 28 12 16 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 29 8 ]
+        %tmp.10 = lgetv %info.2;
+        symbol [ info %tmp.10 29 15 19 ];
+        symbol [ year %tmp.11 29 20 24 ];
+        %tmp.11 = getv %tmp.10 :year;
+        %tmp.12 = "-";
+        %tmp.13 = add %tmp.11 %tmp.12;
+        %tmp.14 = lgetv %info.2;
+        symbol [ info %tmp.14 29 33 37 ];
+        symbol [ month %tmp.15 29 38 43 ];
+        %tmp.15 = getv %tmp.14 :month;
+        %tmp.16 = add %tmp.13 %tmp.15;
+        %tmp.17 = "-";
+        %tmp.18 = add %tmp.16 %tmp.17;
+        %tmp.19 = lgetv %info.2;
+        symbol [ info %tmp.19 29 52 56 ];
+        symbol [ day %tmp.20 29 57 60 ];
+        %tmp.20 = getv %tmp.19 :day;
+        %tmp.21 = add %tmp.18 %tmp.20;
+        ret %tmp.21;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_26_47_30_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 33; @symbol_functiondef = [saveSurveyData,33,20,34]; @symbol_param<0> = [responses,33,35,44]; @symbol_param<0>_type<0> = [Array,33,48,53]; @symbol_param<0>_type<1> = [Number,33,54,60]; @symbol_param<1> = [categories,33,63,73]; @symbol_param<1>_type<0> = [Array,33,77,82]; @symbol_param<1>_type<1> = [String,33,83,89]; @symbol_param<2> = [questionCategories,33,92,110]; @symbol_param<2>_type<0> = [Array,33,114,119]; @symbol_param<2>_type<1> = [String,33,120,126]; ]
+    static
+    function saveSurveyData(responses as Array<Number>, categories as Array<String>, questionCategories as Array<String>) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 34 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_stop" ]
+        %today.1 = local;
+        symbol [ today %today.1 34 12 17 ];
+        %tmp.1 = self;
+        symbol [ getTodayString %tmp.2 34 20 34 ];
+        %tmp.2 = getv function %tmp.1 :getTodayString;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %today.1 %tmp.3;
+        symbol [ today %today.1 34 12 17 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 35 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_stop" ]
+        %timestamp.2 = local;
+        symbol [ timestamp %timestamp.2 35 12 21 ];
+        symbol [ Time %tmp.4 35 24 28 ];
+        %tmp.4 = getm $.Toybox.Time;
+        symbol [ now %tmp.5 35 29 32 ];
+        %tmp.5 = getv function %tmp.4 :now;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ value %tmp.7 35 35 40 ];
+        %tmp.7 = getv function %tmp.6 :value;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %timestamp.2 %tmp.8;
+        symbol [ timestamp %timestamp.2 35 12 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 38 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_stop" ]
+        %surveyData.3 = local;
+        symbol [ surveyData %surveyData.3 38 12 22 ];
+        %tmp.9 = newd 5;
+        %tmp.10 = "date";
+        %tmp.11 = lgetv %today.1;
+        symbol [ today %tmp.11 39 22 27 ];
+        %tmp.12 = dup %tmp.9;
+        %tmp.13 = aputv %tmp.12 %tmp.10 %tmp.11;
+        %tmp.14 = "timestamp";
+        %tmp.15 = lgetv %timestamp.2;
+        symbol [ timestamp %tmp.15 40 27 36 ];
+        %tmp.16 = dup %tmp.13;
+        %tmp.17 = aputv %tmp.16 %tmp.14 %tmp.15;
+        %tmp.18 = "responses";
+        %tmp.19 = lgetv %responses;
+        symbol [ responses %tmp.19 41 27 36 ];
+        %tmp.20 = dup %tmp.17;
+        %tmp.21 = aputv %tmp.20 %tmp.18 %tmp.19;
+        %tmp.22 = "categories";
+        %tmp.23 = lgetv %categories;
+        symbol [ categories %tmp.23 42 28 38 ];
+        %tmp.24 = dup %tmp.21;
+        %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+        %tmp.26 = "questionCategories";
+        %tmp.27 = lgetv %questionCategories;
+        symbol [ questionCategories %tmp.27 43 36 54 ];
+        %tmp.28 = dup %tmp.25;
+        %tmp.29 = aputv %tmp.28 %tmp.26 %tmp.27;
+        lputv %surveyData.3 %tmp.29;
+        symbol [ surveyData %surveyData.3 38 12 22 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 47 8 ]
+        symbol [ Storage %tmp.30 47 8 15 ];
+        %tmp.30 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.31 47 16 24 ];
+        %tmp.31 = getv function %tmp.30 :setValue;
+        %tmp.32 = "survey_";
+        %tmp.33 = lgetv %today.1;
+        symbol [ today %tmp.33 47 37 42 ];
+        %tmp.34 = add %tmp.32 %tmp.33;
+        %tmp.35 = lgetv %surveyData.3;
+        symbol [ surveyData %tmp.35 47 44 54 ];
+        invoke %tmp.30 %tmp.31(%tmp.34, %tmp.35);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 50 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_stop" ]
+        %allDates.4 = local;
+        symbol [ allDates %allDates.4 50 12 20 ];
+        symbol [ Storage %tmp.36 50 23 30 ];
+        %tmp.36 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.37 50 31 39 ];
+        %tmp.37 = getv function %tmp.36 :getValue;
+        %tmp.38 = "allSurveyDates";
+        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
+        lputv %allDates.4 %tmp.39;
+        symbol [ allDates %allDates.4 50 12 20 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 51 8 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_51_8_53_8_if_stmt:
+        %tmp.40 = lgetv %allDates.4;
+        symbol [ allDates %tmp.40 51 12 20 ];
+        %tmp.41 = null;
+        %tmp.42 = eq %tmp.40 %tmp.41;
+        bf %tmp.42 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_51_8_53_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_51_8_53_8_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_51_30_53_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 52 12 ]
+        %tmp.43 = newa 0;
+        lputv %allDates.4 %tmp.43;
+        symbol [ allDates %allDates.4 52 12 20 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_51_30_53_8_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_51_8_53_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_51_8_53_8_if_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 56 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_stop" ]
+        %found.5 = local;
+        symbol [ found %found.5 56 12 17 ];
+        %tmp.44 = false;
+        lputv %found.5 %tmp.44;
+        symbol [ found %found.5 56 12 17 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 57 8 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_end" ]
+        %i.6 = local;
+        symbol [ i %i.6 57 17 18 ];
+        %tmp.45 = 0;
+        lputv %i.6 %tmp.45;
+        symbol [ i %i.6 57 17 18 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_test:
+        %tmp.46 = lgetv %i.6;
+        symbol [ i %tmp.46 57 24 25 ];
+        %tmp.47 = lgetv %allDates.4;
+        symbol [ allDates %tmp.47 57 28 36 ];
+        symbol [ size %tmp.48 57 37 41 ];
+        %tmp.48 = getv function %tmp.47 :size;
+        %tmp.49 = invoke %tmp.47 %tmp.48();
+        %tmp.50 = lt %tmp.46 %tmp.49;
+        bf %tmp.50 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_50_62_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 58 12 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_58_12_61_12_if_stmt:
+        %tmp.51 = lgetv %allDates.4;
+        symbol [ allDates %tmp.51 58 16 24 ];
+        %tmp.52 = lgetv %i.6;
+        symbol [ i %tmp.52 58 25 26 ];
+        %tmp.53 = agetv %tmp.51 %tmp.52;
+        symbol [ equals %tmp.54 58 28 34 ];
+        %tmp.54 = getv function %tmp.53 :equals;
+        %tmp.55 = lgetv %today.1;
+        symbol [ today %tmp.55 58 35 40 ];
+        %tmp.56 = invoke %tmp.53 %tmp.54(%tmp.55);
+        bf %tmp.56 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_58_12_61_12_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_58_12_61_12_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_58_43_61_12_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 59 16 ]
+        %tmp.57 = true;
+        lputv %found.5 %tmp.57;
+        symbol [ found %found.5 59 16 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 60 16 ]
+        goto break @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_58_43_61_12_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_58_12_61_12_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_58_12_61_12_if_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_50_62_8_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 57 ]
+        %tmp.60 = lgetv %i.6;
+        symbol [ i %tmp.60 57 45 46 ];
+        %tmp.61 = add %tmp.60 1;
+        lputv %i.6 %tmp.61;
+        symbol [ i %i.6 57 45 46 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_57_8_62_8_for_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 63 8 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_63_8_66_8_if_stmt:
+        %tmp.62 = lgetv %found.5;
+        symbol [ found %tmp.62 63 13 18 ];
+        %tmp.63 = not %tmp.62;
+        bf %tmp.63 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_63_8_66_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_63_8_66_8_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_63_20_66_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 64 12 ]
+        %tmp.64 = lgetv %allDates.4;
+        symbol [ allDates %tmp.64 64 12 20 ];
+        symbol [ add %tmp.65 64 21 24 ];
+        %tmp.65 = getv function %tmp.64 :add;
+        %tmp.66 = lgetv %today.1;
+        symbol [ today %tmp.66 64 25 30 ];
+        invoke %tmp.64 %tmp.65(%tmp.66);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 65 12 ]
+        symbol [ Storage %tmp.67 65 12 19 ];
+        %tmp.67 = getm $.Toybox.Application.Storage;
+        symbol [ setValue %tmp.68 65 20 28 ];
+        %tmp.68 = getv function %tmp.67 :setValue;
+        %tmp.69 = "allSurveyDates";
+        %tmp.70 = lgetv %allDates.4;
+        symbol [ allDates %tmp.70 65 47 55 ];
+        invoke %tmp.67 %tmp.68(%tmp.69, %tmp.70);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_63_20_66_8_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_63_8_66_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_63_8_66_8_if_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 69 8 ]
+        %tmp.71 = self;
+        symbol [ markCompletedToday %tmp.72 69 8 26 ];
+        %tmp.72 = getv function %tmp.71 :markCompletedToday;
+        invoke %tmp.71 %tmp.72();
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_33_137_70_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 73; @symbol_functiondef = [getAllSurveyDates,73,20,37]; @symbol_return<0> = [Array,73,43,48]; @symbol_return<1> = [String,73,49,55]; ]
+    static
+    function getAllSurveyDates() as Array<String> {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_73_57_79_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 74 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_73_57_79_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_73_57_79_4_stop" ]
+        %dates.1 = local;
+        symbol [ dates %dates.1 74 12 17 ];
+        symbol [ Storage %tmp.1 74 20 27 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.2 74 28 36 ];
+        %tmp.2 = getv function %tmp.1 :getValue;
+        %tmp.3 = "allSurveyDates";
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %dates.1 %tmp.4;
+        symbol [ dates %dates.1 74 12 17 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 75 8 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_75_8_77_8_if_stmt:
+        %tmp.5 = lgetv %dates.1;
+        symbol [ dates %tmp.5 75 12 17 ];
+        %tmp.6 = null;
+        %tmp.7 = eq %tmp.5 %tmp.6;
+        bf %tmp.7 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_75_8_77_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_75_8_77_8_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_75_27_77_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 76 12 ]
+        %tmp.8 = newa 0;
+        ret %tmp.8;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_75_27_77_8_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_75_8_77_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_75_8_77_8_if_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 78 8 ]
+        %tmp.9 = lgetv %dates.1;
+        symbol [ dates %tmp.9 78 15 20 ];
+        ret %tmp.9;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_73_57_79_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 82; @symbol_functiondef = [getSurveyData,82,20,33]; @symbol_param<0> = [dateString,82,34,44]; @symbol_param<0>_type<0> = [String,82,48,54]; @symbol_return<0> = [Dictionary,82,59,69]; ]
+    static
+    function getSurveyData(dateString as String) as Dictionary or Null {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_82_71_84_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 83 8 ]
+        symbol [ Storage %tmp.1 83 15 22 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ getValue %tmp.2 83 23 31 ];
+        %tmp.2 = getv function %tmp.1 :getValue;
+        %tmp.3 = "survey_";
+        %tmp.4 = lgetv %dateString;
+        symbol [ dateString %tmp.4 83 44 54 ];
+        %tmp.5 = add %tmp.3 %tmp.4;
+        %tmp.6 = invoke %tmp.1 %tmp.2(%tmp.5);
+        ret %tmp.6;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_82_71_84_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 87; @symbol_functiondef = [resetDailyCompletion,87,20,40]; ]
+    static
+    function resetDailyCompletion() as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_87_51_89_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc" 88 8 ]
+        symbol [ Storage %tmp.1 88 8 15 ];
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        symbol [ deleteValue %tmp.2 88 16 27 ];
+        %tmp.2 = getv function %tmp.1 :deleteValue;
+        %tmp.3 = "lastSurveyDate";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_survey_storage_mc_87_51_89_4_stop:
+    }
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/survey_storage.mc"; @line = 1; ]
+<init> {
+}

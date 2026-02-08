@@ -1,0 +1,2129 @@
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Math,4,14,18]; ]
+import Toybox.Math;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; ]
+import Toybox.Time;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 7; @symbol_classdef = [SpiderDiagramView,7,6,23]; @symbol_extends<0> = [WatchUi,7,32,39]; @symbol_extends<1> = [View,7,40,44]; ]
+class SpiderDiagramView extends WatchUi.View {
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 8; @position = 16; @symbol_vardef = [symptomLabels,8,16,29]; @symbol_type<0> = [Array,8,33,38]; @symbol_type<1> = [String,8,39,45]; ]
+    private
+    var symptomLabels as Array<String>;
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 9; @position = 16; @symbol_vardef = [symptomValues,9,16,29]; @symbol_type<0> = [Array,9,33,38]; @symbol_type<1> = [Number,9,39,45]; ]
+    private
+    var symptomValues as Array<Number>;
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 10; @position = 16; @symbol_vardef = [numSymptoms,10,16,27]; @symbol_type<0> = [Number,10,31,37]; ]
+    private
+    var numSymptoms as Number;
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 11; @position = 16; @symbol_vardef = [centerX,11,16,23]; @symbol_type<0> = [Float,11,27,32]; ]
+    private
+    var centerX as Float;
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 12; @position = 16; @symbol_vardef = [centerY,12,16,23]; @symbol_type<0> = [Float,12,27,32]; ]
+    private
+    var centerY as Float;
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 13; @position = 16; @symbol_vardef = [radius,13,16,22]; @symbol_type<0> = [Float,13,26,31]; ]
+    private
+    var radius as Float;
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 14; @position = 16; @symbol_vardef = [recordedDate,14,16,28]; @symbol_type<0> = [Time,14,32,36]; @symbol_type<1> = [Moment,14,37,43]; ]
+    private
+    var recordedDate as Time.Moment;
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 16; @symbol_functiondef = [initialize,16,13,23]; @symbol_param<0> = [labels,16,24,30]; @symbol_param<0>_type<0> = [Array,16,34,39]; @symbol_param<0>_type<1> = [String,16,40,46]; @symbol_param<1> = [checkedStates,16,49,62]; @symbol_param<1>_type<0> = [Array,16,66,71]; @symbol_param<1>_type<1> = [Boolean,16,72,79]; @symbol_param<2> = [dateRecorded,16,82,94]; @symbol_param<2>_type<0> = [Time,16,98,102]; @symbol_param<2>_type<1> = [Moment,16,103,109]; ]
+    function initialize(labels as Array<String>, checkedStates as Array<Boolean>, dateRecorded as Time.Moment) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_16_111_32_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 17 8 ]
+        symbol [ View %tmp.2 17 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 17 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 18 8 ]
+        %tmp.4 = lgetv %labels;
+        symbol [ labels %tmp.4 18 24 30 ];
+        symbol [ symptomLabels ? 18 8 21 ];
+        putv self :symptomLabels %tmp.4;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 19 8 ]
+        %tmp.5 = lgetv %labels;
+        symbol [ labels %tmp.5 19 22 28 ];
+        symbol [ size %tmp.6 19 29 33 ];
+        %tmp.6 = getv function %tmp.5 :size;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        symbol [ numSymptoms ? 19 8 19 ];
+        putv self :numSymptoms %tmp.7;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 20 8 ]
+        %tmp.8 = lgetv %dateRecorded;
+        symbol [ dateRecorded %tmp.8 20 23 35 ];
+        symbol [ recordedDate ? 20 8 20 ];
+        putv self :recordedDate %tmp.8;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 23 8 ]
+        %tmp.9 = 0.0;
+        symbol [ centerX ? 23 8 15 ];
+        putv self :centerX %tmp.9;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 24 8 ]
+        %tmp.10 = 0.0;
+        symbol [ centerY ? 24 8 15 ];
+        putv self :centerY %tmp.10;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 25 8 ]
+        %tmp.11 = 0.0;
+        symbol [ radius ? 25 8 14 ];
+        putv self :radius %tmp.11;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 28 8 ]
+        symbol [ numSymptoms %tmp.14 28 42 53 ];
+        %tmp.14 = getv ? :numSymptoms;
+        %tmp.12 = newa Array<Number> %tmp.14;
+        symbol [ Array %tmp.12 28 28 33 ];
+        symbol [ Number %tmp.12 28 34 40 ];
+        symbol [ symptomValues ? 28 8 21 ];
+        putv self :symptomValues %tmp.12;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 29 8 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 29 17 18 ];
+        %tmp.15 = 0;
+        lputv %i.1 %tmp.15;
+        symbol [ i %i.1 29 17 18 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_test:
+        %tmp.16 = lgetv %i.1;
+        symbol [ i %tmp.16 29 24 25 ];
+        symbol [ numSymptoms %tmp.18 29 28 39 ];
+        %tmp.18 = getv ? :numSymptoms;
+        %tmp.19 = lt %tmp.16 %tmp.18;
+        bf %tmp.19 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_46_31_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 30 12 ]
+        symbol [ symptomValues %tmp.20 30 12 25 ];
+        %tmp.20 = getv self :symptomValues;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_30_31_30_56_begin:
+        %tmp.21 = lgetv %checkedStates;
+        symbol [ checkedStates %tmp.21 30 31 44 ];
+        %tmp.22 = lgetv %i.1;
+        symbol [ i %tmp.22 30 45 46 ];
+        %tmp.23 = agetv %tmp.21 %tmp.22;
+        bf %tmp.23 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_30_31_30_56_else_false;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_30_31_30_56_true:
+        %tmp.24 = 100;
+        push %tmp.24;
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_30_31_30_56_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_30_31_30_56_else_false:
+        %tmp.25 = 0;
+        push %tmp.25;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_30_31_30_56_end:
+        %tmp.26 = phi [%tmp.23 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_30_31_30_56_begin] [%tmp.24 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_30_31_30_56_true] [%tmp.25 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_30_31_30_56_else_false] [%tmp.26 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_30_31_30_56_end];
+        %tmp.27 = lgetv %i.1;
+        symbol [ i %tmp.27 30 26 27 ];
+        aputv %tmp.20 %tmp.27 %tmp.26;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_46_31_8_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 29 ]
+        %tmp.30 = lgetv %i.1;
+        symbol [ i %tmp.30 29 41 42 ];
+        %tmp.31 = add %tmp.30 1;
+        lputv %i.1 %tmp.31;
+        symbol [ i %i.1 29 41 42 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_29_8_31_8_for_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_16_111_32_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 34; @symbol_functiondef = [onUpdate,34,13,21]; @symbol_param<0> = [dc,34,22,24]; @symbol_param<0>_type<0> = [Dc,34,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 35 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 35 8 10 ];
+        symbol [ setColor %tmp.2 35 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 35 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 35 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 35 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 35 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 36 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 36 8 10 ];
+        symbol [ clear %tmp.8 36 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 38 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_stop" ]
+        %screenWidth.1 = local;
+        symbol [ screenWidth %screenWidth.1 38 12 23 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 38 26 28 ];
+        symbol [ getWidth %tmp.10 38 29 37 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %screenWidth.1 %tmp.11;
+        symbol [ screenWidth %screenWidth.1 38 12 23 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 39 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_stop" ]
+        %screenHeight.2 = local;
+        symbol [ screenHeight %screenHeight.2 39 12 24 ];
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 39 27 29 ];
+        symbol [ getHeight %tmp.13 39 30 39 ];
+        %tmp.13 = getv function %tmp.12 :getHeight;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %screenHeight.2 %tmp.14;
+        symbol [ screenHeight %screenHeight.2 39 12 24 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 42 8 ]
+        %tmp.15 = lgetv %screenWidth.1;
+        symbol [ screenWidth %tmp.15 42 18 29 ];
+        %tmp.16 = 2.0;
+        %tmp.17 = div %tmp.15 %tmp.16;
+        symbol [ centerX ? 42 8 15 ];
+        putv self :centerX %tmp.17;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 43 8 ]
+        %tmp.18 = lgetv %screenHeight.2;
+        symbol [ screenHeight %tmp.18 43 18 30 ];
+        %tmp.19 = 2.0;
+        %tmp.20 = div %tmp.18 %tmp.19;
+        symbol [ centerY ? 43 8 15 ];
+        putv self :centerY %tmp.20;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 45 8 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_45_18_45_61_begin:
+        %tmp.21 = lgetv %screenWidth.1;
+        symbol [ screenWidth %tmp.21 45 18 29 ];
+        %tmp.22 = lgetv %screenHeight.2;
+        symbol [ screenHeight %tmp.22 45 32 44 ];
+        %tmp.23 = lt %tmp.21 %tmp.22;
+        bf %tmp.23 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_45_18_45_61_else_false;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_45_18_45_61_true:
+        %tmp.24 = lgetv %screenWidth.1;
+        symbol [ screenWidth %tmp.24 45 47 58 ];
+        push %tmp.24;
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_45_18_45_61_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_45_18_45_61_else_false:
+        %tmp.25 = lgetv %screenHeight.2;
+        symbol [ screenHeight %tmp.25 45 61 73 ];
+        push %tmp.25;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_45_18_45_61_end:
+        %tmp.26 = phi [%tmp.23 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_45_18_45_61_begin] [%tmp.24 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_45_18_45_61_true] [%tmp.25 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_45_18_45_61_else_false] [%tmp.26 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_45_18_45_61_end];
+        %tmp.27 = 0.28;
+        %tmp.28 = mul %tmp.26 %tmp.27;
+        symbol [ radius ? 45 8 14 ];
+        putv self :radius %tmp.28;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 48 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_stop" ]
+        %dateInfo.3 = local;
+        symbol [ dateInfo %dateInfo.3 48 12 20 ];
+        symbol [ Time %tmp.29 48 23 27 ];
+        %tmp.29 = getm $.Toybox.Time;
+        symbol [ Gregorian %tmp.30 48 28 37 ];
+        %tmp.30 = getv %tmp.29 :Gregorian;
+        symbol [ info %tmp.31 48 38 42 ];
+        %tmp.31 = getv function %tmp.30 :info;
+        symbol [ recordedDate %tmp.33 48 43 55 ];
+        %tmp.33 = getv ? :recordedDate;
+        symbol [ Time %tmp.34 48 57 61 ];
+        %tmp.34 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.35 48 62 74 ];
+        %tmp.35 = getv %tmp.34 :FORMAT_SHORT;
+        %tmp.36 = invoke %tmp.30 %tmp.31(%tmp.33, %tmp.35);
+        lputv %dateInfo.3 %tmp.36;
+        symbol [ dateInfo %dateInfo.3 48 12 20 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 49 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_stop" ]
+        %monthNames.4 = local;
+        symbol [ monthNames %monthNames.4 49 12 22 ];
+        %tmp.37 = newa 12;
+        %tmp.38 = "Jan";
+        %tmp.39 = dup %tmp.37;
+        %tmp.40 = aputv %tmp.39 0 %tmp.38;
+        %tmp.41 = "Feb";
+        %tmp.42 = dup %tmp.40;
+        %tmp.43 = aputv %tmp.42 1 %tmp.41;
+        %tmp.44 = "Mar";
+        %tmp.45 = dup %tmp.43;
+        %tmp.46 = aputv %tmp.45 2 %tmp.44;
+        %tmp.47 = "Apr";
+        %tmp.48 = dup %tmp.46;
+        %tmp.49 = aputv %tmp.48 3 %tmp.47;
+        %tmp.50 = "May";
+        %tmp.51 = dup %tmp.49;
+        %tmp.52 = aputv %tmp.51 4 %tmp.50;
+        %tmp.53 = "Jun";
+        %tmp.54 = dup %tmp.52;
+        %tmp.55 = aputv %tmp.54 5 %tmp.53;
+        %tmp.56 = "Jul";
+        %tmp.57 = dup %tmp.55;
+        %tmp.58 = aputv %tmp.57 6 %tmp.56;
+        %tmp.59 = "Aug";
+        %tmp.60 = dup %tmp.58;
+        %tmp.61 = aputv %tmp.60 7 %tmp.59;
+        %tmp.62 = "Sep";
+        %tmp.63 = dup %tmp.61;
+        %tmp.64 = aputv %tmp.63 8 %tmp.62;
+        %tmp.65 = "Oct";
+        %tmp.66 = dup %tmp.64;
+        %tmp.67 = aputv %tmp.66 9 %tmp.65;
+        %tmp.68 = "Nov";
+        %tmp.69 = dup %tmp.67;
+        %tmp.70 = aputv %tmp.69 10 %tmp.68;
+        %tmp.71 = "Dec";
+        %tmp.72 = dup %tmp.70;
+        %tmp.73 = aputv %tmp.72 11 %tmp.71;
+        lputv %monthNames.4 %tmp.73;
+        symbol [ monthNames %monthNames.4 49 12 22 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 51 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_stop" ]
+        %monthName.5 = local;
+        symbol [ monthName %monthName.5 51 12 21 ];
+        %tmp.74 = lgetv %monthNames.4;
+        symbol [ monthNames %tmp.74 51 24 34 ];
+        %tmp.75 = lgetv %dateInfo.3;
+        symbol [ dateInfo %tmp.75 51 35 43 ];
+        symbol [ month %tmp.76 51 44 49 ];
+        %tmp.76 = getv %tmp.75 :month;
+        %tmp.77 = 1;
+        %tmp.78 = sub %tmp.76 %tmp.77;
+        %tmp.79 = agetv %tmp.74 %tmp.78;
+        lputv %monthName.5 %tmp.79;
+        symbol [ monthName %monthName.5 51 12 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 52 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_stop" ]
+        %dateText.6 = local;
+        symbol [ dateText %dateText.6 52 12 20 ];
+        symbol [ Lang %tmp.80 52 23 27 ];
+        %tmp.80 = getm $.Toybox.Lang;
+        symbol [ format %tmp.81 52 28 34 ];
+        %tmp.81 = getv function %tmp.80 :format;
+        %tmp.82 = "$1$ $2$, $3$";
+        %tmp.83 = newa 3;
+        %tmp.84 = lgetv %monthName.5;
+        symbol [ monthName %tmp.84 53 12 21 ];
+        %tmp.85 = dup %tmp.83;
+        %tmp.86 = aputv %tmp.85 0 %tmp.84;
+        %tmp.87 = lgetv %dateInfo.3;
+        symbol [ dateInfo %tmp.87 54 12 20 ];
+        symbol [ day %tmp.88 54 21 24 ];
+        %tmp.88 = getv %tmp.87 :day;
+        %tmp.89 = dup %tmp.86;
+        %tmp.90 = aputv %tmp.89 1 %tmp.88;
+        %tmp.91 = lgetv %dateInfo.3;
+        symbol [ dateInfo %tmp.91 55 12 20 ];
+        symbol [ year %tmp.92 55 21 25 ];
+        %tmp.92 = getv %tmp.91 :year;
+        %tmp.93 = dup %tmp.90;
+        %tmp.94 = aputv %tmp.93 2 %tmp.92;
+        %tmp.95 = invoke %tmp.80 %tmp.81(%tmp.82, %tmp.94);
+        lputv %dateText.6 %tmp.95;
+        symbol [ dateText %dateText.6 52 12 20 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 59 8 ]
+        %tmp.96 = lgetv %dc;
+        symbol [ dc %tmp.96 59 8 10 ];
+        symbol [ setColor %tmp.97 59 11 19 ];
+        %tmp.97 = getv function %tmp.96 :setColor;
+        symbol [ Graphics %tmp.98 59 20 28 ];
+        %tmp.98 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.99 59 29 40 ];
+        %tmp.99 = getv %tmp.98 :COLOR_WHITE;
+        symbol [ Graphics %tmp.100 59 42 50 ];
+        %tmp.100 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.101 59 51 68 ];
+        %tmp.101 = getv %tmp.100 :COLOR_TRANSPARENT;
+        invoke %tmp.96 %tmp.97(%tmp.99, %tmp.101);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 60 8 ]
+        %tmp.102 = lgetv %dc;
+        symbol [ dc %tmp.102 60 8 10 ];
+        symbol [ drawText %tmp.103 60 11 19 ];
+        %tmp.103 = getv function %tmp.102 :drawText;
+        symbol [ centerX %tmp.105 61 12 19 ];
+        %tmp.105 = getv ? :centerX;
+        %tmp.106 = 15;
+        symbol [ Graphics %tmp.107 63 12 20 ];
+        %tmp.107 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.108 63 21 31 ];
+        %tmp.108 = getv %tmp.107 :FONT_XTINY;
+        %tmp.109 = lgetv %dateText.6;
+        symbol [ dateText %tmp.109 64 12 20 ];
+        symbol [ Graphics %tmp.110 65 12 20 ];
+        %tmp.110 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.111 65 21 40 ];
+        %tmp.111 = getv %tmp.110 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.102 %tmp.103(%tmp.105, %tmp.106, %tmp.108, %tmp.109, %tmp.111);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 69 8 ]
+        %tmp.112 = self;
+        symbol [ drawGridCircles %tmp.113 69 8 23 ];
+        %tmp.113 = getv function %tmp.112 :drawGridCircles;
+        %tmp.114 = lgetv %dc;
+        symbol [ dc %tmp.114 69 24 26 ];
+        invoke %tmp.112 %tmp.113(%tmp.114);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 72 8 ]
+        %tmp.115 = self;
+        symbol [ drawAxes %tmp.116 72 8 16 ];
+        %tmp.116 = getv function %tmp.115 :drawAxes;
+        %tmp.117 = lgetv %dc;
+        symbol [ dc %tmp.117 72 17 19 ];
+        invoke %tmp.115 %tmp.116(%tmp.117);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 75 8 ]
+        %tmp.118 = self;
+        symbol [ drawSpiderPolygon %tmp.119 75 8 25 ];
+        %tmp.119 = getv function %tmp.118 :drawSpiderPolygon;
+        %tmp.120 = lgetv %dc;
+        symbol [ dc %tmp.120 75 26 28 ];
+        invoke %tmp.118 %tmp.119(%tmp.120);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 78 8 ]
+        %tmp.121 = self;
+        symbol [ drawLabels %tmp.122 78 8 18 ];
+        %tmp.122 = getv function %tmp.121 :drawLabels;
+        %tmp.123 = lgetv %dc;
+        symbol [ dc %tmp.123 78 19 21 ];
+        invoke %tmp.121 %tmp.122(%tmp.123);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_34_40_79_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 81; @symbol_functiondef = [drawGridCircles,81,13,28]; @symbol_param<0> = [dc,81,29,31]; @symbol_param<0>_type<0> = [Dc,81,35,37]; ]
+    function drawGridCircles(dc as Dc) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_81_47_88_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 82 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 82 8 10 ];
+        symbol [ setColor %tmp.2 82 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 82 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.4 82 29 42 ];
+        %tmp.4 = getv %tmp.3 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.5 82 44 52 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 82 53 70 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 84 8 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 84 17 18 ];
+        %tmp.7 = 1;
+        lputv %i.1 %tmp.7;
+        symbol [ i %i.1 84 17 18 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_test:
+        %tmp.8 = lgetv %i.1;
+        symbol [ i %tmp.8 84 24 25 ];
+        %tmp.9 = 3;
+        %tmp.10 = lte %tmp.8 %tmp.9;
+        bf %tmp.10 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_37_87_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 85 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_37_87_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_37_87_8_stop" ]
+        %circleRadius.2 = local;
+        symbol [ circleRadius %circleRadius.2 85 16 28 ];
+        symbol [ radius %tmp.12 85 32 38 ];
+        %tmp.12 = getv ? :radius;
+        %tmp.13 = lgetv %i.1;
+        symbol [ i %tmp.13 85 41 42 ];
+        %tmp.14 = mul %tmp.12 %tmp.13;
+        %tmp.15 = 3;
+        %tmp.16 = div %tmp.14 %tmp.15;
+        lputv %circleRadius.2 %tmp.16;
+        symbol [ circleRadius %circleRadius.2 85 16 28 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 86 12 ]
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 86 12 14 ];
+        symbol [ drawCircle %tmp.18 86 15 25 ];
+        %tmp.18 = getv function %tmp.17 :drawCircle;
+        symbol [ centerX %tmp.20 86 26 33 ];
+        %tmp.20 = getv ? :centerX;
+        symbol [ centerY %tmp.22 86 35 42 ];
+        %tmp.22 = getv ? :centerY;
+        %tmp.23 = lgetv %circleRadius.2;
+        symbol [ circleRadius %tmp.23 86 44 56 ];
+        invoke %tmp.17 %tmp.18(%tmp.20, %tmp.22, %tmp.23);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_37_87_8_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 84 ]
+        %tmp.26 = lgetv %i.1;
+        symbol [ i %tmp.26 84 32 33 ];
+        %tmp.27 = add %tmp.26 1;
+        lputv %i.1 %tmp.27;
+        symbol [ i %i.1 84 32 33 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_84_8_87_8_for_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_81_47_88_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 90; @symbol_functiondef = [drawAxes,90,13,21]; @symbol_param<0> = [dc,90,22,24]; @symbol_param<0>_type<0> = [Dc,90,28,30]; ]
+    function drawAxes(dc as Dc) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_90_40_100_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 91 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 91 8 10 ];
+        symbol [ setColor %tmp.2 91 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 91 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.4 91 29 42 ];
+        %tmp.4 = getv %tmp.3 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.5 91 44 52 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 91 53 70 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 92 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_90_40_100_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_90_40_100_4_stop" ]
+        %angleStep.1 = local;
+        symbol [ angleStep %angleStep.1 92 12 21 ];
+        %tmp.7 = 2;
+        symbol [ Math %tmp.8 92 29 33 ];
+        %tmp.8 = getm $.Toybox.Math;
+        symbol [ PI %tmp.9 92 34 36 ];
+        %tmp.9 = getv %tmp.8 :PI;
+        %tmp.10 = mul %tmp.7 %tmp.9;
+        symbol [ numSymptoms %tmp.12 92 40 51 ];
+        %tmp.12 = getv ? :numSymptoms;
+        %tmp.13 = div %tmp.10 %tmp.12;
+        lputv %angleStep.1 %tmp.13;
+        symbol [ angleStep %angleStep.1 92 12 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 94 8 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 94 17 18 ];
+        %tmp.14 = 0;
+        lputv %i.2 %tmp.14;
+        symbol [ i %i.2 94 17 18 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_test:
+        %tmp.15 = lgetv %i.2;
+        symbol [ i %tmp.15 94 24 25 ];
+        symbol [ numSymptoms %tmp.17 94 28 39 ];
+        %tmp.17 = getv ? :numSymptoms;
+        %tmp.18 = lt %tmp.15 %tmp.17;
+        bf %tmp.18 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_46_99_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 95 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_46_99_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_46_99_8_stop" ]
+        %angle.3 = local;
+        symbol [ angle %angle.3 95 16 21 ];
+        %tmp.19 = lgetv %i.2;
+        symbol [ i %tmp.19 95 25 26 ];
+        %tmp.20 = lgetv %angleStep.1;
+        symbol [ angleStep %tmp.20 95 29 38 ];
+        %tmp.21 = mul %tmp.19 %tmp.20;
+        symbol [ Math %tmp.22 95 43 47 ];
+        %tmp.22 = getm $.Toybox.Math;
+        symbol [ PI %tmp.23 95 48 50 ];
+        %tmp.23 = getv %tmp.22 :PI;
+        %tmp.24 = 2;
+        %tmp.25 = div %tmp.23 %tmp.24;
+        %tmp.26 = sub %tmp.21 %tmp.25;
+        lputv %angle.3 %tmp.26;
+        symbol [ angle %angle.3 95 16 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 96 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_46_99_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_46_99_8_stop" ]
+        %endX.4 = local;
+        symbol [ endX %endX.4 96 16 20 ];
+        symbol [ centerX %tmp.28 96 23 30 ];
+        %tmp.28 = getv ? :centerX;
+        symbol [ radius %tmp.30 96 34 40 ];
+        %tmp.30 = getv ? :radius;
+        symbol [ Math %tmp.31 96 43 47 ];
+        %tmp.31 = getm $.Toybox.Math;
+        symbol [ cos %tmp.32 96 48 51 ];
+        %tmp.32 = getv function %tmp.31 :cos;
+        %tmp.33 = lgetv %angle.3;
+        symbol [ angle %tmp.33 96 52 57 ];
+        %tmp.34 = invoke %tmp.31 %tmp.32(%tmp.33);
+        %tmp.35 = mul %tmp.30 %tmp.34;
+        %tmp.36 = add %tmp.28 %tmp.35;
+        lputv %endX.4 %tmp.36;
+        symbol [ endX %endX.4 96 16 20 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 97 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_46_99_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_46_99_8_stop" ]
+        %endY.5 = local;
+        symbol [ endY %endY.5 97 16 20 ];
+        symbol [ centerY %tmp.38 97 23 30 ];
+        %tmp.38 = getv ? :centerY;
+        symbol [ radius %tmp.40 97 34 40 ];
+        %tmp.40 = getv ? :radius;
+        symbol [ Math %tmp.41 97 43 47 ];
+        %tmp.41 = getm $.Toybox.Math;
+        symbol [ sin %tmp.42 97 48 51 ];
+        %tmp.42 = getv function %tmp.41 :sin;
+        %tmp.43 = lgetv %angle.3;
+        symbol [ angle %tmp.43 97 52 57 ];
+        %tmp.44 = invoke %tmp.41 %tmp.42(%tmp.43);
+        %tmp.45 = mul %tmp.40 %tmp.44;
+        %tmp.46 = add %tmp.38 %tmp.45;
+        lputv %endY.5 %tmp.46;
+        symbol [ endY %endY.5 97 16 20 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 98 12 ]
+        %tmp.47 = lgetv %dc;
+        symbol [ dc %tmp.47 98 12 14 ];
+        symbol [ drawLine %tmp.48 98 15 23 ];
+        %tmp.48 = getv function %tmp.47 :drawLine;
+        symbol [ centerX %tmp.50 98 24 31 ];
+        %tmp.50 = getv ? :centerX;
+        symbol [ centerY %tmp.52 98 33 40 ];
+        %tmp.52 = getv ? :centerY;
+        %tmp.53 = lgetv %endX.4;
+        symbol [ endX %tmp.53 98 42 46 ];
+        %tmp.54 = lgetv %endY.5;
+        symbol [ endY %tmp.54 98 48 52 ];
+        invoke %tmp.47 %tmp.48(%tmp.50, %tmp.52, %tmp.53, %tmp.54);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_46_99_8_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 94 ]
+        %tmp.57 = lgetv %i.2;
+        symbol [ i %tmp.57 94 41 42 ];
+        %tmp.58 = add %tmp.57 1;
+        lputv %i.2 %tmp.58;
+        symbol [ i %i.2 94 41 42 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_94_8_99_8_for_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_90_40_100_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 102; @symbol_functiondef = [drawSpiderPolygon,102,13,30]; @symbol_param<0> = [dc,102,31,33]; @symbol_param<0>_type<0> = [Dc,102,37,39]; ]
+    function drawSpiderPolygon(dc as Dc) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_102_49_141_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 103 8 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_103_8_105_8_if_stmt:
+        symbol [ numSymptoms %tmp.2 103 12 23 ];
+        %tmp.2 = getv ? :numSymptoms;
+        %tmp.3 = 0;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_103_8_105_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_103_8_105_8_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_103_30_105_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 104 12 ]
+        ret ?;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_103_30_105_8_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_103_8_105_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_103_8_105_8_if_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 107 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_102_49_141_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_102_49_141_4_stop" ]
+        %angleStep.1 = local;
+        symbol [ angleStep %angleStep.1 107 12 21 ];
+        %tmp.5 = 2;
+        symbol [ Math %tmp.6 107 29 33 ];
+        %tmp.6 = getm $.Toybox.Math;
+        symbol [ PI %tmp.7 107 34 36 ];
+        %tmp.7 = getv %tmp.6 :PI;
+        %tmp.8 = mul %tmp.5 %tmp.7;
+        symbol [ numSymptoms %tmp.10 107 40 51 ];
+        %tmp.10 = getv ? :numSymptoms;
+        %tmp.11 = div %tmp.8 %tmp.10;
+        lputv %angleStep.1 %tmp.11;
+        symbol [ angleStep %angleStep.1 107 12 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 108 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_102_49_141_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_102_49_141_4_stop" ]
+        %points.2 = local;
+        symbol [ points %points.2 108 12 18 ];
+        symbol [ numSymptoms %tmp.14 108 26 37 ];
+        %tmp.14 = getv ? :numSymptoms;
+        %tmp.12 = newa %tmp.14;
+        lputv %points.2 %tmp.12;
+        symbol [ points %points.2 108 12 18 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 109 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_102_49_141_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_102_49_141_4_stop" ]
+        %xCoords.3 = local;
+        symbol [ xCoords %xCoords.3 109 12 19 ];
+        symbol [ numSymptoms %tmp.17 109 27 38 ];
+        %tmp.17 = getv ? :numSymptoms;
+        %tmp.15 = newa %tmp.17;
+        lputv %xCoords.3 %tmp.15;
+        symbol [ xCoords %xCoords.3 109 12 19 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 110 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_102_49_141_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_102_49_141_4_stop" ]
+        %yCoords.4 = local;
+        symbol [ yCoords %yCoords.4 110 12 19 ];
+        symbol [ numSymptoms %tmp.20 110 27 38 ];
+        %tmp.20 = getv ? :numSymptoms;
+        %tmp.18 = newa %tmp.20;
+        lputv %yCoords.4 %tmp.18;
+        symbol [ yCoords %yCoords.4 110 12 19 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 113 8 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_end" ]
+        %i.5 = local;
+        symbol [ i %i.5 113 17 18 ];
+        %tmp.21 = 0;
+        lputv %i.5 %tmp.21;
+        symbol [ i %i.5 113 17 18 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_test:
+        %tmp.22 = lgetv %i.5;
+        symbol [ i %tmp.22 113 24 25 ];
+        symbol [ numSymptoms %tmp.24 113 28 39 ];
+        %tmp.24 = getv ? :numSymptoms;
+        %tmp.25 = lt %tmp.22 %tmp.24;
+        bf %tmp.25 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_46_121_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 114 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_46_121_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_46_121_8_stop" ]
+        %angle.6 = local;
+        symbol [ angle %angle.6 114 16 21 ];
+        %tmp.26 = lgetv %i.5;
+        symbol [ i %tmp.26 114 25 26 ];
+        %tmp.27 = lgetv %angleStep.1;
+        symbol [ angleStep %tmp.27 114 29 38 ];
+        %tmp.28 = mul %tmp.26 %tmp.27;
+        symbol [ Math %tmp.29 114 43 47 ];
+        %tmp.29 = getm $.Toybox.Math;
+        symbol [ PI %tmp.30 114 48 50 ];
+        %tmp.30 = getv %tmp.29 :PI;
+        %tmp.31 = 2;
+        %tmp.32 = div %tmp.30 %tmp.31;
+        %tmp.33 = sub %tmp.28 %tmp.32;
+        lputv %angle.6 %tmp.33;
+        symbol [ angle %angle.6 114 16 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 115 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_46_121_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_46_121_8_stop" ]
+        %valueRadius.7 = local;
+        symbol [ valueRadius %valueRadius.7 115 16 27 ];
+        symbol [ radius %tmp.35 115 31 37 ];
+        %tmp.35 = getv ? :radius;
+        symbol [ symptomValues %tmp.37 115 40 53 ];
+        %tmp.37 = getv ? :symptomValues;
+        %tmp.38 = lgetv %i.5;
+        symbol [ i %tmp.38 115 54 55 ];
+        %tmp.39 = agetv %tmp.37 %tmp.38;
+        %tmp.40 = mul %tmp.35 %tmp.39;
+        %tmp.41 = 100.0;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        lputv %valueRadius.7 %tmp.42;
+        symbol [ valueRadius %valueRadius.7 115 16 27 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 116 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_46_121_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_46_121_8_stop" ]
+        %x.8 = local;
+        symbol [ x %x.8 116 16 17 ];
+        symbol [ centerX %tmp.44 116 20 27 ];
+        %tmp.44 = getv ? :centerX;
+        %tmp.45 = lgetv %valueRadius.7;
+        symbol [ valueRadius %tmp.45 116 31 42 ];
+        symbol [ Math %tmp.46 116 45 49 ];
+        %tmp.46 = getm $.Toybox.Math;
+        symbol [ cos %tmp.47 116 50 53 ];
+        %tmp.47 = getv function %tmp.46 :cos;
+        %tmp.48 = lgetv %angle.6;
+        symbol [ angle %tmp.48 116 54 59 ];
+        %tmp.49 = invoke %tmp.46 %tmp.47(%tmp.48);
+        %tmp.50 = mul %tmp.45 %tmp.49;
+        %tmp.51 = add %tmp.44 %tmp.50;
+        lputv %x.8 %tmp.51;
+        symbol [ x %x.8 116 16 17 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 117 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_46_121_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_46_121_8_stop" ]
+        %y.9 = local;
+        symbol [ y %y.9 117 16 17 ];
+        symbol [ centerY %tmp.53 117 20 27 ];
+        %tmp.53 = getv ? :centerY;
+        %tmp.54 = lgetv %valueRadius.7;
+        symbol [ valueRadius %tmp.54 117 31 42 ];
+        symbol [ Math %tmp.55 117 45 49 ];
+        %tmp.55 = getm $.Toybox.Math;
+        symbol [ sin %tmp.56 117 50 53 ];
+        %tmp.56 = getv function %tmp.55 :sin;
+        %tmp.57 = lgetv %angle.6;
+        symbol [ angle %tmp.57 117 54 59 ];
+        %tmp.58 = invoke %tmp.55 %tmp.56(%tmp.57);
+        %tmp.59 = mul %tmp.54 %tmp.58;
+        %tmp.60 = add %tmp.53 %tmp.59;
+        lputv %y.9 %tmp.60;
+        symbol [ y %y.9 117 16 17 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 118 12 ]
+        %tmp.61 = lgetv %points.2;
+        symbol [ points %tmp.61 118 12 18 ];
+        %tmp.62 = newa 2;
+        %tmp.63 = lgetv %x.8;
+        symbol [ x %tmp.63 118 25 26 ];
+        %tmp.64 = dup %tmp.62;
+        %tmp.65 = aputv %tmp.64 0 %tmp.63;
+        %tmp.66 = lgetv %y.9;
+        symbol [ y %tmp.66 118 28 29 ];
+        %tmp.67 = dup %tmp.65;
+        %tmp.68 = aputv %tmp.67 1 %tmp.66;
+        %tmp.69 = lgetv %i.5;
+        symbol [ i %tmp.69 118 19 20 ];
+        aputv %tmp.61 %tmp.69 %tmp.68;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 119 12 ]
+        %tmp.70 = lgetv %xCoords.3;
+        symbol [ xCoords %tmp.70 119 12 19 ];
+        %tmp.71 = lgetv %x.8;
+        symbol [ x %tmp.71 119 25 26 ];
+        %tmp.72 = lgetv %i.5;
+        symbol [ i %tmp.72 119 20 21 ];
+        aputv %tmp.70 %tmp.72 %tmp.71;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 120 12 ]
+        %tmp.73 = lgetv %yCoords.4;
+        symbol [ yCoords %tmp.73 120 12 19 ];
+        %tmp.74 = lgetv %y.9;
+        symbol [ y %tmp.74 120 25 26 ];
+        %tmp.75 = lgetv %i.5;
+        symbol [ i %tmp.75 120 20 21 ];
+        aputv %tmp.73 %tmp.75 %tmp.74;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_46_121_8_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 113 ]
+        %tmp.78 = lgetv %i.5;
+        symbol [ i %tmp.78 113 41 42 ];
+        %tmp.79 = add %tmp.78 1;
+        lputv %i.5 %tmp.79;
+        symbol [ i %i.5 113 41 42 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_113_8_121_8_for_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 124 8 ]
+        %tmp.80 = lgetv %dc;
+        symbol [ dc %tmp.80 124 8 10 ];
+        symbol [ setColor %tmp.81 124 11 19 ];
+        %tmp.81 = getv function %tmp.80 :setColor;
+        symbol [ Graphics %tmp.82 124 20 28 ];
+        %tmp.82 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.83 124 29 39 ];
+        %tmp.83 = getv %tmp.82 :COLOR_BLUE;
+        symbol [ Graphics %tmp.84 124 41 49 ];
+        %tmp.84 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.85 124 50 67 ];
+        %tmp.85 = getv %tmp.84 :COLOR_TRANSPARENT;
+        invoke %tmp.80 %tmp.81(%tmp.83, %tmp.85);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 125 8 ]
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 125 8 10 ];
+        symbol [ fillPolygon %tmp.87 125 11 22 ];
+        %tmp.87 = getv function %tmp.86 :fillPolygon;
+        %tmp.88 = lgetv %points.2;
+        symbol [ points %tmp.88 125 23 29 ];
+        invoke %tmp.86 %tmp.87(%tmp.88);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 128 8 ]
+        %tmp.89 = lgetv %dc;
+        symbol [ dc %tmp.89 128 8 10 ];
+        symbol [ setColor %tmp.90 128 11 19 ];
+        %tmp.90 = getv function %tmp.89 :setColor;
+        symbol [ Graphics %tmp.91 128 20 28 ];
+        %tmp.91 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.92 128 29 40 ];
+        %tmp.92 = getv %tmp.91 :COLOR_WHITE;
+        symbol [ Graphics %tmp.93 128 42 50 ];
+        %tmp.93 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.94 128 51 68 ];
+        %tmp.94 = getv %tmp.93 :COLOR_TRANSPARENT;
+        invoke %tmp.89 %tmp.90(%tmp.92, %tmp.94);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 129 8 ]
+        %tmp.95 = lgetv %dc;
+        symbol [ dc %tmp.95 129 8 10 ];
+        symbol [ setPenWidth %tmp.96 129 11 22 ];
+        %tmp.96 = getv function %tmp.95 :setPenWidth;
+        %tmp.97 = 2;
+        invoke %tmp.95 %tmp.96(%tmp.97);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 130 8 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_end" ]
+        %i.10 = local;
+        symbol [ i %i.10 130 17 18 ];
+        %tmp.98 = 0;
+        lputv %i.10 %tmp.98;
+        symbol [ i %i.10 130 17 18 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_test:
+        %tmp.99 = lgetv %i.10;
+        symbol [ i %tmp.99 130 24 25 ];
+        symbol [ numSymptoms %tmp.101 130 28 39 ];
+        %tmp.101 = getv ? :numSymptoms;
+        %tmp.102 = lt %tmp.99 %tmp.101;
+        bf %tmp.102 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_46_133_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 131 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_46_133_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_46_133_8_stop" ]
+        %nextI.11 = local;
+        symbol [ nextI %nextI.11 131 16 21 ];
+        %tmp.103 = lgetv %i.10;
+        symbol [ i %tmp.103 131 25 26 ];
+        %tmp.104 = 1;
+        %tmp.105 = add %tmp.103 %tmp.104;
+        symbol [ numSymptoms %tmp.107 131 34 45 ];
+        %tmp.107 = getv ? :numSymptoms;
+        %tmp.108 = mod %tmp.105 %tmp.107;
+        lputv %nextI.11 %tmp.108;
+        symbol [ nextI %nextI.11 131 16 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 132 12 ]
+        %tmp.109 = lgetv %dc;
+        symbol [ dc %tmp.109 132 12 14 ];
+        symbol [ drawLine %tmp.110 132 15 23 ];
+        %tmp.110 = getv function %tmp.109 :drawLine;
+        %tmp.111 = lgetv %xCoords.3;
+        symbol [ xCoords %tmp.111 132 24 31 ];
+        %tmp.112 = lgetv %i.10;
+        symbol [ i %tmp.112 132 32 33 ];
+        %tmp.113 = agetv %tmp.111 %tmp.112;
+        %tmp.114 = lgetv %yCoords.4;
+        symbol [ yCoords %tmp.114 132 36 43 ];
+        %tmp.115 = lgetv %i.10;
+        symbol [ i %tmp.115 132 44 45 ];
+        %tmp.116 = agetv %tmp.114 %tmp.115;
+        %tmp.117 = lgetv %xCoords.3;
+        symbol [ xCoords %tmp.117 132 48 55 ];
+        %tmp.118 = lgetv %nextI.11;
+        symbol [ nextI %tmp.118 132 56 61 ];
+        %tmp.119 = agetv %tmp.117 %tmp.118;
+        %tmp.120 = lgetv %yCoords.4;
+        symbol [ yCoords %tmp.120 132 64 71 ];
+        %tmp.121 = lgetv %nextI.11;
+        symbol [ nextI %tmp.121 132 72 77 ];
+        %tmp.122 = agetv %tmp.120 %tmp.121;
+        invoke %tmp.109 %tmp.110(%tmp.113, %tmp.116, %tmp.119, %tmp.122);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_46_133_8_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 130 ]
+        %tmp.125 = lgetv %i.10;
+        symbol [ i %tmp.125 130 41 42 ];
+        %tmp.126 = add %tmp.125 1;
+        lputv %i.10 %tmp.126;
+        symbol [ i %i.10 130 41 42 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_130_8_133_8_for_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 134 8 ]
+        %tmp.127 = lgetv %dc;
+        symbol [ dc %tmp.127 134 8 10 ];
+        symbol [ setPenWidth %tmp.128 134 11 22 ];
+        %tmp.128 = getv function %tmp.127 :setPenWidth;
+        %tmp.129 = 1;
+        invoke %tmp.127 %tmp.128(%tmp.129);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 137 8 ]
+        %tmp.130 = lgetv %dc;
+        symbol [ dc %tmp.130 137 8 10 ];
+        symbol [ setColor %tmp.131 137 11 19 ];
+        %tmp.131 = getv function %tmp.130 :setColor;
+        symbol [ Graphics %tmp.132 137 20 28 ];
+        %tmp.132 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.133 137 29 41 ];
+        %tmp.133 = getv %tmp.132 :COLOR_YELLOW;
+        symbol [ Graphics %tmp.134 137 43 51 ];
+        %tmp.134 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.135 137 52 69 ];
+        %tmp.135 = getv %tmp.134 :COLOR_TRANSPARENT;
+        invoke %tmp.130 %tmp.131(%tmp.133, %tmp.135);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 138 8 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_end" ]
+        %i.12 = local;
+        symbol [ i %i.12 138 17 18 ];
+        %tmp.136 = 0;
+        lputv %i.12 %tmp.136;
+        symbol [ i %i.12 138 17 18 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_test:
+        %tmp.137 = lgetv %i.12;
+        symbol [ i %tmp.137 138 24 25 ];
+        symbol [ numSymptoms %tmp.139 138 28 39 ];
+        %tmp.139 = getv ? :numSymptoms;
+        %tmp.140 = lt %tmp.137 %tmp.139;
+        bf %tmp.140 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_46_140_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 139 12 ]
+        %tmp.141 = lgetv %dc;
+        symbol [ dc %tmp.141 139 12 14 ];
+        symbol [ fillCircle %tmp.142 139 15 25 ];
+        %tmp.142 = getv function %tmp.141 :fillCircle;
+        %tmp.143 = lgetv %xCoords.3;
+        symbol [ xCoords %tmp.143 139 26 33 ];
+        %tmp.144 = lgetv %i.12;
+        symbol [ i %tmp.144 139 34 35 ];
+        %tmp.145 = agetv %tmp.143 %tmp.144;
+        %tmp.146 = lgetv %yCoords.4;
+        symbol [ yCoords %tmp.146 139 38 45 ];
+        %tmp.147 = lgetv %i.12;
+        symbol [ i %tmp.147 139 46 47 ];
+        %tmp.148 = agetv %tmp.146 %tmp.147;
+        %tmp.149 = 3;
+        invoke %tmp.141 %tmp.142(%tmp.145, %tmp.148, %tmp.149);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_46_140_8_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 138 ]
+        %tmp.152 = lgetv %i.12;
+        symbol [ i %tmp.152 138 41 42 ];
+        %tmp.153 = add %tmp.152 1;
+        lputv %i.12 %tmp.153;
+        symbol [ i %i.12 138 41 42 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_138_8_140_8_for_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_102_49_141_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 143; @symbol_functiondef = [drawLabels,143,13,23]; @symbol_param<0> = [dc,143,24,26]; @symbol_param<0>_type<0> = [Dc,143,30,32]; ]
+    function drawLabels(dc as Dc) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_143_42_174_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 144 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 144 8 10 ];
+        symbol [ setColor %tmp.2 144 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 144 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 144 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 144 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 144 51 68 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 145 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_143_42_174_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_143_42_174_4_stop" ]
+        %angleStep.1 = local;
+        symbol [ angleStep %angleStep.1 145 12 21 ];
+        %tmp.7 = 2;
+        symbol [ Math %tmp.8 145 29 33 ];
+        %tmp.8 = getm $.Toybox.Math;
+        symbol [ PI %tmp.9 145 34 36 ];
+        %tmp.9 = getv %tmp.8 :PI;
+        %tmp.10 = mul %tmp.7 %tmp.9;
+        symbol [ numSymptoms %tmp.12 145 40 51 ];
+        %tmp.12 = getv ? :numSymptoms;
+        %tmp.13 = div %tmp.10 %tmp.12;
+        lputv %angleStep.1 %tmp.13;
+        symbol [ angleStep %angleStep.1 145 12 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 146 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_143_42_174_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_143_42_174_4_stop" ]
+        %labelRadius.2 = local;
+        symbol [ labelRadius %labelRadius.2 146 12 23 ];
+        symbol [ radius %tmp.15 146 26 32 ];
+        %tmp.15 = getv ? :radius;
+        %tmp.16 = 25;
+        %tmp.17 = add %tmp.15 %tmp.16;
+        lputv %labelRadius.2 %tmp.17;
+        symbol [ labelRadius %labelRadius.2 146 12 23 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 148 8 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_end" ]
+        %i.3 = local;
+        symbol [ i %i.3 148 17 18 ];
+        %tmp.18 = 0;
+        lputv %i.3 %tmp.18;
+        symbol [ i %i.3 148 17 18 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_test:
+        %tmp.19 = lgetv %i.3;
+        symbol [ i %tmp.19 148 24 25 ];
+        symbol [ numSymptoms %tmp.21 148 28 39 ];
+        %tmp.21 = getv ? :numSymptoms;
+        %tmp.22 = lt %tmp.19 %tmp.21;
+        bf %tmp.22 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_46_173_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 149 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_46_173_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_46_173_8_stop" ]
+        %angle.4 = local;
+        symbol [ angle %angle.4 149 16 21 ];
+        %tmp.23 = lgetv %i.3;
+        symbol [ i %tmp.23 149 25 26 ];
+        %tmp.24 = lgetv %angleStep.1;
+        symbol [ angleStep %tmp.24 149 29 38 ];
+        %tmp.25 = mul %tmp.23 %tmp.24;
+        symbol [ Math %tmp.26 149 43 47 ];
+        %tmp.26 = getm $.Toybox.Math;
+        symbol [ PI %tmp.27 149 48 50 ];
+        %tmp.27 = getv %tmp.26 :PI;
+        %tmp.28 = 2;
+        %tmp.29 = div %tmp.27 %tmp.28;
+        %tmp.30 = sub %tmp.25 %tmp.29;
+        lputv %angle.4 %tmp.30;
+        symbol [ angle %angle.4 149 16 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 150 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_46_173_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_46_173_8_stop" ]
+        %labelX.5 = local;
+        symbol [ labelX %labelX.5 150 16 22 ];
+        symbol [ centerX %tmp.32 150 25 32 ];
+        %tmp.32 = getv ? :centerX;
+        %tmp.33 = lgetv %labelRadius.2;
+        symbol [ labelRadius %tmp.33 150 36 47 ];
+        symbol [ Math %tmp.34 150 50 54 ];
+        %tmp.34 = getm $.Toybox.Math;
+        symbol [ cos %tmp.35 150 55 58 ];
+        %tmp.35 = getv function %tmp.34 :cos;
+        %tmp.36 = lgetv %angle.4;
+        symbol [ angle %tmp.36 150 59 64 ];
+        %tmp.37 = invoke %tmp.34 %tmp.35(%tmp.36);
+        %tmp.38 = mul %tmp.33 %tmp.37;
+        %tmp.39 = add %tmp.32 %tmp.38;
+        lputv %labelX.5 %tmp.39;
+        symbol [ labelX %labelX.5 150 16 22 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 151 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_46_173_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_46_173_8_stop" ]
+        %labelY.6 = local;
+        symbol [ labelY %labelY.6 151 16 22 ];
+        symbol [ centerY %tmp.41 151 25 32 ];
+        %tmp.41 = getv ? :centerY;
+        %tmp.42 = lgetv %labelRadius.2;
+        symbol [ labelRadius %tmp.42 151 36 47 ];
+        symbol [ Math %tmp.43 151 50 54 ];
+        %tmp.43 = getm $.Toybox.Math;
+        symbol [ sin %tmp.44 151 55 58 ];
+        %tmp.44 = getv function %tmp.43 :sin;
+        %tmp.45 = lgetv %angle.4;
+        symbol [ angle %tmp.45 151 59 64 ];
+        %tmp.46 = invoke %tmp.43 %tmp.44(%tmp.45);
+        %tmp.47 = mul %tmp.42 %tmp.46;
+        %tmp.48 = add %tmp.41 %tmp.47;
+        lputv %labelY.6 %tmp.48;
+        symbol [ labelY %labelY.6 151 16 22 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 154 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_46_173_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_46_173_8_stop" ]
+        %label.7 = local;
+        symbol [ label %label.7 154 16 21 ];
+        symbol [ symptomLabels %tmp.50 154 24 37 ];
+        %tmp.50 = getv ? :symptomLabels;
+        %tmp.51 = lgetv %i.3;
+        symbol [ i %tmp.51 154 38 39 ];
+        %tmp.52 = agetv %tmp.50 %tmp.51;
+        lputv %label.7 %tmp.52;
+        symbol [ label %label.7 154 16 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 155 12 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_155_12_164_12_if_stmt:
+        %tmp.53 = lgetv %label.7;
+        symbol [ label %tmp.53 155 16 21 ];
+        symbol [ length %tmp.54 155 22 28 ];
+        %tmp.54 = getv function %tmp.53 :length;
+        %tmp.55 = invoke %tmp.53 %tmp.54();
+        %tmp.56 = 8;
+        %tmp.57 = gt %tmp.55 %tmp.56;
+        bf %tmp.57 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_155_12_164_12_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_155_12_164_12_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_155_36_164_12_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 157 16 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_157_16_163_16_if_stmt:
+        %tmp.58 = lgetv %label.7;
+        symbol [ label %tmp.58 157 20 25 ];
+        symbol [ equals %tmp.59 157 26 32 ];
+        %tmp.59 = getv function %tmp.58 :equals;
+        %tmp.60 = "Cardiac dysautonomia";
+        %tmp.61 = invoke %tmp.58 %tmp.59(%tmp.60);
+        bf %tmp.61 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_157_16_163_16_if_false;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_157_16_163_16_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_157_58_159_16_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 158 20 ]
+        %tmp.62 = "Cardiac";
+        lputv %label.7 %tmp.62;
+        symbol [ label %label.7 158 20 25 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_157_58_159_16_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_157_16_163_16_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_157_16_163_16_if_false:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 159 23 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_159_23_163_16_if_stmt:
+        %tmp.63 = lgetv %label.7;
+        symbol [ label %tmp.63 159 27 32 ];
+        symbol [ equals %tmp.64 159 33 39 ];
+        %tmp.64 = getv function %tmp.63 :equals;
+        %tmp.65 = "Gastrointestinal";
+        %tmp.66 = invoke %tmp.63 %tmp.64(%tmp.65);
+        bf %tmp.66 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_159_23_163_16_if_false;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_159_23_163_16_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_159_61_161_16_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 160 20 ]
+        %tmp.67 = "GI";
+        lputv %label.7 %tmp.67;
+        symbol [ label %label.7 160 20 25 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_159_61_161_16_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_159_23_163_16_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_159_23_163_16_if_false:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 161 23 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_161_23_163_16_if_stmt:
+        %tmp.68 = lgetv %label.7;
+        symbol [ label %tmp.68 161 27 32 ];
+        symbol [ equals %tmp.69 161 33 39 ];
+        %tmp.69 = getv function %tmp.68 :equals;
+        %tmp.70 = "Urogential";
+        %tmp.71 = invoke %tmp.68 %tmp.69(%tmp.70);
+        bf %tmp.71 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_161_23_163_16_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_161_23_163_16_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_161_55_163_16_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 162 20 ]
+        %tmp.72 = "Uro";
+        lputv %label.7 %tmp.72;
+        symbol [ label %label.7 162 20 25 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_161_55_163_16_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_161_23_163_16_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_161_23_163_16_if_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_159_23_163_16_if_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_157_16_163_16_if_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_155_36_164_12_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_155_12_164_12_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_155_12_164_12_if_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 166 12 ]
+        %tmp.73 = lgetv %dc;
+        symbol [ dc %tmp.73 166 12 14 ];
+        symbol [ drawText %tmp.74 166 15 23 ];
+        %tmp.74 = getv function %tmp.73 :drawText;
+        %tmp.75 = lgetv %labelX.5;
+        symbol [ labelX %tmp.75 167 16 22 ];
+        %tmp.76 = lgetv %labelY.6;
+        symbol [ labelY %tmp.76 168 16 22 ];
+        symbol [ Graphics %tmp.77 169 16 24 ];
+        %tmp.77 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.78 169 25 35 ];
+        %tmp.78 = getv %tmp.77 :FONT_XTINY;
+        %tmp.79 = lgetv %label.7;
+        symbol [ label %tmp.79 170 16 21 ];
+        symbol [ Graphics %tmp.80 171 16 24 ];
+        %tmp.80 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.81 171 25 44 ];
+        %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.82 171 47 55 ];
+        %tmp.82 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.83 171 56 76 ];
+        %tmp.83 = getv %tmp.82 :TEXT_JUSTIFY_VCENTER;
+        %tmp.84 = bitor %tmp.81 %tmp.83;
+        invoke %tmp.73 %tmp.74(%tmp.75, %tmp.76, %tmp.78, %tmp.79, %tmp.84);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_46_173_8_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 148 ]
+        %tmp.87 = lgetv %i.3;
+        symbol [ i %tmp.87 148 41 42 ];
+        %tmp.88 = add %tmp.87 1;
+        lputv %i.3 %tmp.88;
+        symbol [ i %i.3 148 41 42 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_148_8_173_8_for_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_143_42_174_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 177; @symbol_functiondef = [getSymptomValues,177,20,36]; @symbol_return<0> = [Array,177,42,47]; @symbol_return<1> = [Number,177,48,54]; ]
+    public
+    function getSymptomValues() as Array<Number> {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_177_56_179_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 178 8 ]
+        symbol [ symptomValues %tmp.2 178 15 28 ];
+        %tmp.2 = getv ? :symptomValues;
+        ret %tmp.2;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_177_56_179_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 181; @symbol_functiondef = [getSymptomLabels,181,20,36]; @symbol_return<0> = [Array,181,42,47]; @symbol_return<1> = [String,181,48,54]; ]
+    public
+    function getSymptomLabels() as Array<String> {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_181_56_183_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 182 8 ]
+        symbol [ symptomLabels %tmp.2 182 15 28 ];
+        %tmp.2 = getv ? :symptomLabels;
+        ret %tmp.2;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_181_56_183_4_stop:
+    }
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 186; @symbol_classdef = [SpiderDiagramDelegate,186,6,27]; @symbol_extends<0> = [WatchUi,186,36,43]; @symbol_extends<1> = [BehaviorDelegate,186,44,60]; ]
+class SpiderDiagramDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 186; ]
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 186; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 187; @position = 16; @symbol_vardef = [view,187,16,20]; @symbol_type<0> = [SpiderDiagramView,187,24,41]; ]
+    private
+    var view as SpiderDiagramView;
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 189; @symbol_functiondef = [initialize,189,13,23]; @symbol_param<0> = [v,189,24,25]; @symbol_param<0>_type<0> = [SpiderDiagramView,189,29,46]; ]
+    function initialize(v as SpiderDiagramView) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_189_48_192_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 190 8 ]
+        symbol [ BehaviorDelegate %tmp.2 190 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 190 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 191 8 ]
+        %tmp.4 = lgetv %v;
+        symbol [ v %tmp.4 191 15 16 ];
+        symbol [ view ? 191 8 12 ];
+        putv self :view %tmp.4;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_189_48_192_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 194; @symbol_functiondef = [onBack,194,13,19]; @symbol_return<0> = [Lang,194,25,29]; @symbol_return<1> = [Boolean,194,30,37]; ]
+    function onBack() as Lang.Boolean {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_194_38_197_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 195 8 ]
+        symbol [ WatchUi %tmp.1 195 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 195 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 195 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.4 195 32 42 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 196 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_194_38_197_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 199; @symbol_functiondef = [onSwipe,199,13,20]; @symbol_param<0> = [evt,199,21,24]; @symbol_param<0>_type<0> = [SwipeEvent,199,28,38]; @symbol_return<0> = [Lang,199,43,47]; @symbol_return<1> = [Boolean,199,48,55]; ]
+    function onSwipe(evt as SwipeEvent) as Lang.Boolean {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_199_56_220_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 200 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_199_56_220_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_199_56_220_4_stop" ]
+        %direction.1 = local;
+        symbol [ direction %direction.1 200 12 21 ];
+        %tmp.1 = lgetv %evt;
+        symbol [ evt %tmp.1 200 24 27 ];
+        symbol [ getDirection %tmp.2 200 28 40 ];
+        %tmp.2 = getv function %tmp.1 :getDirection;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %direction.1 %tmp.3;
+        symbol [ direction %direction.1 200 12 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 203 8 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_8_217_8_if_stmt:
+        %tmp.4 = lgetv %direction.1;
+        symbol [ direction %tmp.4 203 12 21 ];
+        symbol [ WatchUi %tmp.5 203 25 32 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ SWIPE_UP %tmp.6 203 33 41 ];
+        %tmp.6 = getv %tmp.5 :SWIPE_UP;
+        %tmp.7 = eq %tmp.4 %tmp.6;
+        bf %tmp.7 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_8_217_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_8_217_8_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_43_217_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 205 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_43_217_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_43_217_8_stop" ]
+        %symptomValues.2 = local;
+        symbol [ symptomValues %symptomValues.2 205 16 29 ];
+        symbol [ view %tmp.9 205 32 36 ];
+        %tmp.9 = getv ? :view;
+        symbol [ getSymptomValues %tmp.10 205 37 53 ];
+        %tmp.10 = getv function %tmp.9 :getSymptomValues;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %symptomValues.2 %tmp.11;
+        symbol [ symptomValues %symptomValues.2 205 16 29 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 206 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_43_217_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_43_217_8_stop" ]
+        %symptomLabels.3 = local;
+        symbol [ symptomLabels %symptomLabels.3 206 16 29 ];
+        symbol [ view %tmp.13 206 32 36 ];
+        %tmp.13 = getv ? :view;
+        symbol [ getSymptomLabels %tmp.14 206 37 53 ];
+        %tmp.14 = getv function %tmp.13 :getSymptomLabels;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        lputv %symptomLabels.3 %tmp.15;
+        symbol [ symptomLabels %symptomLabels.3 206 16 29 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 209 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_43_217_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_43_217_8_stop" ]
+        %chartData.4 = local;
+        symbol [ chartData %chartData.4 209 16 25 ];
+        %tmp.17 = lgetv %symptomValues.2;
+        symbol [ symptomValues %tmp.17 209 33 46 ];
+        symbol [ size %tmp.18 209 47 51 ];
+        %tmp.18 = getv function %tmp.17 :size;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.16 = newa %tmp.19;
+        lputv %chartData.4 %tmp.16;
+        symbol [ chartData %chartData.4 209 16 25 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 210 12 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_end" ]
+        %i.5 = local;
+        symbol [ i %i.5 210 21 22 ];
+        %tmp.20 = 0;
+        lputv %i.5 %tmp.20;
+        symbol [ i %i.5 210 21 22 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_test:
+        %tmp.21 = lgetv %i.5;
+        symbol [ i %tmp.21 210 28 29 ];
+        %tmp.22 = lgetv %symptomValues.2;
+        symbol [ symptomValues %tmp.22 210 32 45 ];
+        symbol [ size %tmp.23 210 46 50 ];
+        %tmp.23 = getv function %tmp.22 :size;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = lt %tmp.21 %tmp.24;
+        bf %tmp.25 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_59_212_12_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 211 16 ]
+        %tmp.26 = lgetv %chartData.4;
+        symbol [ chartData %tmp.26 211 16 25 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_211_31_211_58_begin:
+        %tmp.27 = lgetv %symptomValues.2;
+        symbol [ symptomValues %tmp.27 211 31 44 ];
+        %tmp.28 = lgetv %i.5;
+        symbol [ i %tmp.28 211 45 46 ];
+        %tmp.29 = agetv %tmp.27 %tmp.28;
+        %tmp.30 = 0;
+        %tmp.31 = gt %tmp.29 %tmp.30;
+        bf %tmp.31 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_211_31_211_58_else_false;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_211_31_211_58_true:
+        %tmp.32 = 4;
+        push %tmp.32;
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_211_31_211_58_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_211_31_211_58_else_false:
+        %tmp.33 = 0;
+        push %tmp.33;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_211_31_211_58_end:
+        %tmp.34 = phi [%tmp.31 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_211_31_211_58_begin] [%tmp.32 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_211_31_211_58_true] [%tmp.33 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_211_31_211_58_else_false] [%tmp.34 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_211_31_211_58_end];
+        %tmp.35 = lgetv %i.5;
+        symbol [ i %tmp.35 211 26 27 ];
+        aputv %tmp.26 %tmp.35 %tmp.34;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_59_212_12_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 210 ]
+        %tmp.38 = lgetv %i.5;
+        symbol [ i %tmp.38 210 54 55 ];
+        %tmp.39 = add %tmp.38 1;
+        lputv %i.5 %tmp.39;
+        symbol [ i %i.5 210 54 55 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_210_12_212_12_for_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 214 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_43_217_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_43_217_8_stop" ]
+        %chartView.6 = local;
+        symbol [ chartView %chartView.6 214 16 25 ];
+        symbol [ ChartView %tmp.43 214 32 41 ];
+        %tmp.43 = getv ? :ChartView;
+        %tmp.44 = lgetv %chartData.4;
+        symbol [ chartData %tmp.44 214 42 51 ];
+        %tmp.45 = lgetv %symptomLabels.3;
+        symbol [ symptomLabels %tmp.45 214 53 66 ];
+        %tmp.40 = newc %tmp.43 (%tmp.44, %tmp.45);
+        lputv %chartView.6 %tmp.40;
+        symbol [ chartView %chartView.6 214 16 25 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 215 12 ]
+        symbol [ WatchUi %tmp.46 215 12 19 ];
+        %tmp.46 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.47 215 20 28 ];
+        %tmp.47 = getv function %tmp.46 :pushView;
+        %tmp.48 = lgetv %chartView.6;
+        symbol [ chartView %tmp.48 215 29 38 ];
+        symbol [ ChartDelegate %tmp.52 215 44 57 ];
+        %tmp.52 = getv ? :ChartDelegate;
+        %tmp.49 = newc %tmp.52 ();
+        symbol [ WatchUi %tmp.53 215 61 68 ];
+        %tmp.53 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.54 215 69 77 ];
+        %tmp.54 = getv %tmp.53 :SLIDE_UP;
+        invoke %tmp.46 %tmp.47(%tmp.48, %tmp.49, %tmp.54);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 216 12 ]
+        %tmp.55 = true;
+        ret %tmp.55;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_43_217_8_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_8_217_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_203_8_217_8_if_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 219 8 ]
+        %tmp.56 = false;
+        ret %tmp.56;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_199_56_220_4_stop:
+    }
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 223; @symbol_classdef = [ChartView,223,6,15]; @symbol_extends<0> = [WatchUi,223,24,31]; @symbol_extends<1> = [View,223,32,36]; ]
+class ChartView extends WatchUi.View {
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 223; ]
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 223; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 224; @position = 16; @symbol_vardef = [data,224,16,20]; @symbol_type<0> = [Array,224,24,29]; @symbol_type<1> = [Number,224,30,36]; ]
+    private
+    var data as Array<Number>;
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 225; @position = 16; @symbol_vardef = [labels,225,16,22]; @symbol_type<0> = [Array,225,26,31]; @symbol_type<1> = [String,225,32,38]; ]
+    private
+    var labels as Array<String>;
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 227; @symbol_functiondef = [initialize,227,13,23]; @symbol_param<0> = [chartData,227,24,33]; @symbol_param<0>_type<0> = [Array,227,37,42]; @symbol_param<0>_type<1> = [Number,227,43,49]; @symbol_param<1> = [chartLabels,227,52,63]; @symbol_param<1>_type<0> = [Array,227,67,72]; @symbol_param<1>_type<1> = [String,227,73,79]; ]
+    function initialize(chartData as Array<Number>, chartLabels as Array<String>) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_227_82_231_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 228 8 ]
+        symbol [ View %tmp.2 228 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 228 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 229 8 ]
+        %tmp.4 = lgetv %chartData;
+        symbol [ chartData %tmp.4 229 15 24 ];
+        symbol [ data ? 229 8 12 ];
+        putv self :data %tmp.4;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 230 8 ]
+        %tmp.5 = lgetv %chartLabels;
+        symbol [ chartLabels %tmp.5 230 17 28 ];
+        symbol [ labels ? 230 8 14 ];
+        putv self :labels %tmp.5;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_227_82_231_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 233; @symbol_functiondef = [onUpdate,233,13,21]; @symbol_param<0> = [dc,233,22,24]; @symbol_param<0>_type<0> = [Dc,233,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 234 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %screenW.1 = local;
+        symbol [ screenW %screenW.1 234 12 19 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 234 22 24 ];
+        symbol [ getWidth %tmp.2 234 25 33 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %screenW.1 %tmp.3;
+        symbol [ screenW %screenW.1 234 12 19 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 235 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %screenH.2 = local;
+        symbol [ screenH %screenH.2 235 12 19 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 235 22 24 ];
+        symbol [ getHeight %tmp.5 235 25 34 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %screenH.2 %tmp.6;
+        symbol [ screenH %screenH.2 235 12 19 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 236 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %cx.3 = local;
+        symbol [ cx %cx.3 236 12 14 ];
+        %tmp.7 = lgetv %screenW.1;
+        symbol [ screenW %tmp.7 236 17 24 ];
+        %tmp.8 = 2;
+        %tmp.9 = div %tmp.7 %tmp.8;
+        lputv %cx.3 %tmp.9;
+        symbol [ cx %cx.3 236 12 14 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 237 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %cy.4 = local;
+        symbol [ cy %cy.4 237 12 14 ];
+        %tmp.10 = lgetv %screenH.2;
+        symbol [ screenH %tmp.10 237 17 24 ];
+        %tmp.11 = 2;
+        %tmp.12 = div %tmp.10 %tmp.11;
+        lputv %cy.4 %tmp.12;
+        symbol [ cy %cy.4 237 12 14 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 239 8 ]
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 239 8 10 ];
+        symbol [ setColor %tmp.14 239 11 19 ];
+        %tmp.14 = getv function %tmp.13 :setColor;
+        symbol [ Graphics %tmp.15 239 20 28 ];
+        %tmp.15 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.16 239 29 40 ];
+        %tmp.16 = getv %tmp.15 :COLOR_BLACK;
+        symbol [ Graphics %tmp.17 239 42 50 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.18 239 51 62 ];
+        %tmp.18 = getv %tmp.17 :COLOR_BLACK;
+        invoke %tmp.13 %tmp.14(%tmp.16, %tmp.18);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 240 8 ]
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 240 8 10 ];
+        symbol [ clear %tmp.20 240 11 16 ];
+        %tmp.20 = getv function %tmp.19 :clear;
+        invoke %tmp.19 %tmp.20();
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 243 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 243 8 10 ];
+        symbol [ setColor %tmp.22 243 11 19 ];
+        %tmp.22 = getv function %tmp.21 :setColor;
+        symbol [ Graphics %tmp.23 243 20 28 ];
+        %tmp.23 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.24 243 29 40 ];
+        %tmp.24 = getv %tmp.23 :COLOR_WHITE;
+        symbol [ Graphics %tmp.25 243 42 50 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.26 243 51 68 ];
+        %tmp.26 = getv %tmp.25 :COLOR_TRANSPARENT;
+        invoke %tmp.21 %tmp.22(%tmp.24, %tmp.26);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 244 8 ]
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 244 8 10 ];
+        symbol [ drawText %tmp.28 244 11 19 ];
+        %tmp.28 = getv function %tmp.27 :drawText;
+        %tmp.29 = lgetv %cx.3;
+        symbol [ cx %tmp.29 244 20 22 ];
+        %tmp.30 = 15;
+        symbol [ Graphics %tmp.31 244 28 36 ];
+        %tmp.31 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.32 244 37 47 ];
+        %tmp.32 = getv %tmp.31 :FONT_XTINY;
+        %tmp.33 = "Todays Trends";
+        symbol [ Graphics %tmp.34 244 66 74 ];
+        %tmp.34 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.35 244 75 94 ];
+        %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.27 %tmp.28(%tmp.29, %tmp.30, %tmp.32, %tmp.33, %tmp.35);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 246 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %chartSize.5 = local;
+        symbol [ chartSize %chartSize.5 246 12 21 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_246_24_246_70_begin:
+        %tmp.36 = lgetv %screenW.1;
+        symbol [ screenW %tmp.36 246 24 31 ];
+        %tmp.37 = lgetv %screenH.2;
+        symbol [ screenH %tmp.37 246 34 41 ];
+        %tmp.38 = lt %tmp.36 %tmp.37;
+        bf %tmp.38 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_246_24_246_70_else_false;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_246_24_246_70_true:
+        %tmp.39 = lgetv %screenW.1;
+        symbol [ screenW %tmp.39 246 44 51 ];
+        %tmp.40 = 0.7;
+        %tmp.41 = mul %tmp.39 %tmp.40;
+        push %tmp.41;
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_246_24_246_70_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_246_24_246_70_else_false:
+        %tmp.42 = lgetv %screenH.2;
+        symbol [ screenH %tmp.42 246 60 67 ];
+        %tmp.43 = 0.7;
+        %tmp.44 = mul %tmp.42 %tmp.43;
+        push %tmp.44;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_246_24_246_70_end:
+        %tmp.45 = phi [%tmp.38 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_246_24_246_70_begin] [%tmp.41 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_246_24_246_70_true] [%tmp.44 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_246_24_246_70_else_false] [%tmp.45 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_246_24_246_70_end];
+        lputv %chartSize.5 %tmp.45;
+        symbol [ chartSize %chartSize.5 246 12 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 247 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %chartTop.6 = local;
+        symbol [ chartTop %chartTop.6 247 12 20 ];
+        %tmp.46 = lgetv %cy.4;
+        symbol [ cy %tmp.46 247 23 25 ];
+        %tmp.47 = lgetv %chartSize.5;
+        symbol [ chartSize %tmp.47 247 28 37 ];
+        %tmp.48 = 2;
+        %tmp.49 = div %tmp.47 %tmp.48;
+        %tmp.50 = sub %tmp.46 %tmp.49;
+        lputv %chartTop.6 %tmp.50;
+        symbol [ chartTop %chartTop.6 247 12 20 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 248 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %chartBottom.7 = local;
+        symbol [ chartBottom %chartBottom.7 248 12 23 ];
+        %tmp.51 = lgetv %cy.4;
+        symbol [ cy %tmp.51 248 26 28 ];
+        %tmp.52 = lgetv %chartSize.5;
+        symbol [ chartSize %tmp.52 248 31 40 ];
+        %tmp.53 = 2;
+        %tmp.54 = div %tmp.52 %tmp.53;
+        %tmp.55 = add %tmp.51 %tmp.54;
+        lputv %chartBottom.7 %tmp.55;
+        symbol [ chartBottom %chartBottom.7 248 12 23 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 249 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %chartHeight.8 = local;
+        symbol [ chartHeight %chartHeight.8 249 12 23 ];
+        %tmp.56 = lgetv %chartBottom.7;
+        symbol [ chartBottom %tmp.56 249 26 37 ];
+        %tmp.57 = lgetv %chartTop.6;
+        symbol [ chartTop %tmp.57 249 40 48 ];
+        %tmp.58 = sub %tmp.56 %tmp.57;
+        lputv %chartHeight.8 %tmp.58;
+        symbol [ chartHeight %chartHeight.8 249 12 23 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 250 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %chartLeft.9 = local;
+        symbol [ chartLeft %chartLeft.9 250 12 21 ];
+        %tmp.59 = lgetv %cx.3;
+        symbol [ cx %tmp.59 250 24 26 ];
+        %tmp.60 = lgetv %chartSize.5;
+        symbol [ chartSize %tmp.60 250 29 38 ];
+        %tmp.61 = 2;
+        %tmp.62 = div %tmp.60 %tmp.61;
+        %tmp.63 = sub %tmp.59 %tmp.62;
+        lputv %chartLeft.9 %tmp.63;
+        symbol [ chartLeft %chartLeft.9 250 12 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 251 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %chartRight.10 = local;
+        symbol [ chartRight %chartRight.10 251 12 22 ];
+        %tmp.64 = lgetv %cx.3;
+        symbol [ cx %tmp.64 251 25 27 ];
+        %tmp.65 = lgetv %chartSize.5;
+        symbol [ chartSize %tmp.65 251 30 39 ];
+        %tmp.66 = 2;
+        %tmp.67 = div %tmp.65 %tmp.66;
+        %tmp.68 = add %tmp.64 %tmp.67;
+        lputv %chartRight.10 %tmp.68;
+        symbol [ chartRight %chartRight.10 251 12 22 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 252 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %chartWidth.11 = local;
+        symbol [ chartWidth %chartWidth.11 252 12 22 ];
+        %tmp.69 = lgetv %chartRight.10;
+        symbol [ chartRight %tmp.69 252 25 35 ];
+        %tmp.70 = lgetv %chartLeft.9;
+        symbol [ chartLeft %tmp.70 252 38 47 ];
+        %tmp.71 = sub %tmp.69 %tmp.70;
+        lputv %chartWidth.11 %tmp.71;
+        symbol [ chartWidth %chartWidth.11 252 12 22 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 254 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop" ]
+        %maxValue.12 = local;
+        symbol [ maxValue %maxValue.12 254 12 20 ];
+        %tmp.72 = 4;
+        lputv %maxValue.12 %tmp.72;
+        symbol [ maxValue %maxValue.12 254 12 20 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 256 8 ]
+        %tmp.73 = lgetv %dc;
+        symbol [ dc %tmp.73 256 8 10 ];
+        symbol [ setColor %tmp.74 256 11 19 ];
+        %tmp.74 = getv function %tmp.73 :setColor;
+        symbol [ Graphics %tmp.75 256 20 28 ];
+        %tmp.75 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.76 256 29 42 ];
+        %tmp.76 = getv %tmp.75 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.77 256 44 52 ];
+        %tmp.77 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.78 256 53 70 ];
+        %tmp.78 = getv %tmp.77 :COLOR_TRANSPARENT;
+        invoke %tmp.73 %tmp.74(%tmp.76, %tmp.78);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 257 8 ]
+        %tmp.79 = lgetv %dc;
+        symbol [ dc %tmp.79 257 8 10 ];
+        symbol [ drawRectangle %tmp.80 257 11 24 ];
+        %tmp.80 = getv function %tmp.79 :drawRectangle;
+        %tmp.81 = lgetv %chartLeft.9;
+        symbol [ chartLeft %tmp.81 257 25 34 ];
+        %tmp.82 = lgetv %chartTop.6;
+        symbol [ chartTop %tmp.82 257 36 44 ];
+        %tmp.83 = lgetv %chartWidth.11;
+        symbol [ chartWidth %tmp.83 257 46 56 ];
+        %tmp.84 = lgetv %chartHeight.8;
+        symbol [ chartHeight %tmp.84 257 58 69 ];
+        invoke %tmp.79 %tmp.80(%tmp.81, %tmp.82, %tmp.83, %tmp.84);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 260 8 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_end" ]
+        %i.13 = local;
+        symbol [ i %i.13 260 17 18 ];
+        %tmp.85 = 0;
+        lputv %i.13 %tmp.85;
+        symbol [ i %i.13 260 17 18 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_test:
+        %tmp.86 = lgetv %i.13;
+        symbol [ i %tmp.86 260 24 25 ];
+        %tmp.87 = 4;
+        %tmp.88 = lte %tmp.86 %tmp.87;
+        bf %tmp.88 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_40_268_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 261 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_40_268_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_40_268_8_stop" ]
+        %y.14 = local;
+        symbol [ y %y.14 261 16 17 ];
+        %tmp.89 = lgetv %chartBottom.7;
+        symbol [ chartBottom %tmp.89 261 20 31 ];
+        %tmp.90 = lgetv %i.13;
+        symbol [ i %tmp.90 261 35 36 ];
+        %tmp.91 = lgetv %chartHeight.8;
+        symbol [ chartHeight %tmp.91 261 39 50 ];
+        %tmp.92 = mul %tmp.90 %tmp.91;
+        %tmp.93 = 4;
+        %tmp.94 = div %tmp.92 %tmp.93;
+        %tmp.95 = sub %tmp.89 %tmp.94;
+        lputv %y.14 %tmp.95;
+        symbol [ y %y.14 261 16 17 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 262 12 ]
+        %tmp.96 = lgetv %dc;
+        symbol [ dc %tmp.96 262 12 14 ];
+        symbol [ setColor %tmp.97 262 15 23 ];
+        %tmp.97 = getv function %tmp.96 :setColor;
+        symbol [ Graphics %tmp.98 262 24 32 ];
+        %tmp.98 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.99 262 33 46 ];
+        %tmp.99 = getv %tmp.98 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.100 262 48 56 ];
+        %tmp.100 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.101 262 57 74 ];
+        %tmp.101 = getv %tmp.100 :COLOR_TRANSPARENT;
+        invoke %tmp.96 %tmp.97(%tmp.99, %tmp.101);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 263 12 ]
+        %tmp.102 = lgetv %dc;
+        symbol [ dc %tmp.102 263 12 14 ];
+        symbol [ drawLine %tmp.103 263 15 23 ];
+        %tmp.103 = getv function %tmp.102 :drawLine;
+        %tmp.104 = lgetv %chartLeft.9;
+        symbol [ chartLeft %tmp.104 263 24 33 ];
+        %tmp.105 = lgetv %y.14;
+        symbol [ y %tmp.105 263 35 36 ];
+        %tmp.106 = lgetv %chartRight.10;
+        symbol [ chartRight %tmp.106 263 38 48 ];
+        %tmp.107 = lgetv %y.14;
+        symbol [ y %tmp.107 263 50 51 ];
+        invoke %tmp.102 %tmp.103(%tmp.104, %tmp.105, %tmp.106, %tmp.107);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 266 12 ]
+        %tmp.108 = lgetv %dc;
+        symbol [ dc %tmp.108 266 12 14 ];
+        symbol [ setColor %tmp.109 266 15 23 ];
+        %tmp.109 = getv function %tmp.108 :setColor;
+        symbol [ Graphics %tmp.110 266 24 32 ];
+        %tmp.110 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.111 266 33 46 ];
+        %tmp.111 = getv %tmp.110 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.112 266 48 56 ];
+        %tmp.112 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.113 266 57 74 ];
+        %tmp.113 = getv %tmp.112 :COLOR_TRANSPARENT;
+        invoke %tmp.108 %tmp.109(%tmp.111, %tmp.113);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 267 12 ]
+        %tmp.114 = lgetv %dc;
+        symbol [ dc %tmp.114 267 12 14 ];
+        symbol [ drawText %tmp.115 267 15 23 ];
+        %tmp.115 = getv function %tmp.114 :drawText;
+        %tmp.116 = lgetv %chartLeft.9;
+        symbol [ chartLeft %tmp.116 267 24 33 ];
+        %tmp.117 = 8;
+        %tmp.118 = sub %tmp.116 %tmp.117;
+        %tmp.119 = lgetv %y.14;
+        symbol [ y %tmp.119 267 39 40 ];
+        symbol [ Graphics %tmp.120 267 42 50 ];
+        %tmp.120 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.121 267 51 61 ];
+        %tmp.121 = getv %tmp.120 :FONT_XTINY;
+        %tmp.122 = lgetv %i.13;
+        symbol [ i %tmp.122 267 63 64 ];
+        symbol [ toString %tmp.123 267 65 73 ];
+        %tmp.123 = getv function %tmp.122 :toString;
+        %tmp.124 = invoke %tmp.122 %tmp.123();
+        symbol [ Graphics %tmp.125 267 77 85 ];
+        %tmp.125 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.126 267 86 104 ];
+        %tmp.126 = getv %tmp.125 :TEXT_JUSTIFY_RIGHT;
+        symbol [ Graphics %tmp.127 267 107 115 ];
+        %tmp.127 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.128 267 116 136 ];
+        %tmp.128 = getv %tmp.127 :TEXT_JUSTIFY_VCENTER;
+        %tmp.129 = bitor %tmp.126 %tmp.128;
+        invoke %tmp.114 %tmp.115(%tmp.118, %tmp.119, %tmp.121, %tmp.124, %tmp.129);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_40_268_8_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 260 ]
+        %tmp.130 = lgetv %i.13;
+        symbol [ i %tmp.130 260 32 33 ];
+        %tmp.131 = 2;
+        %tmp.132 = add %tmp.130 %tmp.131;
+        lputv %i.13 %tmp.132;
+        symbol [ i %i.13 260 32 33 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_260_8_268_8_for_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 271 8 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_271_8_295_8_if_stmt:
+        symbol [ data %tmp.134 271 12 16 ];
+        %tmp.134 = getv ? :data;
+        symbol [ size %tmp.135 271 17 21 ];
+        %tmp.135 = getv function %tmp.134 :size;
+        %tmp.136 = invoke %tmp.134 %tmp.135();
+        %tmp.137 = 1;
+        %tmp.138 = gt %tmp.136 %tmp.137;
+        bf %tmp.138 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_271_8_295_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_271_8_295_8_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_271_29_295_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 272 12 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_271_29_295_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_271_29_295_8_stop" ]
+        %stepX.15 = local;
+        symbol [ stepX %stepX.15 272 16 21 ];
+        %tmp.139 = lgetv %chartWidth.11;
+        symbol [ chartWidth %tmp.139 272 24 34 ];
+        symbol [ data %tmp.141 272 38 42 ];
+        %tmp.141 = getv ? :data;
+        symbol [ size %tmp.142 272 43 47 ];
+        %tmp.142 = getv function %tmp.141 :size;
+        %tmp.143 = invoke %tmp.141 %tmp.142();
+        %tmp.144 = 1;
+        %tmp.145 = sub %tmp.143 %tmp.144;
+        symbol [ toFloat %tmp.146 272 55 62 ];
+        %tmp.146 = getv function %tmp.145 :toFloat;
+        %tmp.147 = invoke %tmp.145 %tmp.146();
+        %tmp.148 = div %tmp.139 %tmp.147;
+        lputv %stepX.15 %tmp.148;
+        symbol [ stepX %stepX.15 272 16 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 274 12 ]
+        %tmp.149 = lgetv %dc;
+        symbol [ dc %tmp.149 274 12 14 ];
+        symbol [ setColor %tmp.150 274 15 23 ];
+        %tmp.150 = getv function %tmp.149 :setColor;
+        symbol [ Graphics %tmp.151 274 24 32 ];
+        %tmp.151 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.152 274 33 43 ];
+        %tmp.152 = getv %tmp.151 :COLOR_BLUE;
+        symbol [ Graphics %tmp.153 274 45 53 ];
+        %tmp.153 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.154 274 54 71 ];
+        %tmp.154 = getv %tmp.153 :COLOR_TRANSPARENT;
+        invoke %tmp.149 %tmp.150(%tmp.152, %tmp.154);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 275 12 ]
+        %tmp.155 = lgetv %dc;
+        symbol [ dc %tmp.155 275 12 14 ];
+        symbol [ setPenWidth %tmp.156 275 15 26 ];
+        %tmp.156 = getv function %tmp.155 :setPenWidth;
+        %tmp.157 = 2;
+        invoke %tmp.155 %tmp.156(%tmp.157);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 277 12 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_end" ]
+        %i.16 = local;
+        symbol [ i %i.16 277 21 22 ];
+        %tmp.158 = 0;
+        lputv %i.16 %tmp.158;
+        symbol [ i %i.16 277 21 22 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_test:
+        %tmp.159 = lgetv %i.16;
+        symbol [ i %tmp.159 277 28 29 ];
+        symbol [ data %tmp.161 277 32 36 ];
+        %tmp.161 = getv ? :data;
+        symbol [ size %tmp.162 277 37 41 ];
+        %tmp.162 = getv function %tmp.161 :size;
+        %tmp.163 = invoke %tmp.161 %tmp.162();
+        %tmp.164 = 1;
+        %tmp.165 = sub %tmp.163 %tmp.164;
+        %tmp.166 = lt %tmp.159 %tmp.165;
+        bf %tmp.166 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_54_284_12_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 278 16 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_54_284_12_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_54_284_12_stop" ]
+        %x1.17 = local;
+        symbol [ x1 %x1.17 278 20 22 ];
+        %tmp.167 = lgetv %chartLeft.9;
+        symbol [ chartLeft %tmp.167 278 25 34 ];
+        %tmp.168 = lgetv %i.16;
+        symbol [ i %tmp.168 278 38 39 ];
+        %tmp.169 = lgetv %stepX.15;
+        symbol [ stepX %tmp.169 278 42 47 ];
+        %tmp.170 = mul %tmp.168 %tmp.169;
+        %tmp.171 = add %tmp.167 %tmp.170;
+        lputv %x1.17 %tmp.171;
+        symbol [ x1 %x1.17 278 20 22 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 279 16 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_54_284_12_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_54_284_12_stop" ]
+        %y1.18 = local;
+        symbol [ y1 %y1.18 279 20 22 ];
+        %tmp.172 = lgetv %chartBottom.7;
+        symbol [ chartBottom %tmp.172 279 25 36 ];
+        symbol [ data %tmp.174 279 40 44 ];
+        %tmp.174 = getv ? :data;
+        %tmp.175 = lgetv %i.16;
+        symbol [ i %tmp.175 279 45 46 ];
+        %tmp.176 = agetv %tmp.174 %tmp.175;
+        symbol [ toFloat %tmp.177 279 48 55 ];
+        %tmp.177 = getv function %tmp.176 :toFloat;
+        %tmp.178 = invoke %tmp.176 %tmp.177();
+        %tmp.179 = lgetv %maxValue.12;
+        symbol [ maxValue %tmp.179 279 60 68 ];
+        %tmp.180 = div %tmp.178 %tmp.179;
+        %tmp.181 = lgetv %chartHeight.8;
+        symbol [ chartHeight %tmp.181 279 71 82 ];
+        %tmp.182 = mul %tmp.180 %tmp.181;
+        %tmp.183 = sub %tmp.172 %tmp.182;
+        lputv %y1.18 %tmp.183;
+        symbol [ y1 %y1.18 279 20 22 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 280 16 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_54_284_12_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_54_284_12_stop" ]
+        %x2.19 = local;
+        symbol [ x2 %x2.19 280 20 22 ];
+        %tmp.184 = lgetv %chartLeft.9;
+        symbol [ chartLeft %tmp.184 280 25 34 ];
+        %tmp.185 = lgetv %i.16;
+        symbol [ i %tmp.185 280 39 40 ];
+        %tmp.186 = 1;
+        %tmp.187 = add %tmp.185 %tmp.186;
+        %tmp.188 = lgetv %stepX.15;
+        symbol [ stepX %tmp.188 280 48 53 ];
+        %tmp.189 = mul %tmp.187 %tmp.188;
+        %tmp.190 = add %tmp.184 %tmp.189;
+        lputv %x2.19 %tmp.190;
+        symbol [ x2 %x2.19 280 20 22 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 281 16 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_54_284_12_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_54_284_12_stop" ]
+        %y2.20 = local;
+        symbol [ y2 %y2.20 281 20 22 ];
+        %tmp.191 = lgetv %chartBottom.7;
+        symbol [ chartBottom %tmp.191 281 25 36 ];
+        symbol [ data %tmp.193 281 40 44 ];
+        %tmp.193 = getv ? :data;
+        %tmp.194 = lgetv %i.16;
+        symbol [ i %tmp.194 281 45 46 ];
+        %tmp.195 = 1;
+        %tmp.196 = add %tmp.194 %tmp.195;
+        %tmp.197 = agetv %tmp.193 %tmp.196;
+        symbol [ toFloat %tmp.198 281 52 59 ];
+        %tmp.198 = getv function %tmp.197 :toFloat;
+        %tmp.199 = invoke %tmp.197 %tmp.198();
+        %tmp.200 = lgetv %maxValue.12;
+        symbol [ maxValue %tmp.200 281 64 72 ];
+        %tmp.201 = div %tmp.199 %tmp.200;
+        %tmp.202 = lgetv %chartHeight.8;
+        symbol [ chartHeight %tmp.202 281 75 86 ];
+        %tmp.203 = mul %tmp.201 %tmp.202;
+        %tmp.204 = sub %tmp.191 %tmp.203;
+        lputv %y2.20 %tmp.204;
+        symbol [ y2 %y2.20 281 20 22 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 283 16 ]
+        %tmp.205 = lgetv %dc;
+        symbol [ dc %tmp.205 283 16 18 ];
+        symbol [ drawLine %tmp.206 283 19 27 ];
+        %tmp.206 = getv function %tmp.205 :drawLine;
+        %tmp.207 = lgetv %x1.17;
+        symbol [ x1 %tmp.207 283 28 30 ];
+        %tmp.208 = lgetv %y1.18;
+        symbol [ y1 %tmp.208 283 32 34 ];
+        %tmp.209 = lgetv %x2.19;
+        symbol [ x2 %tmp.209 283 36 38 ];
+        %tmp.210 = lgetv %y2.20;
+        symbol [ y2 %tmp.210 283 40 42 ];
+        invoke %tmp.205 %tmp.206(%tmp.207, %tmp.208, %tmp.209, %tmp.210);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_54_284_12_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 277 ]
+        %tmp.213 = lgetv %i.16;
+        symbol [ i %tmp.213 277 49 50 ];
+        %tmp.214 = add %tmp.213 1;
+        lputv %i.16 %tmp.214;
+        symbol [ i %i.16 277 49 50 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_277_12_284_12_for_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 286 12 ]
+        %tmp.215 = lgetv %dc;
+        symbol [ dc %tmp.215 286 12 14 ];
+        symbol [ setPenWidth %tmp.216 286 15 26 ];
+        %tmp.216 = getv function %tmp.215 :setPenWidth;
+        %tmp.217 = 1;
+        invoke %tmp.215 %tmp.216(%tmp.217);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 289 12 ]
+        %tmp.218 = lgetv %dc;
+        symbol [ dc %tmp.218 289 12 14 ];
+        symbol [ setColor %tmp.219 289 15 23 ];
+        %tmp.219 = getv function %tmp.218 :setColor;
+        symbol [ Graphics %tmp.220 289 24 32 ];
+        %tmp.220 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.221 289 33 45 ];
+        %tmp.221 = getv %tmp.220 :COLOR_YELLOW;
+        symbol [ Graphics %tmp.222 289 47 55 ];
+        %tmp.222 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.223 289 56 73 ];
+        %tmp.223 = getv %tmp.222 :COLOR_TRANSPARENT;
+        invoke %tmp.218 %tmp.219(%tmp.221, %tmp.223);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 290 12 ]
+        for @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_test @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_incr @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_init:
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_begin" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_end" ]
+        %i.21 = local;
+        symbol [ i %i.21 290 21 22 ];
+        %tmp.224 = 0;
+        lputv %i.21 %tmp.224;
+        symbol [ i %i.21 290 21 22 ];
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_test:
+        %tmp.225 = lgetv %i.21;
+        symbol [ i %tmp.225 290 28 29 ];
+        symbol [ data %tmp.227 290 32 36 ];
+        %tmp.227 = getv ? :data;
+        symbol [ size %tmp.228 290 37 41 ];
+        %tmp.228 = getv function %tmp.227 :size;
+        %tmp.229 = invoke %tmp.227 %tmp.228();
+        %tmp.230 = lt %tmp.225 %tmp.229;
+        bf %tmp.230 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_begin:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_50_294_12_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 291 16 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_50_294_12_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_50_294_12_stop" ]
+        %x.22 = local;
+        symbol [ x %x.22 291 20 21 ];
+        %tmp.231 = lgetv %chartLeft.9;
+        symbol [ chartLeft %tmp.231 291 24 33 ];
+        %tmp.232 = lgetv %i.21;
+        symbol [ i %tmp.232 291 37 38 ];
+        %tmp.233 = lgetv %stepX.15;
+        symbol [ stepX %tmp.233 291 41 46 ];
+        %tmp.234 = mul %tmp.232 %tmp.233;
+        %tmp.235 = add %tmp.231 %tmp.234;
+        lputv %x.22 %tmp.235;
+        symbol [ x %x.22 291 20 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 292 16 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_50_294_12_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_50_294_12_stop" ]
+        %y.23 = local;
+        symbol [ y %y.23 292 20 21 ];
+        %tmp.236 = lgetv %chartBottom.7;
+        symbol [ chartBottom %tmp.236 292 24 35 ];
+        symbol [ data %tmp.238 292 39 43 ];
+        %tmp.238 = getv ? :data;
+        %tmp.239 = lgetv %i.21;
+        symbol [ i %tmp.239 292 44 45 ];
+        %tmp.240 = agetv %tmp.238 %tmp.239;
+        symbol [ toFloat %tmp.241 292 47 54 ];
+        %tmp.241 = getv function %tmp.240 :toFloat;
+        %tmp.242 = invoke %tmp.240 %tmp.241();
+        %tmp.243 = lgetv %maxValue.12;
+        symbol [ maxValue %tmp.243 292 59 67 ];
+        %tmp.244 = div %tmp.242 %tmp.243;
+        %tmp.245 = lgetv %chartHeight.8;
+        symbol [ chartHeight %tmp.245 292 70 81 ];
+        %tmp.246 = mul %tmp.244 %tmp.245;
+        %tmp.247 = sub %tmp.236 %tmp.246;
+        lputv %y.23 %tmp.247;
+        symbol [ y %y.23 292 20 21 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 293 16 ]
+        %tmp.248 = lgetv %dc;
+        symbol [ dc %tmp.248 293 16 18 ];
+        symbol [ fillCircle %tmp.249 293 19 29 ];
+        %tmp.249 = getv function %tmp.248 :fillCircle;
+        %tmp.250 = lgetv %x.22;
+        symbol [ x %tmp.250 293 30 31 ];
+        %tmp.251 = lgetv %y.23;
+        symbol [ y %tmp.251 293 33 34 ];
+        %tmp.252 = 2;
+        invoke %tmp.248 %tmp.249(%tmp.250, %tmp.251, %tmp.252);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_50_294_12_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_incr:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 290 ]
+        %tmp.255 = lgetv %i.21;
+        symbol [ i %tmp.255 290 45 46 ];
+        %tmp.256 = add %tmp.255 1;
+        lputv %i.21 %tmp.256;
+        symbol [ i %i.21 290 45 46 ];
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_test;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_290_12_294_12_for_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_271_29_295_8_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_271_8_295_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_271_8_295_8_if_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_233_40_296_4_stop:
+    }
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 299; @symbol_classdef = [ChartDelegate,299,6,19]; @symbol_extends<0> = [WatchUi,299,28,35]; @symbol_extends<1> = [BehaviorDelegate,299,36,52]; ]
+class ChartDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 299; ]
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 299; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 300; @symbol_functiondef = [initialize,300,13,23]; ]
+    function initialize() as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_300_26_302_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 301 8 ]
+        symbol [ BehaviorDelegate %tmp.2 301 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 301 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_300_26_302_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 304; @symbol_functiondef = [onBack,304,13,19]; @symbol_return<0> = [Lang,304,25,29]; @symbol_return<1> = [Boolean,304,30,37]; ]
+    function onBack() as Lang.Boolean {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_304_38_307_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 305 8 ]
+        symbol [ WatchUi %tmp.1 305 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 305 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 305 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.4 305 32 42 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc" 306 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_spiderDiagram_pageView_mc_304_38_307_4_stop:
+    }
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/spiderDiagram_pageView.mc"; @line = 1; ]
+<init> {
+}

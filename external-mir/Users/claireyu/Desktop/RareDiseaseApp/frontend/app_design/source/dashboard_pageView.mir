@@ -1,0 +1,142 @@
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 5; @symbol_classdef = [DashboardView,5,6,19]; @symbol_extends<0> = [WatchUi,5,28,35]; @symbol_extends<1> = [View,5,36,40]; ]
+class DashboardView extends WatchUi.View {
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
+    function initialize() as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_dashboard_pageView_mc_7_26_9_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc" 8 8 ]
+        symbol [ View %tmp.2 8 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 8 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_dashboard_pageView_mc_7_26_9_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 11; @symbol_functiondef = [onUpdate,11,13,21]; @symbol_param<0> = [dc,11,22,24]; @symbol_param<0>_type<0> = [Dc,11,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_dashboard_pageView_mc_11_40_22_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc" 12 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 12 8 10 ];
+        symbol [ setColor %tmp.2 12 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 12 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 12 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 12 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 12 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc" 13 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 13 8 10 ];
+        symbol [ clear %tmp.8 13 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc" 14 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 14 8 10 ];
+        symbol [ setColor %tmp.10 14 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        symbol [ Graphics %tmp.11 14 20 28 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.12 14 29 38 ];
+        %tmp.12 = getv %tmp.11 :COLOR_RED;
+        symbol [ Graphics %tmp.13 14 40 48 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.14 14 49 66 ];
+        %tmp.14 = getv %tmp.13 :COLOR_TRANSPARENT;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc" 15 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 15 8 10 ];
+        symbol [ drawText %tmp.16 15 11 19 ];
+        %tmp.16 = getv function %tmp.15 :drawText;
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 16 12 14 ];
+        symbol [ getWidth %tmp.18 16 15 23 ];
+        %tmp.18 = getv function %tmp.17 :getWidth;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 17 12 14 ];
+        symbol [ getHeight %tmp.23 17 15 24 ];
+        %tmp.23 = getv function %tmp.22 :getHeight;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = 2;
+        %tmp.26 = div %tmp.24 %tmp.25;
+        symbol [ Graphics %tmp.27 18 12 20 ];
+        %tmp.27 = getm $.Toybox.Graphics;
+        symbol [ FONT_LARGE %tmp.28 18 21 31 ];
+        %tmp.28 = getv %tmp.27 :FONT_LARGE;
+        %tmp.29 = "Dashboard/Skip";
+        symbol [ Graphics %tmp.30 20 12 20 ];
+        %tmp.30 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.31 20 21 40 ];
+        %tmp.31 = getv %tmp.30 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.32 20 43 51 ];
+        %tmp.32 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.33 20 52 72 ];
+        %tmp.33 = getv %tmp.32 :TEXT_JUSTIFY_VCENTER;
+        %tmp.34 = bitor %tmp.31 %tmp.33;
+        invoke %tmp.15 %tmp.16(%tmp.21, %tmp.26, %tmp.28, %tmp.29, %tmp.34);
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_dashboard_pageView_mc_11_40_22_4_stop:
+    }
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 25; @symbol_classdef = [DashboardDelegate,25,6,23]; @symbol_extends<0> = [WatchUi,25,32,39]; @symbol_extends<1> = [BehaviorDelegate,25,40,56]; ]
+class DashboardDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 25; ]
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 25; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 27; @symbol_functiondef = [initialize,27,13,23]; ]
+    function initialize() as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_dashboard_pageView_mc_27_26_29_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc" 28 8 ]
+        symbol [ BehaviorDelegate %tmp.2 28 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 28 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_dashboard_pageView_mc_27_26_29_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 31; @symbol_functiondef = [onBack,31,13,19]; @symbol_return<0> = [Lang,31,25,29]; @symbol_return<1> = [Boolean,31,30,37]; ]
+    function onBack() as Lang.Boolean {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_dashboard_pageView_mc_31_38_34_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc" 32 8 ]
+        symbol [ WatchUi %tmp.1 32 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.2 32 16 23 ];
+        %tmp.2 = getv function %tmp.1 :popView;
+        symbol [ WatchUi %tmp.3 32 24 31 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.4 32 32 42 ];
+        %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc" 33 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_dashboard_pageView_mc_31_38_34_4_stop:
+    }
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/dashboard_pageView.mc"; @line = 1; ]
+<init> {
+}

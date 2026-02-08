@@ -1,0 +1,132 @@
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc"; @line = 4; @symbol_classdef = [app_designDelegate,4,6,24]; @symbol_extends<0> = [WatchUi,4,33,40]; @symbol_extends<1> = [BehaviorDelegate,4,41,57]; ]
+class app_designDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_6_26_8_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 7 8 ]
+        symbol [ BehaviorDelegate %tmp.2 7 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 7 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc"; @line = 10; @symbol_functiondef = [onTap,10,13,18]; @symbol_param<0> = [clickEvent,10,19,29]; @symbol_param<0>_type<0> = [ClickEvent,10,33,43]; @symbol_return<0> = [Lang,10,48,52]; @symbol_return<1> = [Boolean,10,53,60]; ]
+    function onTap(clickEvent as ClickEvent) as Lang.Boolean {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_10_61_30_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 11 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_10_61_30_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_10_61_30_4_stop" ]
+        %coords.1 = local;
+        symbol [ coords %coords.1 11 12 18 ];
+        %tmp.1 = lgetv %clickEvent;
+        symbol [ clickEvent %tmp.1 11 21 31 ];
+        symbol [ getCoordinates %tmp.2 11 32 46 ];
+        %tmp.2 = getv function %tmp.1 :getCoordinates;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %coords.1 %tmp.3;
+        symbol [ coords %coords.1 11 12 18 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 12 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_10_61_30_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_10_61_30_4_stop" ]
+        %x.2 = local;
+        symbol [ x %x.2 12 12 13 ];
+        %tmp.4 = lgetv %coords.1;
+        symbol [ coords %tmp.4 12 16 22 ];
+        %tmp.5 = 0;
+        %tmp.6 = agetv %tmp.4 %tmp.5;
+        lputv %x.2 %tmp.6;
+        symbol [ x %x.2 12 12 13 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 13 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_10_61_30_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_10_61_30_4_stop" ]
+        %y.3 = local;
+        symbol [ y %y.3 13 12 13 ];
+        %tmp.7 = lgetv %coords.1;
+        symbol [ coords %tmp.7 13 16 22 ];
+        %tmp.8 = 1;
+        %tmp.9 = agetv %tmp.7 %tmp.8;
+        lputv %y.3 %tmp.9;
+        symbol [ y %y.3 13 12 13 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 16 8 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_16_8_27_8_if_stmt:
+        %tmp.10 = lgetv %y.3;
+        symbol [ y %tmp.10 16 12 13 ];
+        %tmp.11 = 180;
+        %tmp.12 = gt %tmp.10 %tmp.11;
+        bf %tmp.12 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_16_8_27_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_16_8_27_8_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_16_21_27_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 18 12 ]
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_18_12_26_12_if_stmt:
+        %tmp.13 = lgetv %x.2;
+        symbol [ x %tmp.13 18 16 17 ];
+        %tmp.14 = 180;
+        %tmp.15 = lt %tmp.13 %tmp.14;
+        bf %tmp.15 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_18_12_26_12_if_else_false;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_18_12_26_12_if_true:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_18_25_21_12_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 19 16 ]
+        symbol [ WatchUi %tmp.16 19 16 23 ];
+        %tmp.16 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.17 19 24 32 ];
+        %tmp.17 = getv function %tmp.16 :pushView;
+        symbol [ YesPageView %tmp.21 19 37 48 ];
+        %tmp.21 = getv ? :YesPageView;
+        %tmp.18 = newc %tmp.21 ();
+        symbol [ YesPageDelegate %tmp.25 19 56 71 ];
+        %tmp.25 = getv ? :YesPageDelegate;
+        %tmp.22 = newc %tmp.25 ();
+        symbol [ WatchUi %tmp.26 19 75 82 ];
+        %tmp.26 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.27 19 83 91 ];
+        %tmp.27 = getv %tmp.26 :SLIDE_UP;
+        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.22, %tmp.27);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 20 16 ]
+        %tmp.28 = true;
+        ret %tmp.28;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_18_25_21_12_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_18_12_26_12_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_18_12_26_12_if_else_false:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_23_17_26_12_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 24 16 ]
+        symbol [ WatchUi %tmp.29 24 16 23 ];
+        %tmp.29 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.30 24 24 32 ];
+        %tmp.30 = getv function %tmp.29 :pushView;
+        symbol [ DashboardView %tmp.34 24 37 50 ];
+        %tmp.34 = getv ? :DashboardView;
+        %tmp.31 = newc %tmp.34 ();
+        symbol [ DashboardDelegate %tmp.38 24 58 75 ];
+        %tmp.38 = getv ? :DashboardDelegate;
+        %tmp.35 = newc %tmp.38 ();
+        symbol [ WatchUi %tmp.39 24 79 86 ];
+        %tmp.39 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.40 24 87 97 ];
+        %tmp.40 = getv %tmp.39 :SLIDE_DOWN;
+        invoke %tmp.29 %tmp.30(%tmp.31, %tmp.35, %tmp.40);
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 25 16 ]
+        %tmp.41 = true;
+        ret %tmp.41;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_23_17_26_12_stop:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_18_12_26_12_if_end:
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_16_21_27_8_stop:
+        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_16_8_27_8_if_end;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_16_8_27_8_if_end:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc" 29 8 ]
+        %tmp.42 = false;
+        ret %tmp.42;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designDelegate_mc_10_61_30_4_stop:
+    }
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designDelegate.mc"; @line = 1; ]
+<init> {
+}

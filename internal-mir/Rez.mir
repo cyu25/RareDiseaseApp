@@ -1,0 +1,1841 @@
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 12; @symbol_moduledef = [Layouts,12,11,18]; ]
+    module Layouts {
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 13; @symbol_functiondef = [WatchFace,13,17,26]; @symbol_param<0> = [dc,13,27,29]; @symbol_param<0>_type<0> = [Graphics,13,33,41]; @symbol_param<0>_type<1> = [Dc,13,42,44]; @symbol_return<0> = [Array,13,49,54]; @symbol_return<1> = [WatchUi,13,55,62]; @symbol_return<2> = [Drawable,13,63,71]; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 14 12 ]
+            [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_stop" ]
+            %rez_cmp_local_var_dc_getHeight.1 = local;
+            symbol [ rez_cmp_local_var_dc_getHeight %rez_cmp_local_var_dc_getHeight.1 14 16 46 ];
+            %tmp.1 = lgetv %dc;
+            symbol [ dc %tmp.1 14 49 51 ];
+            symbol [ getHeight %tmp.2 14 52 61 ];
+            %tmp.2 = getv function %tmp.1 :getHeight;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getHeight.1 %tmp.3;
+            symbol [ rez_cmp_local_var_dc_getHeight %rez_cmp_local_var_dc_getHeight.1 14 16 46 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 16 12 ]
+            [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_stop" ]
+            %rez_cmp_local_var_dc_getWidth.2 = local;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.2 16 16 45 ];
+            %tmp.4 = lgetv %dc;
+            symbol [ dc %tmp.4 16 48 50 ];
+            symbol [ getWidth %tmp.5 16 51 59 ];
+            %tmp.5 = getv function %tmp.4 :getWidth;
+            %tmp.6 = invoke %tmp.4 %tmp.5();
+            lputv %rez_cmp_local_var_dc_getWidth.2 %tmp.6;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.2 16 16 45 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 18 12 ]
+            [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_stop" ]
+            %rez_cmp_local_text_GreetingLabel.3 = local;
+            symbol [ rez_cmp_local_text_GreetingLabel %rez_cmp_local_text_GreetingLabel.3 18 16 48 ];
+            symbol [ WatchUi %tmp.9 18 55 62 ];
+            %tmp.9 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.10 18 63 67 ];
+            %tmp.10 = getv function ? %tmp.9 :Text;
+            %tmp.11 = newd 6;
+            %tmp.13 = const :identifier;
+            symbol [ identifier %tmp.13 18 70 80 const ];
+            %tmp.14 = "GreetingLabel";
+            %tmp.15 = dup %tmp.11;
+            %tmp.16 = aputv %tmp.15 %tmp.13 %tmp.14;
+            %tmp.18 = const :color;
+            symbol [ color %tmp.18 18 100 105 const ];
+            symbol [ Graphics %tmp.19 18 107 115 ];
+            %tmp.19 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.20 18 116 127 ];
+            %tmp.20 = getv %tmp.19 :COLOR_WHITE;
+            %tmp.21 = dup %tmp.16;
+            %tmp.22 = aputv %tmp.21 %tmp.18 %tmp.20;
+            %tmp.24 = const :locX;
+            symbol [ locX %tmp.24 18 130 134 const ];
+            %tmp.25 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.25 18 137 166 ];
+            %tmp.26 = 0.5;
+            %tmp.27 = mul %tmp.25 %tmp.26;
+            %tmp.28 = dup %tmp.22;
+            %tmp.29 = aputv %tmp.28 %tmp.24 %tmp.27;
+            %tmp.31 = const :locY;
+            symbol [ locY %tmp.31 18 176 180 const ];
+            %tmp.32 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            symbol [ rez_cmp_local_var_dc_getHeight %tmp.32 18 183 213 ];
+            %tmp.33 = 20;
+            %tmp.34 = 100.0;
+            %tmp.35 = div %tmp.33 %tmp.34;
+            %tmp.36 = mul %tmp.32 %tmp.35;
+            %tmp.37 = dup %tmp.29;
+            %tmp.38 = aputv %tmp.37 %tmp.31 %tmp.36;
+            %tmp.40 = const :justification;
+            symbol [ justification %tmp.40 18 232 245 const ];
+            symbol [ Graphics %tmp.41 18 247 255 ];
+            %tmp.41 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.42 18 256 275 ];
+            %tmp.42 = getv %tmp.41 :TEXT_JUSTIFY_CENTER;
+            %tmp.43 = dup %tmp.38;
+            %tmp.44 = aputv %tmp.43 %tmp.40 %tmp.42;
+            %tmp.46 = const :font;
+            symbol [ font %tmp.46 18 278 282 const ];
+            symbol [ Graphics %tmp.47 18 284 292 ];
+            %tmp.47 = getm $.Toybox.Graphics;
+            symbol [ FONT_SMALL %tmp.48 18 293 303 ];
+            %tmp.48 = getv %tmp.47 :FONT_SMALL;
+            %tmp.49 = dup %tmp.44;
+            %tmp.50 = aputv %tmp.49 %tmp.46 %tmp.48;
+            %tmp.7 = newc %tmp.10 (%tmp.50);
+            lputv %rez_cmp_local_text_GreetingLabel.3 %tmp.7;
+            symbol [ rez_cmp_local_text_GreetingLabel %rez_cmp_local_text_GreetingLabel.3 18 16 48 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 20 12 ]
+            [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_stop" ]
+            %rez_cmp_local_text_TimeLabel.4 = local;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.4 20 16 44 ];
+            symbol [ WatchUi %tmp.53 20 51 58 ];
+            %tmp.53 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.54 20 59 63 ];
+            %tmp.54 = getv function ? %tmp.53 :Text;
+            %tmp.55 = newd 6;
+            %tmp.57 = const :identifier;
+            symbol [ identifier %tmp.57 20 66 76 const ];
+            %tmp.58 = "TimeLabel";
+            %tmp.59 = dup %tmp.55;
+            %tmp.60 = aputv %tmp.59 %tmp.57 %tmp.58;
+            %tmp.62 = const :color;
+            symbol [ color %tmp.62 20 92 97 const ];
+            symbol [ Graphics %tmp.63 20 99 107 ];
+            %tmp.63 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.64 20 108 119 ];
+            %tmp.64 = getv %tmp.63 :COLOR_WHITE;
+            %tmp.65 = dup %tmp.60;
+            %tmp.66 = aputv %tmp.65 %tmp.62 %tmp.64;
+            %tmp.68 = const :locX;
+            symbol [ locX %tmp.68 20 122 126 const ];
+            %tmp.69 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.69 20 129 158 ];
+            %tmp.70 = 0.5;
+            %tmp.71 = mul %tmp.69 %tmp.70;
+            %tmp.72 = dup %tmp.66;
+            %tmp.73 = aputv %tmp.72 %tmp.68 %tmp.71;
+            %tmp.75 = const :locY;
+            symbol [ locY %tmp.75 20 168 172 const ];
+            %tmp.76 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            symbol [ rez_cmp_local_var_dc_getHeight %tmp.76 20 175 205 ];
+            %tmp.77 = 48;
+            %tmp.78 = 100.0;
+            %tmp.79 = div %tmp.77 %tmp.78;
+            %tmp.80 = mul %tmp.76 %tmp.79;
+            %tmp.81 = dup %tmp.73;
+            %tmp.82 = aputv %tmp.81 %tmp.75 %tmp.80;
+            %tmp.84 = const :justification;
+            symbol [ justification %tmp.84 20 224 237 const ];
+            symbol [ Graphics %tmp.85 20 239 247 ];
+            %tmp.85 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.86 20 248 267 ];
+            %tmp.86 = getv %tmp.85 :TEXT_JUSTIFY_CENTER;
+            %tmp.87 = dup %tmp.82;
+            %tmp.88 = aputv %tmp.87 %tmp.84 %tmp.86;
+            %tmp.90 = const :font;
+            symbol [ font %tmp.90 20 270 274 const ];
+            symbol [ Graphics %tmp.91 20 276 284 ];
+            %tmp.91 = getm $.Toybox.Graphics;
+            symbol [ FONT_XTINY %tmp.92 20 285 295 ];
+            %tmp.92 = getv %tmp.91 :FONT_XTINY;
+            %tmp.93 = dup %tmp.88;
+            %tmp.94 = aputv %tmp.93 %tmp.90 %tmp.92;
+            %tmp.51 = newc %tmp.54 (%tmp.94);
+            lputv %rez_cmp_local_text_TimeLabel.4 %tmp.51;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.4 20 16 44 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 22 12 ]
+            [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_stop" ]
+            %rez_cmp_local_text_QuestionLabel.5 = local;
+            symbol [ rez_cmp_local_text_QuestionLabel %rez_cmp_local_text_QuestionLabel.5 22 16 48 ];
+            symbol [ WatchUi %tmp.97 22 55 62 ];
+            %tmp.97 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.98 22 63 67 ];
+            %tmp.98 = getv function ? %tmp.97 :Text;
+            %tmp.99 = newd 6;
+            %tmp.101 = const :identifier;
+            symbol [ identifier %tmp.101 22 70 80 const ];
+            %tmp.102 = "QuestionLabel";
+            %tmp.103 = dup %tmp.99;
+            %tmp.104 = aputv %tmp.103 %tmp.101 %tmp.102;
+            %tmp.106 = const :color;
+            symbol [ color %tmp.106 22 100 105 const ];
+            symbol [ Graphics %tmp.107 22 107 115 ];
+            %tmp.107 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.108 22 116 127 ];
+            %tmp.108 = getv %tmp.107 :COLOR_WHITE;
+            %tmp.109 = dup %tmp.104;
+            %tmp.110 = aputv %tmp.109 %tmp.106 %tmp.108;
+            %tmp.112 = const :locX;
+            symbol [ locX %tmp.112 22 130 134 const ];
+            %tmp.113 = lgetv %rez_cmp_local_var_dc_getWidth.2;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.113 22 137 166 ];
+            %tmp.114 = 30;
+            %tmp.115 = 100.0;
+            %tmp.116 = div %tmp.114 %tmp.115;
+            %tmp.117 = mul %tmp.113 %tmp.116;
+            %tmp.118 = dup %tmp.110;
+            %tmp.119 = aputv %tmp.118 %tmp.112 %tmp.117;
+            %tmp.121 = const :locY;
+            symbol [ locY %tmp.121 22 185 189 const ];
+            %tmp.122 = lgetv %rez_cmp_local_var_dc_getHeight.1;
+            symbol [ rez_cmp_local_var_dc_getHeight %tmp.122 22 192 222 ];
+            %tmp.123 = 58;
+            %tmp.124 = 100.0;
+            %tmp.125 = div %tmp.123 %tmp.124;
+            %tmp.126 = mul %tmp.122 %tmp.125;
+            %tmp.127 = dup %tmp.119;
+            %tmp.128 = aputv %tmp.127 %tmp.121 %tmp.126;
+            %tmp.130 = const :justification;
+            symbol [ justification %tmp.130 22 241 254 const ];
+            symbol [ Graphics %tmp.131 22 256 264 ];
+            %tmp.131 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.132 22 265 284 ];
+            %tmp.132 = getv %tmp.131 :TEXT_JUSTIFY_CENTER;
+            %tmp.133 = dup %tmp.128;
+            %tmp.134 = aputv %tmp.133 %tmp.130 %tmp.132;
+            %tmp.136 = const :font;
+            symbol [ font %tmp.136 22 287 291 const ];
+            symbol [ Graphics %tmp.137 22 293 301 ];
+            %tmp.137 = getm $.Toybox.Graphics;
+            symbol [ FONT_XTINY %tmp.138 22 302 312 ];
+            %tmp.138 = getv %tmp.137 :FONT_XTINY;
+            %tmp.139 = dup %tmp.134;
+            %tmp.140 = aputv %tmp.139 %tmp.136 %tmp.138;
+            %tmp.95 = newc %tmp.98 (%tmp.140);
+            lputv %rez_cmp_local_text_QuestionLabel.5 %tmp.95;
+            symbol [ rez_cmp_local_text_QuestionLabel %rez_cmp_local_text_QuestionLabel.5 22 16 48 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 24 12 ]
+            %tmp.141 = newa 3 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.141 24 121 126 ];
+            symbol [ WatchUi %tmp.141 24 127 134 ];
+            symbol [ Drawable %tmp.141 24 135 143 ];
+            %tmp.142 = lgetv %rez_cmp_local_text_GreetingLabel.3;
+            symbol [ rez_cmp_local_text_GreetingLabel %tmp.142 24 20 52 ];
+            %tmp.143 = dup %tmp.141;
+            %tmp.144 = aputv %tmp.143 0 %tmp.142;
+            %tmp.145 = lgetv %rez_cmp_local_text_TimeLabel.4;
+            symbol [ rez_cmp_local_text_TimeLabel %tmp.145 24 54 82 ];
+            %tmp.146 = dup %tmp.144;
+            %tmp.147 = aputv %tmp.146 1 %tmp.145;
+            %tmp.148 = lgetv %rez_cmp_local_text_QuestionLabel.5;
+            symbol [ rez_cmp_local_text_QuestionLabel %tmp.148 24 84 116 ];
+            %tmp.149 = dup %tmp.147;
+            %tmp.150 = aputv %tmp.149 2 %tmp.148;
+            ret %tmp.150;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_gen_006_B4426_00_source_Rez_mcgen_13_73_25_8_stop:
+        }
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 28; @symbol_moduledef = [Strings,28,11,18]; ]
+    module Strings {
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 28; ]
+        <init> {
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 29; @position = 27; initialized = true; @symbol_vardef = [AppName,29,27,34]; @symbol_type<0> = [ResourceId,29,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 32; @symbol_moduledef = [Styles,32,11,17]; ]
+    module Styles {
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 32; ]
+        <init> {
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 33; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,33,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 33; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 34 18 ]
+                symbol [ Graphics %tmp.151 34 34 42 ];
+                %tmp.151 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.152 34 43 62 ];
+                %tmp.152 = getv %tmp.151 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.152;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 35 18 ]
+                symbol [ Graphics %tmp.153 35 25 33 ];
+                %tmp.153 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.154 35 34 44 ];
+                %tmp.154 = getv %tmp.153 :FONT_SMALL;
+                putv self :font %tmp.154;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 34; @position = 18; @symbol_constdef = [justification,34,18,31]; ]
+            const justification;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 35; @position = 18; @symbol_constdef = [font,35,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 38; @symbol_moduledef = [system_size__menu_header,38,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 38; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 39; @position = 18; @symbol_constdef = [width,39,18,23]; @symbol_type<0> = [Number,39,27,33]; ]
+            const width as Number = 390;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 40; @position = 18; @symbol_constdef = [height,40,18,24]; @symbol_type<0> = [Number,40,28,34]; ]
+            const height as Number = 90;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 43; @symbol_moduledef = [system_loc__hint_button_left_bottom,43,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 43; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 44; @position = 18; @symbol_constdef = [exclude,44,18,25]; @symbol_type<0> = [Boolean,44,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 47; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,47,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 47; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 48 18 ]
+                symbol [ Graphics %tmp.155 48 34 42 ];
+                %tmp.155 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.156 48 43 62 ];
+                %tmp.156 = getv %tmp.155 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.157 48 63 71 ];
+                %tmp.157 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.158 48 72 92 ];
+                %tmp.158 = getv %tmp.157 :TEXT_JUSTIFY_VCENTER;
+                %tmp.159 = bitor %tmp.156 %tmp.158;
+                putv self :justification %tmp.159;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 49 18 ]
+                symbol [ Graphics %tmp.160 49 25 33 ];
+                %tmp.160 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.161 49 34 44 ];
+                %tmp.161 = getv %tmp.160 :FONT_SMALL;
+                putv self :font %tmp.161;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 48; @position = 18; @symbol_constdef = [justification,48,18,31]; ]
+            const justification;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 49; @position = 18; @symbol_constdef = [font,49,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 52; @symbol_moduledef = [prompt_loc__body_no_title,52,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 52; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 53; @position = 18; @symbol_constdef = [x,53,18,19]; @symbol_type<0> = [Number,53,23,29]; ]
+            const x as Number = 39;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 54; @position = 18; @symbol_constdef = [y,54,18,19]; @symbol_type<0> = [Number,54,23,29]; ]
+            const y as Number = 58;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 57; @symbol_moduledef = [system_icon_dark__about,57,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 57; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 58; @position = 18; @symbol_constdef = [filename,58,18,26]; @symbol_type<0> = [String,58,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__about.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 59; @position = 18; @symbol_constdef = [compress,59,18,26]; @symbol_type<0> = [String,59,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 60; @position = 18; @symbol_constdef = [dithering,60,18,27]; @symbol_type<0> = [String,60,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [automaticPalette,61,18,34]; @symbol_type<0> = [String,61,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 62; @position = 18; @symbol_constdef = [packingFormat,62,18,31]; @symbol_type<0> = [String,62,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 65; @symbol_moduledef = [system_icon_light__question,65,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 65; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [filename,66,18,26]; @symbol_type<0> = [String,66,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__question.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 67; @position = 18; @symbol_constdef = [compress,67,18,26]; @symbol_type<0> = [String,67,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 68; @position = 18; @symbol_constdef = [dithering,68,18,27]; @symbol_type<0> = [String,68,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 69; @position = 18; @symbol_constdef = [automaticPalette,69,18,34]; @symbol_type<0> = [String,69,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 70; @position = 18; @symbol_constdef = [packingFormat,70,18,31]; @symbol_type<0> = [String,70,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 73; @symbol_moduledef = [system_loc__hint_button_left_top,73,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 73; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 74; @position = 18; @symbol_constdef = [exclude,74,18,25]; @symbol_type<0> = [Boolean,74,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 77; @symbol_moduledef = [prompt_font__title,77,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 77; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 78 18 ]
+                symbol [ Graphics %tmp.162 78 34 42 ];
+                %tmp.162 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.163 78 43 62 ];
+                %tmp.163 = getv %tmp.162 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.164 78 63 71 ];
+                %tmp.164 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.165 78 72 92 ];
+                %tmp.165 = getv %tmp.164 :TEXT_JUSTIFY_VCENTER;
+                %tmp.166 = bitor %tmp.163 %tmp.165;
+                putv self :justification %tmp.166;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 79 18 ]
+                symbol [ Graphics %tmp.167 79 25 33 ];
+                %tmp.167 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.168 79 34 44 ];
+                %tmp.168 = getv %tmp.167 :FONT_XTINY;
+                putv self :font %tmp.168;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 78; @position = 18; @symbol_constdef = [justification,78,18,31]; ]
+            const justification;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 79; @position = 18; @symbol_constdef = [font,79,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 82; @symbol_moduledef = [system_icon_dark__discard,82,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 82; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 83; @position = 18; @symbol_constdef = [filename,83,18,26]; @symbol_type<0> = [String,83,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__discard.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 84; @position = 18; @symbol_constdef = [compress,84,18,26]; @symbol_type<0> = [String,84,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 85; @position = 18; @symbol_constdef = [dithering,85,18,27]; @symbol_type<0> = [String,85,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 86; @position = 18; @symbol_constdef = [automaticPalette,86,18,34]; @symbol_type<0> = [String,86,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [packingFormat,87,18,31]; @symbol_type<0> = [String,87,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 90; @symbol_moduledef = [system_size__menu_item,90,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 90; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 91; @position = 18; @symbol_constdef = [width,91,18,23]; @symbol_type<0> = [Number,91,27,33]; ]
+            const width as Number = 390;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [height,92,18,24]; @symbol_type<0> = [Number,92,28,34]; ]
+            const height as Number = 100;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 95; @symbol_moduledef = [system_color_dark__text,95,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 95; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 97 18 ]
+                symbol [ Graphics %tmp.169 97 31 39 ];
+                %tmp.169 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.170 97 40 57 ];
+                %tmp.170 = getv %tmp.169 :COLOR_TRANSPARENT;
+                putv self :background %tmp.170;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 96; @position = 18; @symbol_constdef = [color,96,18,23]; @symbol_type<0> = [Number,96,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [background,97,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 100; @symbol_moduledef = [system_icon_destructive__discard,100,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 100; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 101; @position = 18; @symbol_constdef = [filename,101,18,26]; @symbol_type<0> = [String,101,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_destructive__discard.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 102; @position = 18; @symbol_constdef = [dithering,102,18,27]; @symbol_type<0> = [String,102,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 103; @position = 18; @symbol_constdef = [packingFormat,103,18,31]; @symbol_type<0> = [String,103,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 106; @symbol_moduledef = [system_icon_dark__hint_action_menu,106,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 106; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [filename,107,18,26]; @symbol_type<0> = [String,107,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__hint_action_menu.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 108; @position = 18; @symbol_constdef = [dithering,108,18,27]; @symbol_type<0> = [String,108,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 109; @position = 18; @symbol_constdef = [packingFormat,109,18,31]; @symbol_type<0> = [String,109,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 112; @symbol_moduledef = [prompt_size__title,112,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 112; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [width,113,18,23]; @symbol_type<0> = [Number,113,27,33]; ]
+            const width as Number = 165;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [height,114,18,24]; @symbol_type<0> = [Number,114,28,34]; ]
+            const height as Number = 70;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 117; @symbol_moduledef = [confirmation_font__body,117,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 117; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 118 18 ]
+                symbol [ Graphics %tmp.171 118 34 42 ];
+                %tmp.171 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.172 118 43 62 ];
+                %tmp.172 = getv %tmp.171 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.173 118 63 71 ];
+                %tmp.173 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.174 118 72 92 ];
+                %tmp.174 = getv %tmp.173 :TEXT_JUSTIFY_VCENTER;
+                %tmp.175 = bitor %tmp.172 %tmp.174;
+                putv self :justification %tmp.175;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 119 18 ]
+                symbol [ Graphics %tmp.176 119 25 33 ];
+                %tmp.176 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.177 119 34 43 ];
+                %tmp.177 = getv %tmp.176 :FONT_TINY;
+                putv self :font %tmp.177;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 118; @position = 18; @symbol_constdef = [justification,118,18,31]; ]
+            const justification;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 119; @position = 18; @symbol_constdef = [font,119,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 122; @symbol_moduledef = [system_color_dark__background,122,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 122; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 123; @position = 18; @symbol_constdef = [color,123,18,23]; @symbol_type<0> = [Number,123,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [background,124,18,28]; @symbol_type<0> = [Number,124,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 127; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,127,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 127; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 128; @position = 18; @symbol_constdef = [exclude,128,18,25]; @symbol_type<0> = [Boolean,128,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 131; @symbol_moduledef = [system_size__launch_icon,131,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 131; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 132; @position = 18; @symbol_constdef = [scaleX,132,18,24]; @symbol_type<0> = [Number,132,28,34]; ]
+            const scaleX as Number = 70;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 133; @position = 18; @symbol_constdef = [scaleY,133,18,24]; @symbol_type<0> = [Number,133,28,34]; ]
+            const scaleY as Number = 70;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [scaleRelativeTo,134,18,33]; @symbol_type<0> = [String,134,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 137; @symbol_moduledef = [confirmation_input__confirm,137,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 137; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 138; @position = 18; @symbol_constdef = [y1,138,18,20]; @symbol_type<0> = [Number,138,24,30]; ]
+            const y1 as Number = 297;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 139; @position = 18; @symbol_constdef = [x1,139,18,20]; @symbol_type<0> = [Number,139,24,30]; ]
+            const x1 as Number = 72;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 140; @position = 18; @symbol_constdef = [y2,140,18,20]; @symbol_type<0> = [Number,140,24,30]; ]
+            const y2 as Number = 390;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 141; @position = 18; @symbol_constdef = [x2,141,18,20]; @symbol_type<0> = [Number,141,24,30]; ]
+            const x2 as Number = 318;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 144; @symbol_moduledef = [prompt_font__body_with_title,144,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 144; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 145 18 ]
+                symbol [ Graphics %tmp.178 145 34 42 ];
+                %tmp.178 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.179 145 43 62 ];
+                %tmp.179 = getv %tmp.178 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.179;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 146 18 ]
+                symbol [ Graphics %tmp.180 146 25 33 ];
+                %tmp.180 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.181 146 34 43 ];
+                %tmp.181 = getv %tmp.180 :FONT_TINY;
+                putv self :font %tmp.181;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 145; @position = 18; @symbol_constdef = [justification,145,18,31]; ]
+            const justification;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 146; @position = 18; @symbol_constdef = [font,146,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 149; @symbol_moduledef = [confirmation_loc__body,149,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 149; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 150; @position = 18; @symbol_constdef = [x,150,18,19]; @symbol_type<0> = [Number,150,23,29]; ]
+            const x as Number = 80;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 151; @position = 18; @symbol_constdef = [y,151,18,19]; @symbol_type<0> = [Number,151,23,29]; ]
+            const y as Number = 78;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 154; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,154,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 154; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 155; @position = 18; @symbol_constdef = [exclude,155,18,25]; @symbol_type<0> = [Boolean,155,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 158; @symbol_moduledef = [prompt_color_dark__background,158,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 158; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 159; @position = 18; @symbol_constdef = [color,159,18,23]; @symbol_type<0> = [Number,159,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 160; @position = 18; @symbol_constdef = [background,160,18,28]; @symbol_type<0> = [Number,160,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 163; @symbol_moduledef = [system_icon_destructive__hint_action_menu,163,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 163; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [filename,164,18,26]; @symbol_type<0> = [String,164,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_destructive__hint_action_menu.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 165; @position = 18; @symbol_constdef = [dithering,165,18,27]; @symbol_type<0> = [String,165,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 166; @position = 18; @symbol_constdef = [packingFormat,166,18,31]; @symbol_type<0> = [String,166,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 169; @symbol_moduledef = [system_loc__hint_action_menu,169,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 169; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [x,170,18,19]; @symbol_type<0> = [Number,170,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 171; @position = 18; @symbol_constdef = [horizontalJustification,171,18,41]; @symbol_type<0> = [String,171,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 172; @position = 18; @symbol_constdef = [y,172,18,19]; @symbol_type<0> = [Number,172,23,29]; ]
+            const y as Number = 318;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 175; @symbol_moduledef = [confirmation_icon__hint_confirm,175,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 175; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 176; @position = 18; @symbol_constdef = [filename,176,18,26]; @symbol_type<0> = [String,176,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 177; @position = 18; @symbol_constdef = [dithering,177,18,27]; @symbol_type<0> = [String,177,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 178; @position = 18; @symbol_constdef = [packingFormat,178,18,31]; @symbol_type<0> = [String,178,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 181; @symbol_moduledef = [system_loc__hint_button_left_middle,181,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 181; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 182; @position = 18; @symbol_constdef = [exclude,182,18,25]; @symbol_type<0> = [Boolean,182,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 185; @symbol_moduledef = [prompt_size__body_no_title,185,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 185; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 186; @position = 18; @symbol_constdef = [width,186,18,23]; @symbol_type<0> = [Number,186,27,33]; ]
+            const width as Number = 312;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 187; @position = 18; @symbol_constdef = [height,187,18,24]; @symbol_type<0> = [Number,187,28,34]; ]
+            const height as Number = 253;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 190; @symbol_moduledef = [system_icon_light__hint_button_left_top,190,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 190; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 191; @position = 18; @symbol_constdef = [exclude,191,18,25]; @symbol_type<0> = [Boolean,191,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 194; @symbol_moduledef = [prompt_color_light__background,194,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 194; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 195; @position = 18; @symbol_constdef = [color,195,18,23]; @symbol_type<0> = [Number,195,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 196; @position = 18; @symbol_constdef = [background,196,18,28]; @symbol_type<0> = [Number,196,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 199; @symbol_moduledef = [confirmation_input__delete,199,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 199; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 200 18 ]
+                symbol [ WatchUi %tmp.182 200 27 34 ];
+                %tmp.182 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.183 200 35 44 ];
+                %tmp.183 = getv %tmp.182 :KEY_ENTER;
+                putv self :button %tmp.183;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 200; @position = 18; @symbol_constdef = [button,200,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 203; @symbol_moduledef = [system_icon_dark__hint_button_left_top,203,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 203; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 204; @position = 18; @symbol_constdef = [exclude,204,18,25]; @symbol_type<0> = [Boolean,204,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 207; @symbol_moduledef = [system_input__action_menu,207,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 207; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [y1,208,18,20]; @symbol_type<0> = [Number,208,24,30]; ]
+            const y1 as Number = 318;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 209; @position = 18; @symbol_constdef = [x1,209,18,20]; @symbol_type<0> = [Number,209,24,30]; ]
+            const x1 as Number = 97;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 210; @position = 18; @symbol_constdef = [y2,210,18,20]; @symbol_type<0> = [Number,210,24,30]; ]
+            const y2 as Number = 390;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 211; @position = 18; @symbol_constdef = [x2,211,18,20]; @symbol_type<0> = [Number,211,24,30]; ]
+            const x2 as Number = 293;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 214; @symbol_moduledef = [system_icon_light__save,214,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 214; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 215; @position = 18; @symbol_constdef = [filename,215,18,26]; @symbol_type<0> = [String,215,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__save.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 216; @position = 18; @symbol_constdef = [compress,216,18,26]; @symbol_type<0> = [String,216,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [dithering,217,18,27]; @symbol_type<0> = [String,217,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 218; @position = 18; @symbol_constdef = [automaticPalette,218,18,34]; @symbol_type<0> = [String,218,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 219; @position = 18; @symbol_constdef = [packingFormat,219,18,31]; @symbol_type<0> = [String,219,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 222; @symbol_moduledef = [prompt_color_light__body,222,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 222; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 224 18 ]
+                symbol [ Graphics %tmp.184 224 31 39 ];
+                %tmp.184 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.185 224 40 57 ];
+                %tmp.185 = getv %tmp.184 :COLOR_TRANSPARENT;
+                putv self :background %tmp.185;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 223; @position = 18; @symbol_constdef = [color,223,18,23]; @symbol_type<0> = [Number,223,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 224; @position = 18; @symbol_constdef = [background,224,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 227; @symbol_moduledef = [system_loc__subwindow,227,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 227; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 228; @position = 18; @symbol_constdef = [exclude,228,18,25]; @symbol_type<0> = [Boolean,228,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 231; @symbol_moduledef = [system_icon_light__warning,231,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 231; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [filename,232,18,26]; @symbol_type<0> = [String,232,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__warning.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 233; @position = 18; @symbol_constdef = [compress,233,18,26]; @symbol_type<0> = [String,233,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [dithering,234,18,27]; @symbol_type<0> = [String,234,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 235; @position = 18; @symbol_constdef = [automaticPalette,235,18,34]; @symbol_type<0> = [String,235,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 236; @position = 18; @symbol_constdef = [packingFormat,236,18,31]; @symbol_type<0> = [String,236,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 239; @symbol_moduledef = [confirmation_color_light__body,239,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 239; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 241 18 ]
+                symbol [ Graphics %tmp.186 241 31 39 ];
+                %tmp.186 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.187 241 40 57 ];
+                %tmp.187 = getv %tmp.186 :COLOR_TRANSPARENT;
+                putv self :background %tmp.187;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 240; @position = 18; @symbol_constdef = [color,240,18,23]; @symbol_type<0> = [Number,240,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 241; @position = 18; @symbol_constdef = [background,241,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 244; @symbol_moduledef = [confirmation_icon_light__hint_keep,244,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 244; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [filename,245,18,26]; @symbol_type<0> = [String,245,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [dithering,246,18,27]; @symbol_type<0> = [String,246,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 247; @position = 18; @symbol_constdef = [packingFormat,247,18,31]; @symbol_type<0> = [String,247,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 250; @symbol_moduledef = [activity_color_light__background,250,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 250; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 251; @position = 18; @symbol_constdef = [color,251,18,23]; @symbol_type<0> = [Number,251,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 252; @position = 18; @symbol_constdef = [background,252,18,28]; @symbol_type<0> = [Number,252,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 255; @symbol_moduledef = [system_icon_positive__hint_button_right_top,255,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 255; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [filename,256,18,26]; @symbol_type<0> = [String,256,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 257; @position = 18; @symbol_constdef = [dithering,257,18,27]; @symbol_type<0> = [String,257,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 258; @position = 18; @symbol_constdef = [packingFormat,258,18,31]; @symbol_type<0> = [String,258,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 261; @symbol_moduledef = [system_size__screen,261,15,34]; ]
+        module system_size__screen {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 261; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 262; @position = 18; @symbol_constdef = [width,262,18,23]; @symbol_type<0> = [Number,262,27,33]; ]
+            const width as Number = 390;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 263; @position = 18; @symbol_constdef = [height,263,18,24]; @symbol_type<0> = [Number,263,28,34]; ]
+            const height as Number = 390;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 266; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,266,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 266; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 267; @position = 18; @symbol_constdef = [filename,267,18,26]; @symbol_type<0> = [String,267,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 268; @position = 18; @symbol_constdef = [dithering,268,18,27]; @symbol_type<0> = [String,268,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 269; @position = 18; @symbol_constdef = [packingFormat,269,18,31]; @symbol_type<0> = [String,269,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 272; @symbol_moduledef = [system_color_light__background,272,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 272; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 273; @position = 18; @symbol_constdef = [color,273,18,23]; @symbol_type<0> = [Number,273,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [background,274,18,28]; @symbol_type<0> = [Number,274,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 277; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,277,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 277; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 278; @position = 18; @symbol_constdef = [filename,278,18,26]; @symbol_type<0> = [String,278,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [dithering,279,18,27]; @symbol_type<0> = [String,279,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [packingFormat,280,18,31]; @symbol_type<0> = [String,280,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 283; @symbol_moduledef = [confirmation_loc__hint_confirm,283,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 283; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 284; @position = 18; @symbol_constdef = [x,284,18,19]; @symbol_type<0> = [Number,284,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [horizontalJustification,285,18,41]; @symbol_type<0> = [String,285,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [y,286,18,19]; @symbol_type<0> = [Number,286,23,29]; ]
+            const y as Number = 297;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 289; @symbol_moduledef = [activity_color_dark__text,289,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 289; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 291 18 ]
+                symbol [ Graphics %tmp.188 291 31 39 ];
+                %tmp.188 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.189 291 40 57 ];
+                %tmp.189 = getv %tmp.188 :COLOR_TRANSPARENT;
+                putv self :background %tmp.189;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [color,290,18,23]; @symbol_type<0> = [Number,290,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 291; @position = 18; @symbol_constdef = [background,291,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 294; @symbol_moduledef = [confirmation_input__keep,294,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 294; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 295 18 ]
+                symbol [ WatchUi %tmp.190 295 27 34 ];
+                %tmp.190 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ESC %tmp.191 295 35 42 ];
+                %tmp.191 = getv %tmp.190 :KEY_ESC;
+                putv self :button %tmp.191;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [button,295,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 298; @symbol_moduledef = [prompt_loc__body_with_title,298,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 298; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [x,299,18,19]; @symbol_type<0> = [Number,299,23,29]; ]
+            const x as Number = 39;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [y,300,18,19]; @symbol_type<0> = [Number,300,23,29]; ]
+            const y as Number = 98;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 303; @symbol_moduledef = [system_icon_dark__search,303,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 303; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 304; @position = 18; @symbol_constdef = [filename,304,18,26]; @symbol_type<0> = [String,304,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__search.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [compress,305,18,26]; @symbol_type<0> = [String,305,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 306; @position = 18; @symbol_constdef = [dithering,306,18,27]; @symbol_type<0> = [String,306,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [automaticPalette,307,18,34]; @symbol_type<0> = [String,307,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 308; @position = 18; @symbol_constdef = [packingFormat,308,18,31]; @symbol_type<0> = [String,308,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 311; @symbol_moduledef = [activity_color_light__text,311,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 311; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 313 18 ]
+                symbol [ Graphics %tmp.192 313 31 39 ];
+                %tmp.192 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.193 313 40 57 ];
+                %tmp.193 = getv %tmp.192 :COLOR_TRANSPARENT;
+                putv self :background %tmp.193;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [color,312,18,23]; @symbol_type<0> = [Number,312,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 313; @position = 18; @symbol_constdef = [background,313,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 316; @symbol_moduledef = [confirmation_icon__hint_keep,316,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 316; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 317; @position = 18; @symbol_constdef = [filename,317,18,26]; @symbol_type<0> = [String,317,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 318; @position = 18; @symbol_constdef = [dithering,318,18,27]; @symbol_type<0> = [String,318,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 319; @position = 18; @symbol_constdef = [packingFormat,319,18,31]; @symbol_type<0> = [String,319,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 322; @symbol_moduledef = [system_icon_dark__save,322,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 322; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 323; @position = 18; @symbol_constdef = [filename,323,18,26]; @symbol_type<0> = [String,323,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__save.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [compress,324,18,26]; @symbol_type<0> = [String,324,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [dithering,325,18,27]; @symbol_type<0> = [String,325,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 326; @position = 18; @symbol_constdef = [automaticPalette,326,18,34]; @symbol_type<0> = [String,326,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 327; @position = 18; @symbol_constdef = [packingFormat,327,18,31]; @symbol_type<0> = [String,327,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 330; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,330,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 330; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 331; @position = 18; @symbol_constdef = [exclude,331,18,25]; @symbol_type<0> = [Boolean,331,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 334; @symbol_moduledef = [system_icon_light__search,334,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 334; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 335; @position = 18; @symbol_constdef = [filename,335,18,26]; @symbol_type<0> = [String,335,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__search.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 336; @position = 18; @symbol_constdef = [compress,336,18,26]; @symbol_type<0> = [String,336,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 337; @position = 18; @symbol_constdef = [dithering,337,18,27]; @symbol_type<0> = [String,337,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 338; @position = 18; @symbol_constdef = [automaticPalette,338,18,34]; @symbol_type<0> = [String,338,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [packingFormat,339,18,31]; @symbol_type<0> = [String,339,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 342; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,342,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 342; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 343; @position = 18; @symbol_constdef = [exclude,343,18,25]; @symbol_type<0> = [Boolean,343,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 346; @symbol_moduledef = [system_icon_positive__hint_button_left_top,346,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 346; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [exclude,347,18,25]; @symbol_type<0> = [Boolean,347,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 350; @symbol_moduledef = [system_loc__hint_button_right_bottom,350,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 350; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 351; @position = 18; @symbol_constdef = [x,351,18,19]; @symbol_type<0> = [Number,351,23,29]; ]
+            const x as Number = 304;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 352; @position = 18; @symbol_constdef = [y,352,18,19]; @symbol_type<0> = [Number,352,23,29]; ]
+            const y as Number = 234;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 355; @symbol_moduledef = [confirmation_icon_dark__hint_reject,355,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 355; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 356; @position = 18; @symbol_constdef = [filename,356,18,26]; @symbol_type<0> = [String,356,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 357; @position = 18; @symbol_constdef = [dithering,357,18,27]; @symbol_type<0> = [String,357,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 358; @position = 18; @symbol_constdef = [packingFormat,358,18,31]; @symbol_type<0> = [String,358,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 361; @symbol_moduledef = [confirmation_color_dark__body,361,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 361; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 363 18 ]
+                symbol [ Graphics %tmp.194 363 31 39 ];
+                %tmp.194 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.195 363 40 57 ];
+                %tmp.195 = getv %tmp.194 :COLOR_TRANSPARENT;
+                putv self :background %tmp.195;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 362; @position = 18; @symbol_constdef = [color,362,18,23]; @symbol_type<0> = [Number,362,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 363; @position = 18; @symbol_constdef = [background,363,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 366; @symbol_moduledef = [confirmation_icon_light__hint_confirm,366,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 366; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 367; @position = 18; @symbol_constdef = [filename,367,18,26]; @symbol_type<0> = [String,367,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [dithering,368,18,27]; @symbol_type<0> = [String,368,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [packingFormat,369,18,31]; @symbol_type<0> = [String,369,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 372; @symbol_moduledef = [prompt_color_dark__title,372,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 372; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 374 18 ]
+                symbol [ Graphics %tmp.196 374 31 39 ];
+                %tmp.196 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.197 374 40 57 ];
+                %tmp.197 = getv %tmp.196 :COLOR_TRANSPARENT;
+                putv self :background %tmp.197;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [color,373,18,23]; @symbol_type<0> = [Number,373,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [background,374,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 377; @symbol_moduledef = [system_icon_destructive__cancel,377,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 377; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [filename,378,18,26]; @symbol_type<0> = [String,378,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_destructive__cancel.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [dithering,379,18,27]; @symbol_type<0> = [String,379,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 380; @position = 18; @symbol_constdef = [packingFormat,380,18,31]; @symbol_type<0> = [String,380,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 383; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,383,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 383; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [filename,384,18,26]; @symbol_type<0> = [String,384,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 385; @position = 18; @symbol_constdef = [dithering,385,18,27]; @symbol_type<0> = [String,385,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 386; @position = 18; @symbol_constdef = [packingFormat,386,18,31]; @symbol_type<0> = [String,386,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 389; @symbol_moduledef = [prompt_loc__title,389,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 389; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 390; @position = 18; @symbol_constdef = [x,390,18,19]; @symbol_type<0> = [Number,390,23,29]; ]
+            const x as Number = 113;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 391; @position = 18; @symbol_constdef = [y,391,18,19]; @symbol_type<0> = [Number,391,23,29]; ]
+            const y as Number = 19;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 394; @symbol_moduledef = [confirmation_font_enhanced_readability__body,394,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 394; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 395 18 ]
+                symbol [ Graphics %tmp.198 395 34 42 ];
+                %tmp.198 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.199 395 43 62 ];
+                %tmp.199 = getv %tmp.198 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.200 395 63 71 ];
+                %tmp.200 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.201 395 72 92 ];
+                %tmp.201 = getv %tmp.200 :TEXT_JUSTIFY_VCENTER;
+                %tmp.202 = bitor %tmp.199 %tmp.201;
+                putv self :justification %tmp.202;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 396 18 ]
+                symbol [ Graphics %tmp.203 396 25 33 ];
+                %tmp.203 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.204 396 34 44 ];
+                %tmp.204 = getv %tmp.203 :FONT_SMALL;
+                putv self :font %tmp.204;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 395; @position = 18; @symbol_constdef = [justification,395,18,31]; ]
+            const justification;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 396; @position = 18; @symbol_constdef = [font,396,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 399; @symbol_moduledef = [prompt_color_light__title,399,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 399; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 401 18 ]
+                symbol [ Graphics %tmp.205 401 31 39 ];
+                %tmp.205 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.206 401 40 57 ];
+                %tmp.206 = getv %tmp.205 :COLOR_TRANSPARENT;
+                putv self :background %tmp.206;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 400; @position = 18; @symbol_constdef = [color,400,18,23]; @symbol_type<0> = [Number,400,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 401; @position = 18; @symbol_constdef = [background,401,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 404; @symbol_moduledef = [system_icon_dark__hint_button_right_top,404,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 404; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [filename,405,18,26]; @symbol_type<0> = [String,405,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 406; @position = 18; @symbol_constdef = [dithering,406,18,27]; @symbol_type<0> = [String,406,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 407; @position = 18; @symbol_constdef = [packingFormat,407,18,31]; @symbol_type<0> = [String,407,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 410; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,410,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 410; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 411; @position = 18; @symbol_constdef = [exclude,411,18,25]; @symbol_type<0> = [Boolean,411,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 414; @symbol_moduledef = [confirmation_icon_dark__hint_keep,414,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 414; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [filename,415,18,26]; @symbol_type<0> = [String,415,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [dithering,416,18,27]; @symbol_type<0> = [String,416,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [packingFormat,417,18,31]; @symbol_type<0> = [String,417,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 420; @symbol_moduledef = [system_icon_light__cancel,420,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 420; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 421; @position = 18; @symbol_constdef = [filename,421,18,26]; @symbol_type<0> = [String,421,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__cancel.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [compress,422,18,26]; @symbol_type<0> = [String,422,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [dithering,423,18,27]; @symbol_type<0> = [String,423,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [automaticPalette,424,18,34]; @symbol_type<0> = [String,424,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 425; @position = 18; @symbol_constdef = [packingFormat,425,18,31]; @symbol_type<0> = [String,425,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 428; @symbol_moduledef = [confirmation_icon_light__hint_reject,428,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 428; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [filename,429,18,26]; @symbol_type<0> = [String,429,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [dithering,430,18,27]; @symbol_type<0> = [String,430,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [packingFormat,431,18,31]; @symbol_type<0> = [String,431,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 434; @symbol_moduledef = [system_icon_light__about,434,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 434; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 435; @position = 18; @symbol_constdef = [filename,435,18,26]; @symbol_type<0> = [String,435,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__about.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [compress,436,18,26]; @symbol_type<0> = [String,436,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [dithering,437,18,27]; @symbol_type<0> = [String,437,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 438; @position = 18; @symbol_constdef = [automaticPalette,438,18,34]; @symbol_type<0> = [String,438,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 439; @position = 18; @symbol_constdef = [packingFormat,439,18,31]; @symbol_type<0> = [String,439,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 442; @symbol_moduledef = [system_size__toast_icon,442,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 442; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [scaleX,443,18,24]; @symbol_type<0> = [Number,443,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 444; @position = 18; @symbol_constdef = [scaleY,444,18,24]; @symbol_type<0> = [Number,444,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 445; @position = 18; @symbol_constdef = [scaleRelativeTo,445,18,33]; @symbol_type<0> = [String,445,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 448; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,448,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 448; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 449; @position = 18; @symbol_constdef = [exclude,449,18,25]; @symbol_type<0> = [Boolean,449,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 452; @symbol_moduledef = [confirmation_icon__hint_reject,452,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 452; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [filename,453,18,26]; @symbol_type<0> = [String,453,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 454; @position = 18; @symbol_constdef = [dithering,454,18,27]; @symbol_type<0> = [String,454,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 455; @position = 18; @symbol_constdef = [packingFormat,455,18,31]; @symbol_type<0> = [String,455,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 458; @symbol_moduledef = [system_icon_light__hint_action_menu,458,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 458; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 459; @position = 18; @symbol_constdef = [filename,459,18,26]; @symbol_type<0> = [String,459,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__hint_action_menu.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 460; @position = 18; @symbol_constdef = [dithering,460,18,27]; @symbol_type<0> = [String,460,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [packingFormat,461,18,31]; @symbol_type<0> = [String,461,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 464; @symbol_moduledef = [system_icon_light__hint_button_right_middle,464,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 464; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 465; @position = 18; @symbol_constdef = [exclude,465,18,25]; @symbol_type<0> = [Boolean,465,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 468; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,468,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 468; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 469; @position = 18; @symbol_constdef = [exclude,469,18,25]; @symbol_type<0> = [Boolean,469,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 472; @symbol_moduledef = [confirmation_loc__hint_reject,472,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 472; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 473; @position = 18; @symbol_constdef = [x,473,18,19]; @symbol_type<0> = [Number,473,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 474; @position = 18; @symbol_constdef = [horizontalJustification,474,18,41]; @symbol_type<0> = [String,474,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [y,475,18,19]; @symbol_type<0> = [Number,475,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 478; @symbol_moduledef = [confirmation_icon_dark__hint_delete,478,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 478; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 479; @position = 18; @symbol_constdef = [filename,479,18,26]; @symbol_type<0> = [String,479,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 480; @position = 18; @symbol_constdef = [dithering,480,18,27]; @symbol_type<0> = [String,480,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [packingFormat,481,18,31]; @symbol_type<0> = [String,481,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 484; @symbol_moduledef = [activity_color_dark__background,484,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 484; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 485; @position = 18; @symbol_constdef = [color,485,18,23]; @symbol_type<0> = [Number,485,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 486; @position = 18; @symbol_constdef = [background,486,18,28]; @symbol_type<0> = [Number,486,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 489; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,489,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 489; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [exclude,490,18,25]; @symbol_type<0> = [Boolean,490,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 493; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,493,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 493; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 494; @position = 18; @symbol_constdef = [exclude,494,18,25]; @symbol_type<0> = [Boolean,494,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 497; @symbol_moduledef = [system_size__menu_icon,497,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 497; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 498; @position = 18; @symbol_constdef = [scaleX,498,18,24]; @symbol_type<0> = [Number,498,28,34]; ]
+            const scaleX as Number = 45;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 499; @position = 18; @symbol_constdef = [scaleY,499,18,24]; @symbol_type<0> = [Number,499,28,34]; ]
+            const scaleY as Number = 45;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 500; @position = 18; @symbol_constdef = [scaleRelativeTo,500,18,33]; @symbol_type<0> = [String,500,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 503; @symbol_moduledef = [system_icon_destructive__warning,503,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 503; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [filename,504,18,26]; @symbol_type<0> = [String,504,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_destructive__warning.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 505; @position = 18; @symbol_constdef = [dithering,505,18,27]; @symbol_type<0> = [String,505,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [packingFormat,506,18,31]; @symbol_type<0> = [String,506,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 509; @symbol_moduledef = [system_loc__hint_button_right_middle,509,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 509; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [exclude,510,18,25]; @symbol_type<0> = [Boolean,510,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 513; @symbol_moduledef = [system_icon_dark__cancel,513,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 513; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [filename,514,18,26]; @symbol_type<0> = [String,514,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__cancel.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [compress,515,18,26]; @symbol_type<0> = [String,515,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [dithering,516,18,27]; @symbol_type<0> = [String,516,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 517; @position = 18; @symbol_constdef = [automaticPalette,517,18,34]; @symbol_type<0> = [String,517,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 518; @position = 18; @symbol_constdef = [packingFormat,518,18,31]; @symbol_type<0> = [String,518,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 521; @symbol_moduledef = [prompt_size__body_with_title,521,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 521; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [width,522,18,23]; @symbol_type<0> = [Number,522,27,33]; ]
+            const width as Number = 312;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [height,523,18,24]; @symbol_type<0> = [Number,523,28,34]; ]
+            const height as Number = 215;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 526; @symbol_moduledef = [system_loc__hint_button_right_top,526,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 526; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 527; @position = 18; @symbol_constdef = [x,527,18,19]; @symbol_type<0> = [Number,527,23,29]; ]
+            const x as Number = 318;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [y,528,18,19]; @symbol_type<0> = [Number,528,23,29]; ]
+            const y as Number = 59;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 531; @symbol_moduledef = [system_color_light__text,531,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 531; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 533 18 ]
+                symbol [ Graphics %tmp.207 533 31 39 ];
+                %tmp.207 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.208 533 40 57 ];
+                %tmp.208 = getv %tmp.207 :COLOR_TRANSPARENT;
+                putv self :background %tmp.208;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 532; @position = 18; @symbol_constdef = [color,532,18,23]; @symbol_type<0> = [Number,532,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 533; @position = 18; @symbol_constdef = [background,533,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 536; @symbol_moduledef = [system_icon_light__check,536,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 536; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 537; @position = 18; @symbol_constdef = [filename,537,18,26]; @symbol_type<0> = [String,537,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__check.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 538; @position = 18; @symbol_constdef = [compress,538,18,26]; @symbol_type<0> = [String,538,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 539; @position = 18; @symbol_constdef = [dithering,539,18,27]; @symbol_type<0> = [String,539,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 540; @position = 18; @symbol_constdef = [automaticPalette,540,18,34]; @symbol_type<0> = [String,540,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [packingFormat,541,18,31]; @symbol_type<0> = [String,541,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 544; @symbol_moduledef = [confirmation_input__reject,544,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 544; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [y1,545,18,20]; @symbol_type<0> = [Number,545,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [x1,546,18,20]; @symbol_type<0> = [Number,546,24,30]; ]
+            const x1 as Number = 97;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 547; @position = 18; @symbol_constdef = [y2,547,18,20]; @symbol_type<0> = [Number,547,24,30]; ]
+            const y2 as Number = 76;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 548; @position = 18; @symbol_constdef = [x2,548,18,20]; @symbol_type<0> = [Number,548,24,30]; ]
+            const x2 as Number = 293;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 551; @symbol_moduledef = [system_icon_light__revert,551,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 551; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 552; @position = 18; @symbol_constdef = [filename,552,18,26]; @symbol_type<0> = [String,552,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__revert.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 553; @position = 18; @symbol_constdef = [compress,553,18,26]; @symbol_type<0> = [String,553,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [dithering,554,18,27]; @symbol_type<0> = [String,554,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [automaticPalette,555,18,34]; @symbol_type<0> = [String,555,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 556; @position = 18; @symbol_constdef = [packingFormat,556,18,31]; @symbol_type<0> = [String,556,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 559; @symbol_moduledef = [system_size__subwindow,559,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 559; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [exclude,560,18,25]; @symbol_type<0> = [Boolean,560,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 563; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,563,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 563; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [exclude,564,18,25]; @symbol_type<0> = [Boolean,564,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 567; @symbol_moduledef = [system_icon_dark__check,567,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 567; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [filename,568,18,26]; @symbol_type<0> = [String,568,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__check.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 569; @position = 18; @symbol_constdef = [compress,569,18,26]; @symbol_type<0> = [String,569,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 570; @position = 18; @symbol_constdef = [dithering,570,18,27]; @symbol_type<0> = [String,570,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 571; @position = 18; @symbol_constdef = [automaticPalette,571,18,34]; @symbol_type<0> = [String,571,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [packingFormat,572,18,31]; @symbol_type<0> = [String,572,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 575; @symbol_moduledef = [confirmation_loc__hint_keep,575,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 575; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 576; @position = 18; @symbol_constdef = [x,576,18,19]; @symbol_type<0> = [Number,576,23,29]; ]
+            const x as Number = 304;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [y,577,18,19]; @symbol_type<0> = [Number,577,23,29]; ]
+            const y as Number = 234;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 580; @symbol_moduledef = [confirmation_loc__hint_delete,580,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 580; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 581; @position = 18; @symbol_constdef = [x,581,18,19]; @symbol_type<0> = [Number,581,23,29]; ]
+            const x as Number = 309;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 582; @position = 18; @symbol_constdef = [y,582,18,19]; @symbol_type<0> = [Number,582,23,29]; ]
+            const y as Number = 47;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 585; @symbol_moduledef = [system_icon_positive__hint_action_menu,585,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 585; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 586; @position = 18; @symbol_constdef = [filename,586,18,26]; @symbol_type<0> = [String,586,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_positive__hint_action_menu.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 587; @position = 18; @symbol_constdef = [dithering,587,18,27]; @symbol_type<0> = [String,587,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 588; @position = 18; @symbol_constdef = [packingFormat,588,18,31]; @symbol_type<0> = [String,588,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 591; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,591,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 591; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 592; @position = 18; @symbol_constdef = [exclude,592,18,25]; @symbol_type<0> = [Boolean,592,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 595; @symbol_moduledef = [system_icon_light__hint_button_left_middle,595,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 595; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 596; @position = 18; @symbol_constdef = [exclude,596,18,25]; @symbol_type<0> = [Boolean,596,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 599; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,599,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 599; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [filename,600,18,26]; @symbol_type<0> = [String,600,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [dithering,601,18,27]; @symbol_type<0> = [String,601,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 602; @position = 18; @symbol_constdef = [packingFormat,602,18,31]; @symbol_type<0> = [String,602,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 605; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,605,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 605; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [filename,606,18,26]; @symbol_type<0> = [String,606,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [dithering,607,18,27]; @symbol_type<0> = [String,607,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [packingFormat,608,18,31]; @symbol_type<0> = [String,608,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 611; @symbol_moduledef = [system_icon_dark__revert,611,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 611; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [filename,612,18,26]; @symbol_type<0> = [String,612,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__revert.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [compress,613,18,26]; @symbol_type<0> = [String,613,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [dithering,614,18,27]; @symbol_type<0> = [String,614,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 615; @position = 18; @symbol_constdef = [automaticPalette,615,18,34]; @symbol_type<0> = [String,615,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 616; @position = 18; @symbol_constdef = [packingFormat,616,18,31]; @symbol_type<0> = [String,616,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 619; @symbol_moduledef = [confirmation_icon_light__hint_delete,619,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 619; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [filename,620,18,26]; @symbol_type<0> = [String,620,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [dithering,621,18,27]; @symbol_type<0> = [String,621,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [packingFormat,622,18,31]; @symbol_type<0> = [String,622,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 625; @symbol_moduledef = [system_icon_dark__question,625,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 625; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [filename,626,18,26]; @symbol_type<0> = [String,626,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__question.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [compress,627,18,26]; @symbol_type<0> = [String,627,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [dithering,628,18,27]; @symbol_type<0> = [String,628,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [automaticPalette,629,18,34]; @symbol_type<0> = [String,629,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 630; @position = 18; @symbol_constdef = [packingFormat,630,18,31]; @symbol_type<0> = [String,630,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 633; @symbol_moduledef = [system_icon_light__discard,633,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 633; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [filename,634,18,26]; @symbol_type<0> = [String,634,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__discard.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 635; @position = 18; @symbol_constdef = [compress,635,18,26]; @symbol_type<0> = [String,635,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 636; @position = 18; @symbol_constdef = [dithering,636,18,27]; @symbol_type<0> = [String,636,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [automaticPalette,637,18,34]; @symbol_type<0> = [String,637,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [packingFormat,638,18,31]; @symbol_type<0> = [String,638,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 641; @symbol_moduledef = [device_info,641,15,26]; ]
+        module device_info {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 641; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 643 18 ]
+                symbol [ Toybox %tmp.210 643 32 38 ];
+                %tmp.210 = getv ? :Toybox;
+                symbol [ System %tmp.211 643 39 45 ];
+                %tmp.211 = getv %tmp.210 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.212 643 46 64 ];
+                %tmp.212 = getv %tmp.211 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.212;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 642; @position = 18; @symbol_constdef = [screenWidth,642,18,29]; @symbol_type<0> = [Number,642,33,39]; ]
+            const screenWidth as Number = 390;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 643; @position = 18; @symbol_constdef = [screenShape,643,18,29]; ]
+            const screenShape;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [hasNightMode,644,18,30]; @symbol_type<0> = [Boolean,644,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 645; @position = 18; @symbol_constdef = [hasGpu,645,18,24]; @symbol_type<0> = [Boolean,645,28,35]; ]
+            const hasGpu as Boolean = false;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 646; @position = 18; @symbol_constdef = [screenHeight,646,18,30]; @symbol_type<0> = [Number,646,34,40]; ]
+            const screenHeight as Number = 390;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 647; @position = 18; @symbol_constdef = [hasTouchScreen,647,18,32]; @symbol_type<0> = [Boolean,647,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 648; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,648,18,44]; @symbol_type<0> = [Boolean,648,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = true;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 651; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,651,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 651; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [filename,652,18,26]; @symbol_type<0> = [String,652,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 653; @position = 18; @symbol_constdef = [dithering,653,18,27]; @symbol_type<0> = [String,653,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 654; @position = 18; @symbol_constdef = [packingFormat,654,18,31]; @symbol_type<0> = [String,654,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 657; @symbol_moduledef = [prompt_font__body_no_title,657,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 657; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 658 18 ]
+                symbol [ Graphics %tmp.213 658 34 42 ];
+                %tmp.213 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.214 658 43 62 ];
+                %tmp.214 = getv %tmp.213 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.215 658 63 71 ];
+                %tmp.215 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.216 658 72 92 ];
+                %tmp.216 = getv %tmp.215 :TEXT_JUSTIFY_VCENTER;
+                %tmp.217 = bitor %tmp.214 %tmp.216;
+                putv self :justification %tmp.217;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 659 18 ]
+                symbol [ Graphics %tmp.218 659 25 33 ];
+                %tmp.218 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.219 659 34 43 ];
+                %tmp.219 = getv %tmp.218 :FONT_TINY;
+                putv self :font %tmp.219;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [justification,658,18,31]; ]
+            const justification;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [font,659,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 662; @symbol_moduledef = [prompt_size__title_icon,662,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 662; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 663; @position = 18; @symbol_constdef = [scaleX,663,18,24]; @symbol_type<0> = [Float,663,28,33]; ]
+            const scaleX as Float = 0.12;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 664; @position = 18; @symbol_constdef = [scaleRelativeTo,664,18,33]; @symbol_type<0> = [String,664,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 667; @symbol_moduledef = [system_icon_dark__warning,667,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 667; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 668; @position = 18; @symbol_constdef = [filename,668,18,26]; @symbol_type<0> = [String,668,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_dark__warning.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 669; @position = 18; @symbol_constdef = [compress,669,18,26]; @symbol_type<0> = [String,669,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 670; @position = 18; @symbol_constdef = [dithering,670,18,27]; @symbol_type<0> = [String,670,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 671; @position = 18; @symbol_constdef = [automaticPalette,671,18,34]; @symbol_type<0> = [String,671,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 672; @position = 18; @symbol_constdef = [packingFormat,672,18,31]; @symbol_type<0> = [String,672,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 675; @symbol_moduledef = [prompt_loc__title_icon,675,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 675; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 676; @position = 18; @symbol_constdef = [x,676,18,19]; @symbol_type<0> = [Number,676,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 677; @position = 18; @symbol_constdef = [y,677,18,19]; @symbol_type<0> = [Number,677,23,29]; ]
+            const y as Number = 39;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 678; @position = 18; @symbol_constdef = [horizontalJustification,678,18,41]; @symbol_type<0> = [String,678,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 679; @position = 18; @symbol_constdef = [verticalJustification,679,18,39]; @symbol_type<0> = [String,679,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 682; @symbol_moduledef = [prompt_font_enhanced_readability__title,682,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 682; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 683 18 ]
+                symbol [ Graphics %tmp.220 683 34 42 ];
+                %tmp.220 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.221 683 43 62 ];
+                %tmp.221 = getv %tmp.220 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.222 683 63 71 ];
+                %tmp.222 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.223 683 72 92 ];
+                %tmp.223 = getv %tmp.222 :TEXT_JUSTIFY_VCENTER;
+                %tmp.224 = bitor %tmp.221 %tmp.223;
+                putv self :justification %tmp.224;
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 684 18 ]
+                symbol [ Graphics %tmp.225 684 25 33 ];
+                %tmp.225 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.226 684 34 43 ];
+                %tmp.226 = getv %tmp.225 :FONT_TINY;
+                putv self :font %tmp.226;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 683; @position = 18; @symbol_constdef = [justification,683,18,31]; ]
+            const justification;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 684; @position = 18; @symbol_constdef = [font,684,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 687; @symbol_moduledef = [prompt_color_dark__body,687,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 687; ]
+            <init> {
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen" 689 18 ]
+                symbol [ Graphics %tmp.227 689 31 39 ];
+                %tmp.227 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.228 689 40 57 ];
+                %tmp.228 = getv %tmp.227 :COLOR_TRANSPARENT;
+                putv self :background %tmp.228;
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 688; @position = 18; @symbol_constdef = [color,688,18,23]; @symbol_type<0> = [Number,688,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 689; @position = 18; @symbol_constdef = [background,689,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 692; @symbol_moduledef = [confirmation_icon__hint_delete,692,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 692; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 693; @position = 18; @symbol_constdef = [filename,693,18,26]; @symbol_type<0> = [String,693,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 694; @position = 18; @symbol_constdef = [dithering,694,18,27]; @symbol_type<0> = [String,694,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 695; @position = 18; @symbol_constdef = [packingFormat,695,18,31]; @symbol_type<0> = [String,695,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 698; @symbol_moduledef = [system_icon_light__hint_button_right_top,698,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 698; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 699; @position = 18; @symbol_constdef = [filename,699,18,26]; @symbol_type<0> = [String,699,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 700; @position = 18; @symbol_constdef = [dithering,700,18,27]; @symbol_type<0> = [String,700,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 701; @position = 18; @symbol_constdef = [packingFormat,701,18,31]; @symbol_type<0> = [String,701,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 704; @symbol_moduledef = [confirmation_size__body,704,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 704; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 705; @position = 18; @symbol_constdef = [width,705,18,23]; @symbol_type<0> = [Number,705,27,33]; ]
+            const width as Number = 231;
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 706; @position = 18; @symbol_constdef = [height,706,18,24]; @symbol_type<0> = [Number,706,28,34]; ]
+            const height as Number = 234;
+        }
+        [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 709; @symbol_moduledef = [system_icon_positive__check,709,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 709; ]
+            <init> {
+            }
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 710; @position = 18; @symbol_constdef = [filename,710,18,26]; @symbol_type<0> = [String,710,30,36]; ]
+            const filename as String = "/Users/claireyu/Library/Application Support/Garmin/ConnectIQ/Devices/vivoactive5/system_icon_positive__check.svg";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 711; @position = 18; @symbol_constdef = [dithering,711,18,27]; @symbol_type<0> = [String,711,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 712; @position = 18; @symbol_constdef = [packingFormat,712,18,31]; @symbol_type<0> = [String,712,35,41]; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/gen/006-B4426-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

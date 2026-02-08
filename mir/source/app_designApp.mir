@@ -1,0 +1,84 @@
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 5; @symbol_classdef = [app_designApp,5,6,19]; @symbol_extends<0> = [Application,5,28,39]; @symbol_extends<1> = [AppBase,5,40,47]; ]
+class app_designApp extends Application.AppBase {
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; ]
+    function initialize() as Void {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designApp_mc_7_26_9_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc" 8 8 ]
+        symbol [ AppBase %tmp.2 8 8 15 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 8 16 26 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designApp_mc_7_26_9_4_stop:
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 11; @symbol_functiondef = [onStart,11,13,20]; @symbol_param<0> = [state,11,21,26]; @symbol_param<0>_type<0> = [Dictionary,11,30,40]; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 14; @symbol_functiondef = [onStop,14,13,19]; @symbol_param<0> = [state,14,20,25]; @symbol_param<0>_type<0> = [Dictionary,14,29,39]; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 17; @symbol_functiondef = [getInitialView,17,13,27]; ]
+    function getInitialView() {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designApp_mc_17_30_21_4_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc" 18 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designApp_mc_17_30_21_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designApp_mc_17_30_21_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 18 12 16 ];
+        symbol [ app_designView %tmp.4 18 23 37 ];
+        %tmp.4 = getv ? :app_designView;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %view.1 %tmp.1;
+        symbol [ view %view.1 18 12 16 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc" 19 8 ]
+        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designApp_mc_17_30_21_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designApp_mc_17_30_21_4_stop" ]
+        %delegate.2 = local;
+        symbol [ delegate %delegate.2 19 12 20 ];
+        symbol [ app_designDelegate %tmp.8 19 27 45 ];
+        %tmp.8 = getv ? :app_designDelegate;
+        %tmp.5 = newc %tmp.8 ();
+        lputv %delegate.2 %tmp.5;
+        symbol [ delegate %delegate.2 19 12 20 ];
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc" 20 8 ]
+        %tmp.9 = newa 2;
+        %tmp.10 = lgetv %view.1;
+        symbol [ view %tmp.10 20 16 20 ];
+        %tmp.11 = dup %tmp.9;
+        %tmp.12 = aputv %tmp.11 0 %tmp.10;
+        %tmp.13 = lgetv %delegate.2;
+        symbol [ delegate %tmp.13 20 22 30 ];
+        %tmp.14 = dup %tmp.12;
+        %tmp.15 = aputv %tmp.14 1 %tmp.13;
+        ret %tmp.15;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designApp_mc_17_30_21_4_stop:
+    }
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 25; @symbol_functiondef = [getApp,25,9,15]; @symbol_return<0> = [app_designApp,25,21,34]; ]
+function getApp() as app_designApp {
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designApp_mc_25_35_27_0_start:
+[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc" 26 4 ]
+    symbol [ Application %tmp.1 26 11 22 ];
+    %tmp.1 = getm $.Toybox.Application;
+    symbol [ getApp %tmp.2 26 23 29 ];
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 app_designApp;
+    symbol [ app_designApp %tmp.4 26 35 48 ];
+    ret %tmp.4;
+_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_app_designApp_mc_25_35_27_0_stop:
+}
+[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/app_designApp.mc"; @line = 1; ]
+<init> {
+}
