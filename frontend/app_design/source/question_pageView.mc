@@ -261,19 +261,6 @@ class questionPageView extends WatchUi.View {
         var labelText = getLabelForValue(value);
         dc.drawText(cx, cy + r - 150, Graphics.FONT_XTINY, labelText, Graphics.TEXT_JUSTIFY_CENTER);
         
-        // // SKIP ALL button (small, top-right area)
-        // var skipW = 70;
-        // var skipH = 25;
-        // var skipX = cx;
-        // var skipY = cy + r - 115;
-        // skipAllBox = [skipX - skipW/2, skipY - skipH/2, skipW, skipH];
-        
-        // dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-        // dc.drawRoundedRectangle(skipX - skipW/2, skipY - skipH/2, skipW, skipH, 6);
-        // dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        // // dc.drawText(skipX, skipY, Graphics.FONT_XTINY, "SKIP ALL",
-        //             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        
         // BACK button
         var backBtnW = 75;
         var backBtnH = 40;
@@ -383,21 +370,31 @@ class CompletionView extends WatchUi.View {
         var screenH = dc.getHeight();
         var cx = screenW / 2;
         var cy = screenH / 2;
+        
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
+        
         var r = (screenW < screenH ? screenW : screenH) / 2 - 12;
+        
         dc.setColor(0x7B2FBE, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(6);
         dc.drawCircle(cx, cy, r);
         dc.setPenWidth(1);
+        
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.fillCircle(cx, cy, r - 4);
+        
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
         drawCheckmark(dc, cx, cy - 30, 30);
+        
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, cy + 40, Graphics.FONT_MEDIUM, "Nice Job!", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        dc.drawText(cx, cy + 70, Graphics.FONT_XTINY, "Swipe up for results", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(cx, cy + 40, Graphics.FONT_MEDIUM, "Nice Job!", 
+                    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(cx, cy + 70, Graphics.FONT_XTINY, "Swipe up for results", 
+                    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        
     }
+    
     
     function drawCheckmark(dc as Dc, x as Number, y as Number, size as Number) as Void {
         dc.setPenWidth(3);

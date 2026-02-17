@@ -113,6 +113,31 @@ class scorePageView extends WatchUi.View {
             dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
             dc.drawText(cx, cy, Graphics.FONT_SMALL, "No HRV data", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
+
+        drawPageIndicators(dc, dc.getHeight(), 1);
+
+        
+    }
+
+     function drawPageIndicators(dc as Dc, screenH as Number, currentPage as Number) as Void {
+        var dotRadius = 4;
+        var dotSpacing = 15;
+        var x = 20; // Left margin
+        var startY = (screenH / 2) - dotSpacing; // Center vertically
+        
+        for (var i = 0; i < 4; i++) {
+            var y = startY + (i * dotSpacing);
+            
+            if (i == currentPage) {
+                // Current page - filled dot
+                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                dc.fillCircle(x, y, dotRadius);
+            } else {
+                // Other pages - outline dot
+                dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+                dc.drawCircle(x, y, dotRadius);
+            }
+        }
     }
 }
 

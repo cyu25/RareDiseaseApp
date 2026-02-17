@@ -47,8 +47,30 @@ class CalendarPageView extends WatchUi.View {
         drawMonthYearHeader(dc, centerX);
         drawDayHeaders(dc, width);
         drawCalendarGrid(dc, width, height);
+        drawPageIndicators(dc, dc.getHeight(), 3);
     }
     
+    function drawPageIndicators(dc as Dc, screenH as Number, currentPage as Number) as Void {
+        var dotRadius = 4;
+        var dotSpacing = 15;
+        var x = 20; // Left margin
+        var startY = (screenH / 2) - dotSpacing; // Center vertically
+        
+        for (var i = 0; i < 4; i++) {
+            var y = startY + (i * dotSpacing);
+            
+            if (i == currentPage) {
+                // Current page - filled dot
+                dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+                dc.fillCircle(x, y, dotRadius);
+            } else {
+                // Other pages - outline dot
+                dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+                dc.drawCircle(x, y, dotRadius);
+            }
+        }
+    }
+
     function drawTitle(dc as Dc, centerX as Number) as Void {
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(centerX, 50, Graphics.FONT_TINY, "Select a Date", 

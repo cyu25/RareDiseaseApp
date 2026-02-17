@@ -31,7 +31,7 @@ class SpiderDiagramView extends WatchUi.View {
         var screenHeight = dc.getHeight();
         centerX = screenWidth / 2.0;
         centerY = screenHeight / 2.0;
-        radius = (screenWidth < screenHeight ? screenWidth : screenHeight) * 0.28;
+        radius = (screenWidth < screenHeight ? screenWidth : screenHeight) * 0.26;
         var dateInfo = Time.Gregorian.info(recordedDate, Time.FORMAT_SHORT);
         var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         var dateText = Lang.format("$1$ $2$, $3$", [monthNames[dateInfo.month - 1], dateInfo.day, dateInfo.year]);
@@ -41,6 +41,7 @@ class SpiderDiagramView extends WatchUi.View {
         drawAxes(dc);
         drawSpiderPolygon(dc);
         drawLabels(dc);
+        drawPageIndicators(dc, dc.getHeight(), 0);
     }
     function drawGridCircles(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
@@ -94,6 +95,28 @@ class SpiderDiagramView extends WatchUi.View {
     }
     public function getSymptomValues() as Array<Number> { return symptomValues; }
     public function getSymptomLabels() as Array<String> { return symptomLabels; }
+
+    function drawPageIndicators(dc as Dc, screenH as Number, currentPage as Number) as Void {
+    var dotRadius = 4;
+    var dotSpacing = 15;
+    var x = 20; // Left margin
+    var startY = (screenH / 2) - dotSpacing; // Center vertically
+    
+    // Draw 4 dots
+    for (var i = 0; i < 4; i++) {
+        var y = startY + (i * dotSpacing);
+        
+        if (i == currentPage) {
+            // Current page - filled dot
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.fillCircle(x, y, dotRadius);
+        } else {
+            // Other pages - outline dot
+            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+            dc.drawCircle(x, y, dotRadius);
+        }
+    }
+}
 }
 
 class SpiderDiagramDelegate extends WatchUi.BehaviorDelegate {
@@ -111,6 +134,7 @@ class SpiderDiagramDelegate extends WatchUi.BehaviorDelegate {
         }
         return false;
     }
+    
 }
 
 // =========================================================
@@ -191,6 +215,27 @@ class ChartView extends WatchUi.View {
                     }
                     if (cnt > 0) { weeklyData[c][d] = (sum / cnt).toNumber(); }
                 }
+            }
+        }
+    }
+
+    function drawPageIndicators(dc as Dc, screenH as Number, currentPage as Number) as Void {
+        var dotRadius = 4;
+        var dotSpacing = 15;
+        var x = 20; // Left margin
+        var startY = (screenH / 2) - dotSpacing; // Center vertically
+        
+        for (var i = 0; i < 4; i++) {
+            var y = startY + (i * dotSpacing);
+            
+            if (i == currentPage) {
+                // Current page - filled dot
+                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                dc.fillCircle(x, y, dotRadius);
+            } else {
+                // Other pages - outline dot
+                dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+                dc.drawCircle(x, y, dotRadius);
             }
         }
     }
@@ -282,6 +327,8 @@ class ChartView extends WatchUi.View {
             dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
             dc.drawText(cx, H / 2, Graphics.FONT_XTINY, "No data this week", Graphics.TEXT_JUSTIFY_CENTER);
         }
+
+        drawPageIndicators(dc, dc.getHeight(), 2);
     }
 
     function drawCategoryPills(dc as Dc, cx as Number, screenW as Number, pillY as Number) as Void {
