@@ -17,13 +17,13 @@ class checkPageView extends WatchUi.View {
         View.initialize();
         
         checklistItems = [
-            "NMSK",
+            "NMSK (muscle joints & nerves)",
             "Pain",
-            "Urogential",
+            "Urinary and reproductive",
             "Anxiety",
             "Depression",
-            "Cardiac dysautonomia",
-            "Gastrointestinal",
+            "Heart rate/blood pressure regulation",
+            "Digestive (stomach/bowel)",
             "Fatigue"
         ];
         
@@ -77,7 +77,7 @@ class checkPageView extends WatchUi.View {
             
             // Fill checkbox if checked
             if (checkedStates[i]) {
-                dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
+                dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
                 dc.fillRectangle(checkboxX + 2, checkboxY + 2, checkboxSize - 4, checkboxSize - 4);
             }
             
@@ -112,7 +112,7 @@ class checkPageView extends WatchUi.View {
         var buttonX = screenWidth / 2;
         var buttonY = (screenHeight * 88) / 100;
         
-        dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
         dc.fillRoundedRectangle(
             buttonX - buttonWidth/2,
             buttonY - buttonHeight/2,
@@ -131,7 +131,7 @@ class checkPageView extends WatchUi.View {
         );
 
         if (errorMessage != null) {
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+            dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
             dc.drawText(
                 screenWidth / 2,
                 275,

@@ -91,7 +91,7 @@ class scorePageView extends WatchUi.View {
         if (isLoading) {
             dc.drawText(cx, cy, Graphics.FONT_SMALL, "Loading...", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         } else if (errorMessage != null) {
-            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+            dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
             dc.drawText(cx, cy - 20, Graphics.FONT_XTINY, "Error", Graphics.TEXT_JUSTIFY_CENTER);
             dc.drawText(cx, cy + 10, Graphics.FONT_XTINY, errorMessage, Graphics.TEXT_JUSTIFY_CENTER);
         } else if (hrvAverage != null) {

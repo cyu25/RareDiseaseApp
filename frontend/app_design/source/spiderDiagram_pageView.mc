@@ -85,9 +85,9 @@ class SpiderDiagramView extends WatchUi.View {
         for (var i = 0; i < numSymptoms; i++) {
             var angle = (i * angleStep) - (Math.PI / 2);
             var label = symptomLabels[i];
-            if (label.equals("Cardiac dysautonomia")) { label = "Cardiac"; }
-            else if (label.equals("Gastrointestinal")) { label = "GI"; }
-            else if (label.equals("Urogential")) { label = "Uro"; }
+            if (label.equals("Heart rate/blood pressure regulation")) { label = "Cardiac"; }
+            else if (label.equals("Digestive (stomach/bowel")) { label = "GI"; }
+            else if (label.equals("Urinary and reproductive")) { label = "Uro"; }
             dc.drawText(centerX + (labelRadius * Math.cos(angle)), centerY + (labelRadius * Math.sin(angle)),
                         Graphics.FONT_XTINY, label, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
@@ -310,9 +310,9 @@ class ChartView extends WatchUi.View {
                 dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
             }
             var label = categoryLabels[i];
-            if (label.equals("Cardiac dysautonomia")) { label = "Cardiac"; }
-            else if (label.equals("Gastrointestinal")) { label = "GI"; }
-            else if (label.equals("Urogential")) { label = "Uro"; }
+            if (label.equals("Heart rate/blood pressure regulation")) { label = "Cardiac"; }
+            else if (label.equals("Digestive (stomach/bowel)")) { label = "GI"; }
+            else if (label.equals("Urinary and reproductive")) { label = "Uro"; }
             else if (label.equals("Depression")) { label = "Depress"; }
             else if (label.length() > 7) { label = label.substring(0, 7); }
             dc.drawText(pX + pillWidth / 2, pillY + pillHeight / 2, Graphics.FONT_XTINY,

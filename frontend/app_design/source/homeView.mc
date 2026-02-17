@@ -25,7 +25,7 @@ class HomeView extends WatchUi.View {
         dc.drawText(cx, 60, Graphics.FONT_MEDIUM, "Today's Survey", 
                     Graphics.TEXT_JUSTIFY_CENTER);
         
-        dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, cy - 20, Graphics.FONT_SMALL, "Complete!", 
                     Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         
@@ -33,7 +33,7 @@ class HomeView extends WatchUi.View {
         dc.drawText(cx, cy + 40, Graphics.FONT_XTINY, "Swipe up for trends", 
                     Graphics.TEXT_JUSTIFY_CENTER);
     
-        dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, cy + 95, Graphics.FONT_XTINY, "Tap to Reset", 
                     Graphics.TEXT_JUSTIFY_CENTER);
     }

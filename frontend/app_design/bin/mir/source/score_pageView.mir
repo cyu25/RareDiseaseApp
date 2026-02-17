@@ -1,102 +1,102 @@
-[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+[ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+[ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
 import Toybox.Graphics;
-[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+[ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
 import Toybox.Lang;
-[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Communications,4,14,28]; ]
+[ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Communications,4,14,28]; ]
 import Toybox.Communications;
-[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [System,5,14,20]; ]
+[ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [System,5,14,20]; ]
 import Toybox.System;
-[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 11; @symbol_classdef = [scorePageView,11,6,19]; @symbol_extends<0> = [WatchUi,11,28,35]; @symbol_extends<1> = [View,11,36,40]; ]
+[ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 11; @symbol_classdef = [scorePageView,11,6,19]; @symbol_extends<0> = [WatchUi,11,28,35]; @symbol_extends<1> = [View,11,36,40]; ]
 class scorePageView extends WatchUi.View {
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 11; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 11; ]
     <init> {
     }
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 11; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 11; ]
     static
     <init> {
     }
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 13; @position = 16; @symbol_vardef = [hrvAverage,13,16,26]; @symbol_type<0> = [Float,13,30,35]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 13; @position = 16; @symbol_vardef = [hrvAverage,13,16,26]; @symbol_type<0> = [Float,13,30,35]; ]
     private
     var hrvAverage as Float or Null;
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 14; @position = 16; @symbol_vardef = [hrvPercentile10,14,16,31]; @symbol_type<0> = [Float,14,35,40]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 14; @position = 16; @symbol_vardef = [hrvPercentile10,14,16,31]; @symbol_type<0> = [Float,14,35,40]; ]
     private
     var hrvPercentile10 as Float or Null;
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 15; @position = 16; @symbol_vardef = [hrvPercentile90,15,16,31]; @symbol_type<0> = [Float,15,35,40]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 15; @position = 16; @symbol_vardef = [hrvPercentile90,15,16,31]; @symbol_type<0> = [Float,15,35,40]; ]
     private
     var hrvPercentile90 as Float or Null;
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 16; @position = 16; @symbol_vardef = [daysIncluded,16,16,28]; @symbol_type<0> = [Number,16,32,38]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 16; @position = 16; @symbol_vardef = [daysIncluded,16,16,28]; @symbol_type<0> = [Number,16,32,38]; ]
     private
     var daysIncluded as Number;
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 17; @position = 16; @symbol_vardef = [isLoading,17,16,25]; @symbol_type<0> = [Boolean,17,29,36]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 17; @position = 16; @symbol_vardef = [isLoading,17,16,25]; @symbol_type<0> = [Boolean,17,29,36]; ]
     private
     var isLoading as Boolean;
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 18; @position = 16; @symbol_vardef = [errorMessage,18,16,28]; @symbol_type<0> = [String,18,32,38]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 18; @position = 16; @symbol_vardef = [errorMessage,18,16,28]; @symbol_type<0> = [String,18,32,38]; ]
     private
     var errorMessage as String or Null;
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 20; @position = 18; @symbol_constdef = [BACKEND_URL,20,18,29]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 20; @position = 18; @symbol_constdef = [BACKEND_URL,20,18,29]; ]
     private
     const BACKEND_URL = "https://your-ngrok-url.ngrok-free.dev/hrv/rolling21";
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 22; @symbol_functiondef = [initialize,22,13,23]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 22; @symbol_functiondef = [initialize,22,13,23]; ]
     function initialize() as Void {
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_22_26_31_4_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 23 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_22_26_31_4_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 23 8 ]
         symbol [ View %tmp.2 23 8 12 ];
         %tmp.2 = getv ? :View;
         symbol [ initialize %tmp.3 23 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 24 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 24 8 ]
         %tmp.4 = null;
         symbol [ hrvAverage ? 24 8 18 ];
         putv self :hrvAverage %tmp.4;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 25 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 25 8 ]
         %tmp.5 = null;
         symbol [ hrvPercentile10 ? 25 8 23 ];
         putv self :hrvPercentile10 %tmp.5;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 26 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 26 8 ]
         %tmp.6 = null;
         symbol [ hrvPercentile90 ? 26 8 23 ];
         putv self :hrvPercentile90 %tmp.6;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 27 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 27 8 ]
         %tmp.7 = 0;
         symbol [ daysIncluded ? 27 8 20 ];
         putv self :daysIncluded %tmp.7;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 28 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 28 8 ]
         %tmp.8 = true;
         symbol [ isLoading ? 28 8 17 ];
         putv self :isLoading %tmp.8;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 29 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 29 8 ]
         %tmp.9 = null;
         symbol [ errorMessage ? 29 8 20 ];
         putv self :errorMessage %tmp.9;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 30 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 30 8 ]
         %tmp.10 = self;
         symbol [ loadHRVData %tmp.11 30 8 19 ];
         %tmp.11 = getv function %tmp.10 :loadHRVData;
         invoke %tmp.10 %tmp.11();
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_22_26_31_4_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_22_26_31_4_stop:
     }
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 33; @symbol_functiondef = [loadHRVData,33,13,24]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 33; @symbol_functiondef = [loadHRVData,33,13,24]; ]
     function loadHRVData() as Void {
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_33_35_47_4_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 34 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_33_35_47_4_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 34 8 ]
         %tmp.1 = true;
         symbol [ isLoading ? 34 8 17 ];
         putv self :isLoading %tmp.1;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 35 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 35 8 ]
         %tmp.2 = null;
         symbol [ errorMessage ? 35 8 20 ];
         putv self :errorMessage %tmp.2;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 36 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 36 8 ]
         symbol [ WatchUi %tmp.3 36 8 15 ];
         %tmp.3 = getm $.Toybox.WatchUi;
         symbol [ requestUpdate %tmp.4 36 16 29 ];
         %tmp.4 = getv function %tmp.3 :requestUpdate;
         invoke %tmp.3 %tmp.4();
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 37 8 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_33_35_47_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_33_35_47_4_stop" ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 37 8 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_33_35_47_4_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_33_35_47_4_stop" ]
         %options.1 = local;
         symbol [ options %options.1 37 12 19 ];
         %tmp.5 = newd 2;
@@ -118,7 +118,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.17 = aputv %tmp.16 %tmp.13 %tmp.15;
         lputv %options.1 %tmp.17;
         symbol [ options %options.1 37 12 19 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 41 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 41 8 ]
         symbol [ Communications %tmp.18 41 8 22 ];
         %tmp.18 = getm $.Toybox.Communications;
         symbol [ makeWebRequest %tmp.19 41 23 37 ];
@@ -135,37 +135,37 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ onHRVDataReceived %tmp.27 45 20 37 const ];
         %tmp.28 = invoke %tmp.24 %tmp.25(%tmp.27);
         invoke %tmp.18 %tmp.19(%tmp.21, %tmp.22, %tmp.23, %tmp.28);
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_33_35_47_4_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_33_35_47_4_stop:
     }
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 49; @symbol_functiondef = [onHRVDataReceived,49,13,30]; @symbol_param<0> = [responseCode,49,31,43]; @symbol_param<0>_type<0> = [Number,49,47,53]; @symbol_param<1> = [data,49,55,59]; @symbol_param<1>_type<0> = [Dictionary,49,63,73]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 49; @symbol_functiondef = [onHRVDataReceived,49,13,30]; @symbol_param<0> = [responseCode,49,31,43]; @symbol_param<0>_type<0> = [Number,49,47,53]; @symbol_param<1> = [data,49,55,59]; @symbol_param<1>_type<0> = [Dictionary,49,63,73]; ]
     function onHRVDataReceived(responseCode as Number, data as Dictionary or Null) as Void {
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_49_84_76_4_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 50 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_49_84_76_4_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 50 8 ]
         %tmp.1 = false;
         symbol [ isLoading ? 50 8 17 ];
         putv self :isLoading %tmp.1;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 51 8 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_stmt:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_12_51_43_begin:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 51 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_stmt:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_12_51_43_begin:
         %tmp.2 = lgetv %responseCode;
         symbol [ responseCode %tmp.2 51 12 24 ];
         %tmp.3 = 200;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_else_false;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_35_51_43_true:
+        bf %tmp.4 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_else_false;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_35_51_43_true:
         %tmp.5 = lgetv %data;
         symbol [ data %tmp.5 51 35 39 ];
         %tmp.6 = null;
         %tmp.7 = ne %tmp.5 %tmp.6;
         push %tmp.7;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_35_51_43_end:
-        %tmp.8 = phi [%tmp.4 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_12_51_43_begin] [%tmp.7 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_35_51_43_true] [%tmp.8 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_35_51_43_end];
-        bf %tmp.8 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_else_false;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_49_65_8_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 52 12 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_stmt:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_16_52_65_begin:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_35_51_43_end:
+        %tmp.8 = phi [%tmp.4 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_12_51_43_begin] [%tmp.7 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_35_51_43_true] [%tmp.8 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_35_51_43_end];
+        bf %tmp.8 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_else_false;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_49_65_8_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 52 12 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_stmt:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_16_52_65_begin:
         %tmp.9 = lgetv %data;
         symbol [ data %tmp.9 52 16 20 ];
         %tmp.10 = as %tmp.9 { (!Null) };
@@ -173,8 +173,8 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.11 = getv function %tmp.10 :hasKey;
         %tmp.12 = "average";
         %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
-        bf %tmp.13 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_42_52_65_true:
+        bf %tmp.13 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_42_52_65_true:
         %tmp.14 = lgetv %data;
         symbol [ data %tmp.14 52 42 46 ];
         %tmp.15 = as %tmp.14 { (!Null) };
@@ -185,12 +185,12 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.19 = null;
         %tmp.20 = ne %tmp.18 %tmp.19;
         push %tmp.20;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_42_52_65_end:
-        %tmp.21 = phi [%tmp.13 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_16_52_65_begin] [%tmp.20 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_42_52_65_true] [%tmp.21 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_42_52_65_end];
-        bf %tmp.21 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_71_54_12_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 53 16 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_42_52_65_end:
+        %tmp.21 = phi [%tmp.13 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_16_52_65_begin] [%tmp.20 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_42_52_65_true] [%tmp.21 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_42_52_65_end];
+        bf %tmp.21 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_71_54_12_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 53 16 ]
         %tmp.22 = lgetv %data;
         symbol [ data %tmp.22 53 29 33 ];
         %tmp.23 = as %tmp.22 { (!Null) };
@@ -202,12 +202,12 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ Float %tmp.27 53 52 57 ];
         symbol [ hrvAverage ? 53 16 26 ];
         putv self :hrvAverage %tmp.27;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_71_54_12_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_end:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 55 12 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_stmt:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_16_55_75_begin:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_71_54_12_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_52_12_54_12_if_end:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 55 12 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_stmt:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_16_55_75_begin:
         %tmp.28 = lgetv %data;
         symbol [ data %tmp.28 55 16 20 ];
         %tmp.29 = as %tmp.28 { (!Null) };
@@ -215,8 +215,8 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.30 = getv function %tmp.29 :hasKey;
         %tmp.31 = "percentile10";
         %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
-        bf %tmp.32 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_47_55_75_true:
+        bf %tmp.32 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_47_55_75_true:
         %tmp.33 = lgetv %data;
         symbol [ data %tmp.33 55 47 51 ];
         %tmp.34 = as %tmp.33 { (!Null) };
@@ -227,12 +227,12 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.38 = null;
         %tmp.39 = ne %tmp.37 %tmp.38;
         push %tmp.39;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_47_55_75_end:
-        %tmp.40 = phi [%tmp.32 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_16_55_75_begin] [%tmp.39 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_47_55_75_true] [%tmp.40 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_47_55_75_end];
-        bf %tmp.40 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_81_57_12_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 56 16 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_47_55_75_end:
+        %tmp.40 = phi [%tmp.32 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_16_55_75_begin] [%tmp.39 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_47_55_75_true] [%tmp.40 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_47_55_75_end];
+        bf %tmp.40 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_81_57_12_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 56 16 ]
         %tmp.41 = lgetv %data;
         symbol [ data %tmp.41 56 34 38 ];
         %tmp.42 = as %tmp.41 { (!Null) };
@@ -244,12 +244,12 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ Float %tmp.46 56 62 67 ];
         symbol [ hrvPercentile10 ? 56 16 31 ];
         putv self :hrvPercentile10 %tmp.46;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_81_57_12_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_end:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 58 12 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_stmt:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_16_58_75_begin:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_81_57_12_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_55_12_57_12_if_end:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 58 12 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_stmt:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_16_58_75_begin:
         %tmp.47 = lgetv %data;
         symbol [ data %tmp.47 58 16 20 ];
         %tmp.48 = as %tmp.47 { (!Null) };
@@ -257,8 +257,8 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.49 = getv function %tmp.48 :hasKey;
         %tmp.50 = "percentile90";
         %tmp.51 = invoke %tmp.48 %tmp.49(%tmp.50);
-        bf %tmp.51 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_47_58_75_true:
+        bf %tmp.51 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_47_58_75_true:
         %tmp.52 = lgetv %data;
         symbol [ data %tmp.52 58 47 51 ];
         %tmp.53 = as %tmp.52 { (!Null) };
@@ -269,12 +269,12 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.57 = null;
         %tmp.58 = ne %tmp.56 %tmp.57;
         push %tmp.58;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_47_58_75_end:
-        %tmp.59 = phi [%tmp.51 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_16_58_75_begin] [%tmp.58 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_47_58_75_true] [%tmp.59 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_47_58_75_end];
-        bf %tmp.59 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_81_60_12_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 59 16 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_47_58_75_end:
+        %tmp.59 = phi [%tmp.51 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_16_58_75_begin] [%tmp.58 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_47_58_75_true] [%tmp.59 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_47_58_75_end];
+        bf %tmp.59 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_81_60_12_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 59 16 ]
         %tmp.60 = lgetv %data;
         symbol [ data %tmp.60 59 34 38 ];
         %tmp.61 = as %tmp.60 { (!Null) };
@@ -286,11 +286,11 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ Float %tmp.65 59 62 67 ];
         symbol [ hrvPercentile90 ? 59 16 31 ];
         putv self :hrvPercentile90 %tmp.65;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_81_60_12_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_end:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 61 12 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_12_63_12_if_stmt:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_81_60_12_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_58_12_60_12_if_end:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 61 12 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_12_63_12_if_stmt:
         %tmp.66 = lgetv %data;
         symbol [ data %tmp.66 61 16 20 ];
         %tmp.67 = as %tmp.66 { (!Null) };
@@ -298,10 +298,10 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.68 = getv function %tmp.67 :hasKey;
         %tmp.69 = "daysIncluded";
         %tmp.70 = invoke %tmp.67 %tmp.68(%tmp.69);
-        bf %tmp.70 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_12_63_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_12_63_12_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_45_63_12_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 62 16 ]
+        bf %tmp.70 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_12_63_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_12_63_12_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_45_63_12_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 62 16 ]
         %tmp.71 = lgetv %data;
         symbol [ data %tmp.71 62 31 35 ];
         %tmp.72 = as %tmp.71 { (!Null) };
@@ -313,26 +313,26 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ Number %tmp.76 62 59 65 ];
         symbol [ daysIncluded ? 62 16 28 ];
         putv self :daysIncluded %tmp.76;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_45_63_12_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_12_63_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_12_63_12_if_end:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 64 12 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_45_63_12_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_12_63_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_61_12_63_12_if_end:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 64 12 ]
         %tmp.77 = null;
         symbol [ errorMessage ? 64 12 24 ];
         putv self :errorMessage %tmp.77;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_49_65_8_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_else_false:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_65_15_74_8_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 66 12 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_stmt:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_16_66_51_begin:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_49_65_8_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_else_false:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_65_15_74_8_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 66 12 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_stmt:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_16_66_51_begin:
         %tmp.78 = lgetv %data;
         symbol [ data %tmp.78 66 16 20 ];
         %tmp.79 = null;
         %tmp.80 = ne %tmp.78 %tmp.79;
-        bf %tmp.80 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_else_false;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_32_66_51_true:
+        bf %tmp.80 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_else_false;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_32_66_51_true:
         %tmp.81 = lgetv %data;
         symbol [ data %tmp.81 66 32 36 ];
         %tmp.82 = as %tmp.81 { (!Null) };
@@ -341,12 +341,12 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.84 = "error";
         %tmp.85 = invoke %tmp.82 %tmp.83(%tmp.84);
         push %tmp.85;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_32_66_51_end:
-        %tmp.86 = phi [%tmp.80 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_16_66_51_begin] [%tmp.85 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_32_66_51_true] [%tmp.86 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_32_66_51_end];
-        bf %tmp.86 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_else_false;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_54_68_12_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 67 16 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_32_66_51_end:
+        %tmp.86 = phi [%tmp.80 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_16_66_51_begin] [%tmp.85 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_32_66_51_true] [%tmp.86 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_32_66_51_end];
+        bf %tmp.86 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_else_false;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_54_68_12_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 67 16 ]
         %tmp.87 = lgetv %data;
         symbol [ data %tmp.87 67 31 35 ];
         %tmp.88 = as %tmp.87 { (!Null) };
@@ -358,43 +358,43 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ String %tmp.92 67 52 58 ];
         symbol [ errorMessage ? 67 16 28 ];
         putv self :errorMessage %tmp.92;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_54_68_12_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_else_false:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_68_19_70_12_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 69 16 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_54_68_12_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_else_false:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_68_19_70_12_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 69 16 ]
         %tmp.93 = "Failed to load HRV data";
         symbol [ errorMessage ? 69 16 28 ];
         putv self :errorMessage %tmp.93;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_68_19_70_12_stop:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_end:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 71 12 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_68_19_70_12_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_66_12_70_12_if_end:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 71 12 ]
         %tmp.94 = null;
         symbol [ hrvAverage ? 71 12 22 ];
         putv self :hrvAverage %tmp.94;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 72 12 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 72 12 ]
         %tmp.95 = null;
         symbol [ hrvPercentile10 ? 72 12 27 ];
         putv self :hrvPercentile10 %tmp.95;
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 73 12 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 73 12 ]
         %tmp.96 = null;
         symbol [ hrvPercentile90 ? 73 12 27 ];
         putv self :hrvPercentile90 %tmp.96;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_65_15_74_8_stop:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_end:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 75 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_65_15_74_8_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_51_8_74_8_if_end:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 75 8 ]
         symbol [ WatchUi %tmp.97 75 8 15 ];
         %tmp.97 = getm $.Toybox.WatchUi;
         symbol [ requestUpdate %tmp.98 75 16 29 ];
         %tmp.98 = getv function %tmp.97 :requestUpdate;
         invoke %tmp.97 %tmp.98();
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_49_84_76_4_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_49_84_76_4_stop:
     }
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 78; @symbol_functiondef = [onUpdate,78,13,21]; @symbol_param<0> = [dc,78,22,24]; @symbol_param<0>_type<0> = [Dc,78,28,30]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 78; @symbol_functiondef = [onUpdate,78,13,21]; @symbol_param<0> = [dc,78,22,24]; @symbol_param<0>_type<0> = [Dc,78,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 79 8 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop" ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 79 8 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop" ]
         %screenW.1 = local;
         symbol [ screenW %screenW.1 79 12 19 ];
         %tmp.1 = lgetv %dc;
@@ -404,8 +404,8 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %screenW.1 %tmp.3;
         symbol [ screenW %screenW.1 79 12 19 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 80 8 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop" ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 80 8 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop" ]
         %screenH.2 = local;
         symbol [ screenH %screenH.2 80 12 19 ];
         %tmp.4 = lgetv %dc;
@@ -415,8 +415,8 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %screenH.2 %tmp.6;
         symbol [ screenH %screenH.2 80 12 19 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 81 8 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop" ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 81 8 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop" ]
         %cx.3 = local;
         symbol [ cx %cx.3 81 12 14 ];
         %tmp.7 = lgetv %screenW.1;
@@ -425,8 +425,8 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.9 = div %tmp.7 %tmp.8;
         lputv %cx.3 %tmp.9;
         symbol [ cx %cx.3 81 12 14 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 82 8 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop" ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 82 8 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop" ]
         %cy.4 = local;
         symbol [ cy %cy.4 82 12 14 ];
         %tmp.10 = lgetv %screenH.2;
@@ -435,7 +435,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.12 = div %tmp.10 %tmp.11;
         lputv %cy.4 %tmp.12;
         symbol [ cy %cy.4 82 12 14 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 83 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 83 8 ]
         %tmp.13 = lgetv %dc;
         symbol [ dc %tmp.13 83 8 10 ];
         symbol [ setColor %tmp.14 83 11 19 ];
@@ -449,41 +449,41 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ COLOR_BLACK %tmp.18 83 51 62 ];
         %tmp.18 = getv %tmp.17 :COLOR_BLACK;
         invoke %tmp.13 %tmp.14(%tmp.16, %tmp.18);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 84 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 84 8 ]
         %tmp.19 = lgetv %dc;
         symbol [ dc %tmp.19 84 8 10 ];
         symbol [ clear %tmp.20 84 11 16 ];
         %tmp.20 = getv function %tmp.19 :clear;
         invoke %tmp.19 %tmp.20();
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 85 8 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop" ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 85 8 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop" ]
         %r.5 = local;
         symbol [ r %r.5 85 12 13 ];
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_begin:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_begin:
         %tmp.21 = lgetv %screenW.1;
         symbol [ screenW %tmp.21 85 17 24 ];
         %tmp.22 = lgetv %screenH.2;
         symbol [ screenH %tmp.22 85 27 34 ];
         %tmp.23 = lt %tmp.21 %tmp.22;
-        bf %tmp.23 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_else_false;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_true:
+        bf %tmp.23 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_else_false;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_true:
         %tmp.24 = lgetv %screenW.1;
         symbol [ screenW %tmp.24 85 37 44 ];
         push %tmp.24;
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_else_false:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_else_false:
         %tmp.25 = lgetv %screenH.2;
         symbol [ screenH %tmp.25 85 47 54 ];
         push %tmp.25;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_end:
-        %tmp.26 = phi [%tmp.23 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_begin] [%tmp.24 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_true] [%tmp.25 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_else_false] [%tmp.26 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_end];
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_end:
+        %tmp.26 = phi [%tmp.23 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_begin] [%tmp.24 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_true] [%tmp.25 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_else_false] [%tmp.26 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_85_17_85_47_end];
         %tmp.27 = 2;
         %tmp.28 = div %tmp.26 %tmp.27;
         %tmp.29 = 12;
         %tmp.30 = sub %tmp.28 %tmp.29;
         lputv %r.5 %tmp.30;
         symbol [ r %r.5 85 12 13 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 87 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 87 8 ]
         %tmp.31 = lgetv %dc;
         symbol [ dc %tmp.31 87 8 10 ];
         symbol [ setColor %tmp.32 87 11 19 ];
@@ -497,7 +497,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ COLOR_TRANSPARENT %tmp.36 87 51 68 ];
         %tmp.36 = getv %tmp.35 :COLOR_TRANSPARENT;
         invoke %tmp.31 %tmp.32(%tmp.34, %tmp.36);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 88 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 88 8 ]
         %tmp.37 = lgetv %dc;
         symbol [ dc %tmp.37 88 8 10 ];
         symbol [ drawText %tmp.38 88 11 19 ];
@@ -521,14 +521,14 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ TEXT_JUSTIFY_CENTER %tmp.49 88 85 104 ];
         %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.37 %tmp.38(%tmp.39, %tmp.44, %tmp.46, %tmp.47, %tmp.49);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 91 8 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_stmt:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 91 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_stmt:
         symbol [ isLoading %tmp.51 91 12 21 ];
         %tmp.51 = getv ? :isLoading;
-        bf %tmp.51 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_false;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_23_93_8_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 92 12 ]
+        bf %tmp.51 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_false;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_23_93_8_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 92 12 ]
         %tmp.52 = lgetv %dc;
         symbol [ dc %tmp.52 92 12 14 ];
         symbol [ drawText %tmp.53 92 15 23 ];
@@ -552,33 +552,33 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.62 = getv %tmp.61 :TEXT_JUSTIFY_VCENTER;
         %tmp.63 = bitor %tmp.60 %tmp.62;
         invoke %tmp.52 %tmp.53(%tmp.54, %tmp.55, %tmp.57, %tmp.58, %tmp.63);
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_23_93_8_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_false:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 93 15 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_stmt:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_23_93_8_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_false:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 93 15 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_stmt:
         symbol [ errorMessage %tmp.65 93 19 31 ];
         %tmp.65 = getv ? :errorMessage;
         %tmp.66 = null;
         %tmp.67 = ne %tmp.65 %tmp.66;
-        bf %tmp.67 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_false;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_41_97_8_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 94 12 ]
+        bf %tmp.67 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_false;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_41_97_8_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 94 12 ]
         %tmp.68 = lgetv %dc;
         symbol [ dc %tmp.68 94 12 14 ];
         symbol [ setColor %tmp.69 94 15 23 ];
         %tmp.69 = getv function %tmp.68 :setColor;
         symbol [ Graphics %tmp.70 94 24 32 ];
         %tmp.70 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.71 94 33 42 ];
-        %tmp.71 = getv %tmp.70 :COLOR_RED;
-        symbol [ Graphics %tmp.72 94 44 52 ];
+        symbol [ COLOR_ORANGE %tmp.71 94 33 45 ];
+        %tmp.71 = getv %tmp.70 :COLOR_ORANGE;
+        symbol [ Graphics %tmp.72 94 47 55 ];
         %tmp.72 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.73 94 53 70 ];
+        symbol [ COLOR_TRANSPARENT %tmp.73 94 56 73 ];
         %tmp.73 = getv %tmp.72 :COLOR_TRANSPARENT;
         invoke %tmp.68 %tmp.69(%tmp.71, %tmp.73);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 95 12 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 95 12 ]
         %tmp.74 = lgetv %dc;
         symbol [ dc %tmp.74 95 12 14 ];
         symbol [ drawText %tmp.75 95 15 23 ];
@@ -599,7 +599,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ TEXT_JUSTIFY_CENTER %tmp.84 95 76 95 ];
         %tmp.84 = getv %tmp.83 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.74 %tmp.75(%tmp.76, %tmp.79, %tmp.81, %tmp.82, %tmp.84);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 96 12 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 96 12 ]
         %tmp.85 = lgetv %dc;
         symbol [ dc %tmp.85 96 12 14 ];
         symbol [ drawText %tmp.86 96 15 23 ];
@@ -621,19 +621,19 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ TEXT_JUSTIFY_CENTER %tmp.96 96 81 100 ];
         %tmp.96 = getv %tmp.95 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.85 %tmp.86(%tmp.87, %tmp.90, %tmp.92, %tmp.94, %tmp.96);
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_41_97_8_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_false:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 97 15 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_stmt:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_41_97_8_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_false:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 97 15 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_stmt:
         symbol [ hrvAverage %tmp.98 97 19 29 ];
         %tmp.98 = getv ? :hrvAverage;
         %tmp.99 = null;
         %tmp.100 = ne %tmp.98 %tmp.99;
-        bf %tmp.100 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_else_false;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_39_112_8_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 98 12 ]
+        bf %tmp.100 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_else_false;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_39_112_8_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 98 12 ]
         %tmp.101 = lgetv %dc;
         symbol [ dc %tmp.101 98 12 14 ];
         symbol [ setColor %tmp.102 98 15 23 ];
@@ -647,8 +647,8 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ COLOR_TRANSPARENT %tmp.106 98 55 72 ];
         %tmp.106 = getv %tmp.105 :COLOR_TRANSPARENT;
         invoke %tmp.101 %tmp.102(%tmp.104, %tmp.106);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 99 12 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_39_112_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_39_112_8_stop" ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 99 12 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_39_112_8_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_39_112_8_stop" ]
         %avgText.6 = local;
         symbol [ avgText %avgText.6 99 16 23 ];
         symbol [ hrvAverage %tmp.108 99 26 36 ];
@@ -659,7 +659,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.111 = invoke %tmp.108 %tmp.109(%tmp.110);
         lputv %avgText.6 %tmp.111;
         symbol [ avgText %avgText.6 99 16 23 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 100 12 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 100 12 ]
         %tmp.112 = lgetv %dc;
         symbol [ dc %tmp.112 100 12 14 ];
         symbol [ drawText %tmp.113 100 15 23 ];
@@ -686,7 +686,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.124 = getv %tmp.123 :TEXT_JUSTIFY_VCENTER;
         %tmp.125 = bitor %tmp.122 %tmp.124;
         invoke %tmp.112 %tmp.113(%tmp.114, %tmp.117, %tmp.119, %tmp.120, %tmp.125);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 101 12 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 101 12 ]
         %tmp.126 = lgetv %dc;
         symbol [ dc %tmp.126 101 12 14 ];
         symbol [ drawText %tmp.127 101 15 23 ];
@@ -707,27 +707,27 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ TEXT_JUSTIFY_CENTER %tmp.136 101 78 97 ];
         %tmp.136 = getv %tmp.135 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.126 %tmp.127(%tmp.128, %tmp.131, %tmp.133, %tmp.134, %tmp.136);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 102 12 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_stmt:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_16_102_62_begin:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 102 12 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_stmt:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_16_102_62_begin:
         symbol [ hrvPercentile10 %tmp.138 102 16 31 ];
         %tmp.138 = getv ? :hrvPercentile10;
         %tmp.139 = null;
         %tmp.140 = ne %tmp.138 %tmp.139;
-        bf %tmp.140 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_43_102_62_true:
+        bf %tmp.140 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_43_102_62_true:
         symbol [ hrvPercentile90 %tmp.142 102 43 58 ];
         %tmp.142 = getv ? :hrvPercentile90;
         %tmp.143 = null;
         %tmp.144 = ne %tmp.142 %tmp.143;
         push %tmp.144;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_43_102_62_end:
-        %tmp.145 = phi [%tmp.140 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_16_102_62_begin] [%tmp.144 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_43_102_62_true] [%tmp.145 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_43_102_62_end];
-        bf %tmp.145 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 103 16 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_stop" ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_43_102_62_end:
+        %tmp.145 = phi [%tmp.140 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_16_102_62_begin] [%tmp.144 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_43_102_62_true] [%tmp.145 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_43_102_62_end];
+        bf %tmp.145 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 103 16 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_stop" ]
         %rangeY.7 = local;
         symbol [ rangeY %rangeY.7 103 20 26 ];
         %tmp.146 = lgetv %cy.4;
@@ -739,7 +739,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.150 = sub %tmp.148 %tmp.149;
         lputv %rangeY.7 %tmp.150;
         symbol [ rangeY %rangeY.7 103 20 26 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 104 16 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 104 16 ]
         %tmp.151 = lgetv %dc;
         symbol [ dc %tmp.151 104 16 18 ];
         symbol [ setColor %tmp.152 104 19 27 ];
@@ -753,7 +753,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ COLOR_TRANSPARENT %tmp.156 104 61 78 ];
         %tmp.156 = getv %tmp.155 :COLOR_TRANSPARENT;
         invoke %tmp.151 %tmp.152(%tmp.154, %tmp.156);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 105 16 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 105 16 ]
         %tmp.157 = lgetv %dc;
         symbol [ dc %tmp.157 105 16 18 ];
         symbol [ drawText %tmp.158 105 19 27 ];
@@ -772,8 +772,8 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ TEXT_JUSTIFY_CENTER %tmp.165 105 91 110 ];
         %tmp.165 = getv %tmp.164 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.157 %tmp.158(%tmp.159, %tmp.160, %tmp.162, %tmp.163, %tmp.165);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 106 16 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_stop" ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 106 16 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_stop" ]
         %rangeText.8 = local;
         symbol [ rangeText %rangeText.8 106 20 29 ];
         symbol [ hrvPercentile10 %tmp.167 106 32 47 ];
@@ -793,7 +793,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.178 = add %tmp.172 %tmp.177;
         lputv %rangeText.8 %tmp.178;
         symbol [ rangeText %rangeText.8 106 20 29 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 107 16 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 107 16 ]
         %tmp.179 = lgetv %dc;
         symbol [ dc %tmp.179 107 16 18 ];
         symbol [ setColor %tmp.180 107 19 27 ];
@@ -807,7 +807,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ COLOR_TRANSPARENT %tmp.184 107 59 76 ];
         %tmp.184 = getv %tmp.183 :COLOR_TRANSPARENT;
         invoke %tmp.179 %tmp.180(%tmp.182, %tmp.184);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 108 16 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 108 16 ]
         %tmp.185 = lgetv %dc;
         symbol [ dc %tmp.185 108 16 18 ];
         symbol [ drawText %tmp.186 108 19 27 ];
@@ -829,10 +829,10 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ TEXT_JUSTIFY_CENTER %tmp.195 108 86 105 ];
         %tmp.195 = getv %tmp.194 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.185 %tmp.186(%tmp.187, %tmp.190, %tmp.192, %tmp.193, %tmp.195);
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_end:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 110 12 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_68_109_12_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_102_12_109_12_if_end:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 110 12 ]
         %tmp.196 = lgetv %dc;
         symbol [ dc %tmp.196 110 12 14 ];
         symbol [ setColor %tmp.197 110 15 23 ];
@@ -846,7 +846,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ COLOR_TRANSPARENT %tmp.201 110 57 74 ];
         %tmp.201 = getv %tmp.200 :COLOR_TRANSPARENT;
         invoke %tmp.196 %tmp.197(%tmp.199, %tmp.201);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 111 12 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 111 12 ]
         %tmp.202 = lgetv %dc;
         symbol [ dc %tmp.202 111 12 14 ];
         symbol [ drawText %tmp.203 111 15 23 ];
@@ -876,11 +876,11 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ TEXT_JUSTIFY_CENTER %tmp.219 111 106 125 ];
         %tmp.219 = getv %tmp.218 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.202 %tmp.203(%tmp.204, %tmp.209, %tmp.211, %tmp.217, %tmp.219);
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_39_112_8_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_else_false:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_112_15_115_8_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 113 12 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_39_112_8_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_else_false:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_112_15_115_8_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 113 12 ]
         %tmp.220 = lgetv %dc;
         symbol [ dc %tmp.220 113 12 14 ];
         symbol [ setColor %tmp.221 113 15 23 ];
@@ -894,7 +894,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ COLOR_TRANSPARENT %tmp.225 113 57 74 ];
         %tmp.225 = getv %tmp.224 :COLOR_TRANSPARENT;
         invoke %tmp.220 %tmp.221(%tmp.223, %tmp.225);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 114 12 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 114 12 ]
         %tmp.226 = lgetv %dc;
         symbol [ dc %tmp.226 114 12 14 ];
         symbol [ drawText %tmp.227 114 15 23 ];
@@ -918,59 +918,59 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.236 = getv %tmp.235 :TEXT_JUSTIFY_VCENTER;
         %tmp.237 = bitor %tmp.234 %tmp.236;
         invoke %tmp.226 %tmp.227(%tmp.228, %tmp.229, %tmp.231, %tmp.232, %tmp.237);
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_112_15_115_8_stop:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_end:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_end:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_end:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_112_15_115_8_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_97_15_115_8_if_end:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_93_15_115_8_if_end:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_91_8_115_8_if_end:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_78_40_116_4_stop:
     }
 }
-[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 119; @symbol_classdef = [ScorePageDelegate,119,6,23]; @symbol_extends<0> = [WatchUi,119,32,39]; @symbol_extends<1> = [BehaviorDelegate,119,40,56]; ]
+[ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 119; @symbol_classdef = [ScorePageDelegate,119,6,23]; @symbol_extends<0> = [WatchUi,119,32,39]; @symbol_extends<1> = [BehaviorDelegate,119,40,56]; ]
 class ScorePageDelegate extends WatchUi.BehaviorDelegate {
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 119; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 119; ]
     <init> {
     }
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 119; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 119; ]
     static
     <init> {
     }
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 120; @position = 16; @symbol_vardef = [view,120,16,20]; @symbol_type<0> = [scorePageView,120,24,37]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 120; @position = 16; @symbol_vardef = [view,120,16,20]; @symbol_type<0> = [scorePageView,120,24,37]; ]
     private
     var view as scorePageView;
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 122; @symbol_functiondef = [initialize,122,13,23]; @symbol_param<0> = [v,122,24,25]; @symbol_param<0>_type<0> = [scorePageView,122,29,42]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 122; @symbol_functiondef = [initialize,122,13,23]; @symbol_param<0> = [v,122,24,25]; @symbol_param<0>_type<0> = [scorePageView,122,29,42]; ]
     function initialize(v as scorePageView) as Void {
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_122_44_125_4_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 123 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_122_44_125_4_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 123 8 ]
         symbol [ BehaviorDelegate %tmp.2 123 8 24 ];
         %tmp.2 = getv ? :BehaviorDelegate;
         symbol [ initialize %tmp.3 123 25 35 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 124 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 124 8 ]
         %tmp.4 = lgetv %v;
         symbol [ v %tmp.4 124 15 16 ];
         symbol [ view ? 124 8 12 ];
         putv self :view %tmp.4;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_122_44_125_4_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_122_44_125_4_stop:
     }
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 127; @symbol_functiondef = [onSelect,127,13,21]; @symbol_return<0> = [Boolean,127,27,34]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 127; @symbol_functiondef = [onSelect,127,13,21]; @symbol_return<0> = [Boolean,127,27,34]; ]
     function onSelect() as Boolean {
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_127_35_130_4_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 128 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_127_35_130_4_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 128 8 ]
         symbol [ view %tmp.2 128 8 12 ];
         %tmp.2 = getv ? :view;
         symbol [ loadHRVData %tmp.3 128 13 24 ];
         %tmp.3 = getv function %tmp.2 :loadHRVData;
         invoke %tmp.2 %tmp.3();
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 129 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 129 8 ]
         %tmp.4 = true;
         ret %tmp.4;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_127_35_130_4_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_127_35_130_4_stop:
     }
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 132; @symbol_functiondef = [onBack,132,13,19]; @symbol_return<0> = [Boolean,132,25,32]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 132; @symbol_functiondef = [onBack,132,13,19]; @symbol_return<0> = [Boolean,132,25,32]; ]
     function onBack() as Boolean {
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_132_33_135_4_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 133 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_132_33_135_4_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 133 8 ]
         symbol [ WatchUi %tmp.1 133 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
         symbol [ popView %tmp.2 133 16 23 ];
@@ -980,16 +980,16 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ SLIDE_DOWN %tmp.4 133 32 42 ];
         %tmp.4 = getv %tmp.3 :SLIDE_DOWN;
         invoke %tmp.1 %tmp.2(%tmp.4);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 134 8 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 134 8 ]
         %tmp.5 = true;
         ret %tmp.5;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_132_33_135_4_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_132_33_135_4_stop:
     }
-    [ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 137; @symbol_functiondef = [onSwipe,137,13,20]; @symbol_param<0> = [evt,137,21,24]; @symbol_param<0>_type<0> = [SwipeEvent,137,28,38]; @symbol_return<0> = [Boolean,137,43,50]; ]
+    [ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 137; @symbol_functiondef = [onSwipe,137,13,20]; @symbol_param<0> = [evt,137,21,24]; @symbol_param<0>_type<0> = [SwipeEvent,137,28,38]; @symbol_return<0> = [Boolean,137,43,50]; ]
     function onSwipe(evt as SwipeEvent) as Boolean {
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_137_51_146_4_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 138 8 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_137_51_146_4_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_137_51_146_4_stop" ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_137_51_146_4_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 138 8 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_137_51_146_4_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_137_51_146_4_stop" ]
         %direction.1 = local;
         symbol [ direction %direction.1 138 12 21 ];
         %tmp.1 = lgetv %evt;
@@ -999,8 +999,8 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %direction.1 %tmp.3;
         symbol [ direction %direction.1 138 12 21 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 139 8 ]
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_8_144_8_if_stmt:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 139 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_8_144_8_if_stmt:
         %tmp.4 = lgetv %direction.1;
         symbol [ direction %tmp.4 139 12 21 ];
         symbol [ WatchUi %tmp.5 139 25 32 ];
@@ -1008,11 +1008,11 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ SWIPE_UP %tmp.6 139 33 41 ];
         %tmp.6 = getv %tmp.5 :SWIPE_UP;
         %tmp.7 = eq %tmp.4 %tmp.6;
-        bf %tmp.7 @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_8_144_8_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_8_144_8_if_true:
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_start:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 140 12 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_stop" ]
+        bf %tmp.7 @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_8_144_8_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_8_144_8_if_true:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_start:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 140 12 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_stop" ]
         %chartView.2 = local;
         symbol [ chartView %chartView.2 140 16 25 ];
         symbol [ ChartView %tmp.11 140 32 41 ];
@@ -1021,8 +1021,8 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.8 = newc %tmp.11 (%tmp.12);
         lputv %chartView.2 %tmp.8;
         symbol [ chartView %chartView.2 140 16 25 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 141 12 ]
-        [ "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_start" "_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_stop" ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 141 12 ]
+        [ "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_start" "_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_stop" ]
         %chartDelegate.3 = local;
         symbol [ chartDelegate %chartDelegate.3 141 16 29 ];
         symbol [ ChartDelegate %tmp.16 141 36 49 ];
@@ -1030,7 +1030,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.13 = newc %tmp.16 ();
         lputv %chartDelegate.3 %tmp.13;
         symbol [ chartDelegate %chartDelegate.3 141 16 29 ];
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 142 12 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 142 12 ]
         %tmp.17 = lgetv %chartDelegate.3;
         symbol [ chartDelegate %tmp.17 142 12 25 ];
         symbol [ setView %tmp.18 142 26 33 ];
@@ -1038,7 +1038,7 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         %tmp.19 = lgetv %chartView.2;
         symbol [ chartView %tmp.19 142 34 43 ];
         invoke %tmp.17 %tmp.18(%tmp.19);
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 143 12 ]
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 143 12 ]
         symbol [ WatchUi %tmp.20 143 12 19 ];
         %tmp.20 = getm $.Toybox.WatchUi;
         symbol [ pushView %tmp.21 143 20 28 ];
@@ -1052,15 +1052,15 @@ _Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView
         symbol [ SLIDE_UP %tmp.25 143 63 71 ];
         %tmp.25 = getv %tmp.24 :SLIDE_UP;
         invoke %tmp.20 %tmp.21(%tmp.22, %tmp.23, %tmp.25);
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_stop:
-        goto @_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_8_144_8_if_end;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_8_144_8_if_end:
-[ "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 145 8 ]
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_43_144_8_stop:
+        goto @_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_8_144_8_if_end;
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_139_8_144_8_if_end:
+[ "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc" 145 8 ]
         %tmp.26 = false;
         ret %tmp.26;
-_Users_claireyu_Desktop_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_137_51_146_4_stop:
+_Users_jennasheldon_Documents_GitHub_RareDiseaseApp_frontend_app_design_source_score_pageView_mc_137_51_146_4_stop:
     }
 }
-[ @file = "/Users/claireyu/Desktop/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 1; ]
+[ @file = "/Users/jennasheldon/Documents/GitHub/RareDiseaseApp/frontend/app_design/source/score_pageView.mc"; @line = 1; ]
 <init> {
 }

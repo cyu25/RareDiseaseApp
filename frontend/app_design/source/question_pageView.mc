@@ -44,7 +44,7 @@ class questionPageView extends WatchUi.View {
             "Joint instability",                    // NMSK Q1
             "Muscle weakness",                      // NMSK Q2
             "Muscle spasms",                        // NMSK Q3
-            "Balance & proprioception problems",    // NMSK Q4
+            "Balance & body position awareness problems",    // NMSK Q4
             "Tingling or loss of sensation",        // NMSK Q5
             "Joint pain",                           // Pain Q6
             "Widespread pain",                      // Pain Q7
@@ -55,9 +55,9 @@ class questionPageView extends WatchUi.View {
             "Difficulty with sleep",                // Fatigue Q12
             "Faint when moving to standing",        // Cardiac Q13
             "Faint when standing upright",          // Cardiac Q14
-            "Autonomic impact severity",            // Cardiac Q15
+            "Nervous system severity",            // Cardiac Q15
             "Impact on daily life",                 // Cardiac Q16
-            "Abdominal bloating/pain",              // GI Q17
+            "Stomach bloating/pain",              // GI Q17
             "Diarrhea or constipation",             // GI Q18
             "Nausea or vomiting",                   // GI Q19
             "Reflux or difficulty swallowing",      // GI Q20

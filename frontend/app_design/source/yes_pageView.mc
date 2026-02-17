@@ -31,7 +31,7 @@ class YesPageView extends WatchUi.View {
         var yesX = (screenWidth * 28) / 100;
         var yesY = (screenHeight * 76) / 100;
 
-        dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
         dc.fillRoundedRectangle(
             yesX - buttonWidth/2,
             yesY - buttonHeight/2,
@@ -53,7 +53,7 @@ class YesPageView extends WatchUi.View {
         var skipX = (screenWidth * 69) / 100;
         var skipY = (screenHeight * 76) / 100;
 
-        dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
         dc.fillRoundedRectangle(
             skipX - buttonWidth/2,
             skipY - buttonHeight/2,
