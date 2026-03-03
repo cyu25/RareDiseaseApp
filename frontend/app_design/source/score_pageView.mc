@@ -247,55 +247,37 @@ public function loadSurveyData() as Void {
     }
 
     if (hasSurveyData) {
-        // --- COMPOSITE SCORE MODE ---
-
-        // Title
+        // Composite score mode
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, 30, Graphics.FONT_XTINY, "HEALTH SCORE",
             Graphics.TEXT_JUSTIFY_CENTER);
 
-        dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, cy - 25, Graphics.FONT_NUMBER_HOT,
+        // Big composite score
+        dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT); // Blue
+        dc.drawText(cx, cy - 30, Graphics.FONT_NUMBER_HOT,
             compositeScore.toString(),
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-        // Battery / Peak labels
+        // Small current body battery value, centered lower on the screen
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, cy + 30, Graphics.FONT_XTINY, "Battery  Peak",
+        dc.drawText(cx, cy + 65, Graphics.FONT_XTINY, "Body Battery",
             Graphics.TEXT_JUSTIFY_CENTER);
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         var batteryStr = (currentLevel != null) ? (currentLevel as Float).format("%.0f") : "--";
-        var peakStr    = (morningPeak  != null) ? (morningPeak  as Float).format("%.0f") : "--";
-        dc.drawText(cx, cy + 52, Graphics.FONT_XTINY,
-            batteryStr + "        " + peakStr,
+        dc.drawText(cx, cy + 97, Graphics.FONT_XTINY, batteryStr,
             Graphics.TEXT_JUSTIFY_CENTER);
-
     } else {
-        // --- BODY BATTERY ONLY MODE (no survey completed yet today) ---
-
+        // Body battery only mode (no survey yet)
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         dc.drawText(cx, 40, Graphics.FONT_XTINY, "BODY BATTERY",
             Graphics.TEXT_JUSTIFY_CENTER);
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, cy - 20, Graphics.FONT_NUMBER_HOT,
-            (currentLevel as Float).format("%.0f"),
+        var currentStr = (currentLevel != null) ? (currentLevel as Float).format("%.0f") : "--";
+        dc.drawText(cx, cy + 80, Graphics.FONT_NUMBER_HOT,
+            currentStr,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, cy + 45, Graphics.FONT_XTINY, "Peak",
-            Graphics.TEXT_JUSTIFY_CENTER);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, cy + 65, Graphics.FONT_XTINY, (morningPeak as Float).format("%.0f"),
-            Graphics.TEXT_JUSTIFY_CENTER);
-
-        // Prompt to complete survey
-        dc.setColor(0x7B2FBE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(cx, cy + 110, Graphics.FONT_XTINY, "Complete survey",
-            Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(cx, cy + 128, Graphics.FONT_XTINY, "for health score",
-            Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     drawPageIndicators(dc, screenH, 1);
